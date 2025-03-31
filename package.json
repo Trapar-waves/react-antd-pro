@@ -2,6 +2,9 @@
   "name": "@trapar-waves/react-antd-pro",
   "version": "1.0.0",
   "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
