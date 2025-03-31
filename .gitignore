@@ -1,0 +1,17 @@
+# Local
+.DS_Store
+*.local
+*.log*
+
+# Dist
+node_modules
+dist/
+
+# IDE
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea
+doc_build
+*.module.css.d.ts
+routeTree.gen.ts
