@@ -1,7 +1,7 @@
 {
   "name": "@trapar-waves/react-antd-pro",
-  "version": "1.0.1",
   "type": "module",
+  "version": "1.0.1",
   "publishConfig": {
     "access": "public"
   },
