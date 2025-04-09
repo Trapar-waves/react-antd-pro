@@ -64,8 +64,8 @@ importers:
         specifier: ^1.3.5
         version: 1.3.5
       '@rsbuild/plugin-react':
-        specifier: ^1.1.1
-        version: 1.1.1(@rsbuild/core@1.3.5)
+        specifier: ^1.2.0
+        version: 1.2.0(@rsbuild/core@1.3.5)
       '@rsbuild/plugin-typed-css-modules':
         specifier: ^1.0.2
         version: 1.0.2(@rsbuild/core@1.3.5)
@@ -1034,8 +1034,8 @@ packages:
       '@rsbuild/core':
         optional: true
 
-  '@rsbuild/plugin-react@1.1.1':
-    resolution: {integrity: sha512-gkATKrOQauXMMtrYA5jbTQkhmYTE0VXoknPLtVpiXtwDbBUwgX23LFf1XJ51YOwqYpP7g5SfPEMgD2FENtCq0A==}
+  '@rsbuild/plugin-react@1.2.0':
+    resolution: {integrity: sha512-TXd0cvcLPF7OrO215vlGSyRXD6Fc3KQWhFuXFKOtRYp+C1Vc9oeW0GopUIStv2pI2/xtv2XX8GOAdJsnsc6lkA==}
     peerDependencies:
       '@rsbuild/core': 1.x
 
@@ -1140,12 +1140,13 @@ packages:
     resolution: {integrity: sha512-VynGOEsVw2s8TAlLf/uESfrgfrq2+rcXB1muPJYBWbsm1Oa6r5qVQhjA5ggM6z/coYPrsVMgovl3Ff7Q7OCp1w==}
     engines: {node: '>=16.0.0'}
 
-  '@rspack/plugin-react-refresh@1.0.1':
-    resolution: {integrity: sha512-KSBc3bsr3mrAPViv7w9MpE9KEWm6q87EyRXyHlRfJ9PpQ56NbX9KZ7AXo7jPeECb0q5sfpM2PSEf+syBiMgLSw==}
+  '@rspack/plugin-react-refresh@1.2.0':
+    resolution: {integrity: sha512-DTsbtggCfsiXE5QQtYMS8rKfEF8GIjwPDbgIT6Kg8BlAjpJY4jT5IisyhfIi7YOT3d5RIvu60iFB6Kr9sSMsnA==}
     peerDependencies:
       react-refresh: '>=0.10.0 <1.0.0'
+      webpack-hot-middleware: 2.x
     peerDependenciesMeta:
-      react-refresh:
+      webpack-hot-middleware:
         optional: true
 
   '@socket.io/component-emitter@3.1.2':
@@ -2499,8 +2500,8 @@ packages:
     resolution: {integrity: sha512-puUZAUKT5m8Zzvs72XWy3HtvVbTWljRE66cP60bxJzAqf2DgICo7lYTY2IHUmLnNpjYvw5bvmoHvPc0QO2a62w==}
     engines: {node: ^16.14.0 || >=18.0.0}
 
-  html-entities@2.5.2:
-    resolution: {integrity: sha512-K//PSRMQk4FZ78Kyau+mZurHn3FH0Vwr+H36eE0rPbeYkRRi9YxceYPhuN60UwWorxyKHhqoAJl2OFKa4BVtaA==}
+  html-entities@2.6.0:
+    resolution: {integrity: sha512-kig+rMn/QOVRvr7c86gQ8lWXq+Hkv6CbAH1hLu+RG338StTpE8Z0b44SDVaqVu7HGKf27frdmUYEs9hTUX/cLQ==}
 
   html-escaper@2.0.2:
     resolution: {integrity: sha512-H2iMtd0I4Mt5eYiapRdIDjp+XzelXQ0tFE4JS7YFwFevXXMmOp9myNrUvCg0D6ws8iqkRPBfKHgbwig1SmlLfg==}
@@ -3443,8 +3444,8 @@ packages:
   react-lifecycles-compat@3.0.4:
     resolution: {integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==}
 
-  react-refresh@0.16.0:
-    resolution: {integrity: sha512-FPvF2XxTSikpJxcr+bHut2H4gJ17+18Uy20D5/F+SKzFap62R3cM5wH6b8WN3LyGSYeQilLEcJcR1fjBSI2S1A==}
+  react-refresh@0.17.0:
+    resolution: {integrity: sha512-z6F7K9bV85EfseRCp2bzrpyQ0Gkw1uLoCel9XBVWPg/TjRj94SkJzUTGfOa4bs7iJvBWtQG0Wq7wnI0syw3EBQ==}
     engines: {node: '>=0.10.0'}
 
   react-router-dom@6.30.0:
@@ -5057,11 +5058,13 @@ snapshots:
     optionalDependencies:
       '@rsbuild/core': 1.3.5
 
-  '@rsbuild/plugin-react@1.1.1(@rsbuild/core@1.3.5)':
+  '@rsbuild/plugin-react@1.2.0(@rsbuild/core@1.3.5)':
     dependencies:
       '@rsbuild/core': 1.3.5
-      '@rspack/plugin-react-refresh': 1.0.1(react-refresh@0.16.0)
-      react-refresh: 0.16.0
+      '@rspack/plugin-react-refresh': 1.2.0(react-refresh@0.17.0)
+      react-refresh: 0.17.0
+    transitivePeerDependencies:
+      - webpack-hot-middleware
 
   '@rsbuild/plugin-typed-css-modules@1.0.2(@rsbuild/core@1.3.5)':
     optionalDependencies:
@@ -5235,12 +5238,11 @@ snapshots:
 
   '@rspack/lite-tapable@1.0.1': {}
 
-  '@rspack/plugin-react-refresh@1.0.1(react-refresh@0.16.0)':
+  '@rspack/plugin-react-refresh@1.2.0(react-refresh@0.17.0)':
     dependencies:
       error-stack-parser: 2.1.4
-      html-entities: 2.5.2
-    optionalDependencies:
-      react-refresh: 0.16.0
+      html-entities: 2.6.0
+      react-refresh: 0.17.0
 
   '@socket.io/component-emitter@3.1.2': {}
 
@@ -6811,7 +6813,7 @@ snapshots:
     dependencies:
       lru-cache: 10.4.3
 
-  html-entities@2.5.2: {}
+  html-entities@2.6.0: {}
 
   html-escaper@2.0.2: {}
 
@@ -7938,7 +7940,7 @@ snapshots:
 
   react-lifecycles-compat@3.0.4: {}
 
-  react-refresh@0.16.0: {}
+  react-refresh@0.17.0: {}
 
   react-router-dom@6.30.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
