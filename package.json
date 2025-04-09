@@ -2,6 +2,25 @@
   "name": "@trapar-waves/react-antd-pro",
   "type": "module",
   "version": "1.0.6",
+  "author": {
+    "email": "admin@rikka.cc",
+    "name": "Rikka",
+    "url": "https://github.com/Muromi-Rikka"
+  },
+  "homepage": "https://github.com/Trapar-waves/react-antd-pro",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trapar-waves/react-antd-pro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Trapar-waves/react-antd-pro/issues"
+  },
+  "keywords": [
+    "react",
+    "antd",
+    "tanstack",
+    "rsbuild"
+  ],
   "publishConfig": {
     "access": "public"
   },
@@ -15,7 +34,7 @@
     "@ant-design/pro-components": "^2.8.7",
     "@ant-design/pro-layout": "^7.22.4",
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
-    "@tanstack/react-query": "^5.72.0",
+    "@tanstack/react-query": "^5.72.1",
     "@tanstack/react-router": "^1.115.2",
     "antd": "^5.24.6",
     "axios": "^1.8.4",
@@ -36,9 +55,9 @@
     "@rsbuild/plugin-typed-css-modules": "^1.0.2",
     "@rsdoctor/rspack-plugin": "^1.0.1",
     "@tailwindcss/postcss": "^4.1.3",
-    "@tanstack/eslint-plugin-query": "^5.72.0",
+    "@tanstack/eslint-plugin-query": "^5.72.1",
     "@tanstack/eslint-plugin-router": "^1.115.0",
-    "@tanstack/react-query-devtools": "^5.72.0",
+    "@tanstack/react-query-devtools": "^5.72.1",
     "@tanstack/react-router-devtools": "^1.115.2",
     "@tanstack/router-plugin": "^1.115.2",
     "@types/react": "^19.1.0",
