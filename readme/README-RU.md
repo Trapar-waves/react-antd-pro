@@ -38,19 +38,19 @@ npm -v # или yarn -v или pnpm -v
 ### Установка
 
 1. Склонируйте репозиторий:
-```bash
-git clone https://github.com/Trapar-waves/react-antd-pro.git
-cd @trapar-waves/react-antd-pro
-```
+    ```bash
+    git clone https://github.com/Trapar-waves/react-antd-pro.git
+    cd @trapar-waves/react-antd-pro
+    ```
 2. Установите зависимости:
-```bash
-# Используйте любой менеджер пакетов
-npm install
-# или
-yarn install
-# или
-pnpm install
-```
+    ```bash
+    # Используйте любой менеджер пакетов
+    npm install
+    # или
+    yarn install
+    # или
+    pnpm install
+    ```
 
 ## 🛠️ Использование
 

@@ -39,20 +39,20 @@ npm -v # 或 yarn -v 或 pnpm -v
 ### 安装步骤
 
 1. 克隆项目仓库：
-```bash
-git clone https://github.com/Trapar-waves/react-antd-pro.git
-cd @trapar-waves/react-antd-pro
-```
+    ```bash
+    git clone https://github.com/Trapar-waves/react-antd-pro.git
+    cd @trapar-waves/react-antd-pro
+    ```
 
 2. 安装项目依赖：
-```bash
-# 使用您偏好的包管理工具
-npm install
-# 或
-yarn install
-# 或
-pnpm install
-```
+    ```bash
+    # 使用您偏好的包管理工具
+    npm install
+    # 或
+    yarn install
+    # 或
+    pnpm install
+    ```
 
 ## 🛠️ 常用命令
 

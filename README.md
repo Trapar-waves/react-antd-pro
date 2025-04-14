@@ -38,19 +38,19 @@ npm -v # or yarn -v or pnpm -v
 ### Installation
 
 1. Clone the repository:
-```bash
-git clone https://github.com/Trapar-waves/react-antd-pro.git
-cd @trapar-waves/react-antd-pro
-```
+    ```bash
+    git clone https://github.com/Trapar-waves/react-antd-pro.git
+    cd @trapar-waves/react-antd-pro
+    ```
 2. Install dependencies:
-```bash
-# Use your preferred package manager
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
+    ```bash
+    # Use your preferred package manager
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
 
 ## 🛠️ Usage
 
