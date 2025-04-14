@@ -54,7 +54,7 @@
     "@rsbuild/plugin-react": "^1.2.0",
     "@rsbuild/plugin-typed-css-modules": "^1.0.2",
     "@rsdoctor/rspack-plugin": "^1.0.1",
-    "@tailwindcss/postcss": "^4.1.3",
+    "@tailwindcss/postcss": "^4.1.4",
     "@tanstack/eslint-plugin-query": "^5.73.3",
     "@tanstack/eslint-plugin-router": "^1.115.0",
     "@tanstack/react-query-devtools": "^5.74.0",
@@ -64,7 +64,7 @@
     "@types/react-dom": "^19.1.2",
     "eslint": "^9.24.0",
     "rspack-plugin-mock": "^1.0.1",
-    "tailwindcss": "^4.1.3",
+    "tailwindcss": "^4.1.4",
     "typescript": "^5.8.3"
   },
   "pnpm": {
