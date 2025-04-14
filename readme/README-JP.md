@@ -38,19 +38,19 @@ npm -v # または yarn -v または pnpm -v
 ### インストール方法
 
 1. リポジトリをクローンします：
-```bash
-git clone https://github.com/Trapar-waves/react-antd-pro.git
-cd @trapar-waves/react-antd-pro
-```
+    ```bash
+    git clone https://github.com/Trapar-waves/react-antd-pro.git
+    cd @trapar-waves/react-antd-pro
+    ```
 2. 必要な依存関係をインストールします：
-```bash
-# お好きなパッケージマネージャーを使用してください
-npm install
-# または
-yarn install
-# または
-pnpm install
-```
+    ```bash
+    # お好きなパッケージマネージャーを使用してください
+    npm install
+    # または
+    yarn install
+    # または
+    pnpm install
+    ```
 
 ## 🛠️ 使い方
 
