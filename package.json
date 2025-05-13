@@ -50,7 +50,7 @@
     "@antfu/eslint-config": "^4.13.0",
     "@iconify/json": "^2.2.337",
     "@iconify/tailwind4": "^1.0.6",
-    "@rsbuild/core": "^1.3.19",
+    "@rsbuild/core": "^1.3.20",
     "@rsbuild/plugin-react": "^1.3.1",
     "@rsbuild/plugin-typed-css-modules": "^1.0.2",
     "@rsdoctor/rspack-plugin": "^1.1.2",
