@@ -67,7 +67,7 @@
     "@tanstack/router-plugin": "^1.120.3",
     "@types/react": "^19.1.4",
     "@types/react-dom": "^19.1.5",
-    "eslint": "^9.26.0",
+    "eslint": "^9.27.0",
     "rspack-plugin-mock": "^1.1.0",
     "tailwindcss": "^4.1.7",
     "typescript": "^5.8.3"
