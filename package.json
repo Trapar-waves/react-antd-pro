@@ -19,8 +19,12 @@
   "keywords": [
     "react",
     "antd",
+    "ant-design-pro",
     "tanstack",
-    "rsbuild"
+    "rsbuild",
+    "typescript",
+    "tailwindcss",
+    "enterprise"
   ],
   "publishConfig": {
     "access": "public"
