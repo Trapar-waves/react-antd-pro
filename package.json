@@ -65,7 +65,7 @@
     "@tanstack/react-query-devtools": "^5.77.2",
     "@tanstack/react-router-devtools": "^1.120.11",
     "@tanstack/router-plugin": "^1.120.11",
-    "@types/react": "^19.1.5",
+    "@types/react": "^19.1.6",
     "@types/react-dom": "^19.1.5",
     "eslint": "^9.27.0",
     "rspack-plugin-mock": "^1.1.0",
