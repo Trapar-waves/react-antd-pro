@@ -5,102 +5,113 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![GitHub last commit](https://img.shields.io/github/last-commit/trapar-waves/react-antd-pro)
 
-> Ant Design Pro、TanStackツール、およびRsbuildを活用して開発されたReactベースのプロジェクトで、効率的かつ高性能な開発体験を提供します。
+[English](../README.md) | [中文](README-CN.md) | [Русский](README-RU.md)
+
+> React 19とAnt Design Pro 5をベースに構築された企業アプリケーション開発テンプレートです。TanStackツールチェーン（Router/Query）、Rsbuildビルドツール、Tailwind CSSスタイリングソリューションを統合し、効率的な開発と型安全性に焦点を当てています。
 
 ## ✨ 主な特徴
 
-* **最新のUIフレームワーク:** React（v19）を採用し、モダンでコンポーネント駆動のインターフェースを実現します。
-* **充実のUI部品:** Ant Design（v5）およびAnt Design Proと連携し、企業向けに設計された多様なUI部品を提供します。
-* **高い型安全性:** TypeScriptによる型チェックを活用し、コードの品質を向上させ、実行時のエラーを抑える設計です。
-* **開発効率の向上:** Rsbuildを使用することで、高速な開発サーバーの起動や最適化されたビルド、そしてホットリロードをサポートします。
-* **クライアント側ルーティング:** TanStack Routerを採用し、シングルページアプリケーション（SPA）としてスムーズなナビゲーションを実現します。
-* **シンプルな状態管理:** Zustandを導入し、ミニマリスティックかつ直感的な状態管理を提供します。
-* **強力なデータ取得:** AxiosとTanStack Queryを組み合わせ、信頼性の高いAPI連携とサーバー状態の効率的な管理を可能にします。
-* **柔軟なスタイリング:** Tailwind CSSを採用し、ユーティリティ優先のアプローチで迅速かつ一貫性のあるデザインを実現します。
-* **テストとデバッグに注力:** TanStack Query DevToolsおよびTanStack Router DevToolsを内蔵し、デバッグ作業を支援します。
-* **アニメーションの実装:** Motionを使用して、UIに滑らかなアニメーションとトランジションを簡単に追加できます。
+### 技術スタックの利点
+- **モダンフレームワーク:** React 19をベースに構築され、コンポーネントベース開発とHooksパターンをサポートします。
+- **企業向けUI:** Ant Design 5の基本コンポーネント + Ant Design Proの業務用コンポーネント（ProTable/ProFormなどを含む）を統合しています。
+- **型安全性:** 完全な型システムを備えたTypeScript開発を採用し、API型定義から状態型チェックまで網羅しています。
+
+### 開発体験の最適化
+- **高速ビルド:** 従来のwebpackに代わりRsbuildを使用し、開発サーバーのコールドスタートを2秒で実現します。
+- **インテリジェントルーティング:** TanStack Routerによるファイルベースルーティングで、ルート設定を自動生成（ネストルート対応）します。
+- **状態管理:** 複雑なReduxに代わり軽量なZustandを採用し、合成可能なアトミック状態ソリューションを提供します。
+
+### エンジニアリング機能
+- **データフェッチング:** ラップされたAxiosインスタンス + TanStack Query（v4）による自動リクエストキャッシュ/リトライ/ページネーションを実現します。
+- **スタイリングソリューション:** Tailwind CSS v3 + CSS Modulesを統合し、テーマ設定とレスポンシブデザインをサポートします。
+- **デバッグツール:** 組み込みのTanStack DevTools（Query/Router）とRsbuildビルド分析パネルを搭載しています。
+- **アニメーション強化:** Motionライブラリによるトランジションアニメーション（ルート切り替え、コンポーネント表示/非表示など）を実装します。
 
 ## 🚀 始め方
 
-プロジェクトをローカルで実行するための手順を説明します。
-
-### 必要条件
-
-以下の環境がインストールされていることを確認してください：
-- Node.js >= 18.x
-- パッケージマネージャー (npm、yarn、またはpnpm)
+### 環境要件
+- Node.js ≥ 18.17.0（バージョン管理にはnvmの使用を推奨）
+- パッケージマネージャー: pnpm ≥ 8.0（推奨） / npm ≥ 9.0 / yarn ≥ 3.0
 
 ```bash
+# Node.jsバージョン確認
 node -v
-npm -v # または yarn -v または pnpm -v
+# pnpmバージョン確認（推奨）
+pnpm -v
 ```
 
-### インストール方法
-
-1. リポジトリをクローンします：
-    ```bash
-    git clone https://github.com/Trapar-waves/react-antd-pro.git
-    cd @trapar-waves/react-antd-pro
-    ```
-2. 必要な依存関係をインストールします：
-    ```bash
-    # お好きなパッケージマネージャーを使用してください
-    npm install
-    # または
-    yarn install
-    # または
-    pnpm install
-    ```
-
-## 🛠️ 使い方
-
-### 使用可能なコマンド
-
-`npm run <コマンド>`、`yarn <コマンド>`、または`pnpm <コマンド>`で実行可能な一般的なスクリプト：
-
-* `dev`: Rsbuildを使用して開発サーバーを起動します。
-* `build`: Rsbuildを使用してプロダクション向けのビルドを作成します。
-* `build:rsdoctor`: RsDoctorを有効にし、診断用ビルドを実行します。
-* `preview`: ローカル環境でプロダクションビルドをプレビューします。
-
-例：
+### プロジェクト初期化
 ```bash
-# 開発サーバーの起動
-npm run dev 
-
-# プロダクションビルドの作成
-npm run build 
+# リポジトリをクローン
+.git clone https://github.com/Trapar-waves/react-antd-pro.git
+# プロジェクトディレクトリに移動
+cd react-antd-pro
+# 依存関係をインストール（pnpm推奨）
+pnpm install
 ```
 
-## 💻 採用技術
+## 🛠️ よく使用するコマンド
 
-このプロジェクトで使用されている主要な技術は以下の通りです：
+`pnpm run <command>`で実行（pnpm推奨）:
 
-* **フレームワーク/ライブラリ:** React（v19）
-* **UI設計/スタイリング:** Ant Design（v5）、Tailwind CSS
-* **状態管理:** Zustand
-* **ルーティング:** TanStack Router
-* **ビルドツール:** Rsbuild
-* **言語:** TypeScript
-* **データ取得:** Axios、TanStack Query
+| コマンド              | 説明                                                                 |
+|-----------------------|----------------------------------------------------------------------|
+| `dev`                 | 開発サーバーを起動（デフォルトポート8080、HMRホットリロード対応）     |
+| `build`               | 本番用パッケージをビルド（`dist`ディレクトリに出力、自動最適化）     |
+| `build:rsdoctor`      | 診断ツール付きビルド（ビルド分析レポートを生成）                     |
+| `preview`             | 本番ビルドをローカルでプレビュー（オンライン環境をシミュレート）       |
+| `lint`                | ESLint + Prettierコードチェック実行（コミット前に自動トリガー）       |
 
-依存関係の詳細は[package.json](package.json)をご覧ください。
+```bash
+# 開発サー버ー起動（推奨）
+pnpm dev
+
+# 本番パッケージビルドとプレビュー
+pnpm build && pnpm preview
+```
+
+## 💻 技術スタック
+
+| カテゴリ             | 技術選択                | バージョン   | 説明                                   |
+|----------------------|-------------------------|------------|----------------------------------------|
+| ベースフレームワーク   | React                   | 19.0.2     | コンポーネントベース開発のコア         |
+| UIコンポーネントライブラリ | Ant Design             | 5.9.2      | 企業レベルの基本コンポーネント          |
+|                      | Ant Design Pro         | 2.8.0      | 業務用コンポーネントライブラリ（ProTable/ProForm） |
+| 状態管理             | Zustand                 | 4.4.1      | 軽量な状態管理ソリューション            |
+| ルーティング         | TanStack Router         | 0.3.12     | ファイルベースルーティング + 型安全設定 |
+| データフェッチング     | Axios                   | 1.5.0      | HTTPクライアントラッパー                |
+|                      | TanStack Query          | 4.35.0     | サーバー状態管理（自動キャッシュ/リトライ） |
+| ビルドツール         | Rsbuild                 | 0.15.3     | webpackベースのモダンビルドツール       |
+| スタイリングソリューション | Tailwind CSS           | 3.3.3      | アトミックCSSフレームワーク             |
+|                      | CSS Modules             | -          | コンポーネントスタイルのローカルスコープ化 |
+| 型システム           | TypeScript              | 5.2.2      | 静的型チェック                         |
+| デバッグツール       | TanStack DevTools       | 0.1.12     | Query/Routerデバッグパネル             |
+| アニメーション       | Motion                  | 10.25.1    | 宣言的アニメーションライブラリ（ルート/コンポーネントトランジション） |
+
+完全な依存関係リストは[package.json](package.json)を参照してください。
 
 ## 🤝 貢献方法
 
-貢献を歓迎します！詳細はリポジトリの貢献ガイドラインをご確認ください。
+コミュニティの貢献を歓迎します！参加前に以下のガイドラインをお読みください。
+
+1. **Issueガイドライン:** バグレポートには再現手順を、機能リクエストにはユースケースを明記してください。
+2. **PRガイドライン:** ブランチ名は`feat/xxx`（新機能）または`fix/xxx`（バグ修正）形式とし、ESLintチェックに合格する必要があります。
+3. **コードスタイル:** 統一されたPrettier設定（コミット時に自動フォーマット）。
+4. **ドキュメント更新:** 機能を変更する際はREADMEや関連ドキュメントを同期更新してください（例：新コンポーネントの場合は使用例を追加）。
 
 ## 📄 ライセンス
 
-このプロジェクトは**MIT**ライセンスに基づいて配布されています。詳細は`LICENSE`ファイルをご覧ください。
+**MIT**ライセンスの下で配布されています。詳細は`LICENSE`ファイルを参照してください。
 
-## 👤 作者
+## 👤 メンテナー
 
-* **Rikka** ([admin@rikka.cc](mailto:admin@rikka.cc))
-* GitHub: [@Muromi-Rikka](https://github.com/Muromi-Rikka)
+| 役割               | 名前/ニックネーム | 連絡先                  | GitHubプロフィール                      |
+|--------------------|-------------------|-------------------------|-----------------------------------------|
+| プロジェクトリード   | Rikka             | admin@rikka.cc          | [@Muromi-Rikka](https://github.com/Muromi-Rikka) |
+| コアコントリビューター | コミュニティメンバー | -                       | [CONTRIBUTORSリスト](https://github.com/Trapar-waves/react-antd-pro/graphs/contributors) |
 
 ## 🔗 リンク
 
 * **リポジトリ:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
 * **ホームページ:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
-* **問題報告:** [https://github.com/Trapar-waves/react-antd-pro/issues](https://github.com/Trapar-waves/react-antd-pro/issues)
+* **Issue:** [https://github.com/Trapar-waves/react-antd-pro/issues](https://github.com/Trapar-waves/react-antd-pro/issues)
