@@ -36,7 +36,7 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
-    "@ant-design/pro-components": "^2.8.7",
+    "@ant-design/pro-components": "^2.8.9",
     "@ant-design/pro-layout": "^7.22.4",
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "@tanstack/react-query": "^5.80.6",
