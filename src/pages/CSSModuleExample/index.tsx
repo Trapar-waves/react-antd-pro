@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import styles from "./css-module-example.module.css";
 
-export default () => {
+export default function CSSModuleExample() {
   return (
     <div className={clsx(styles.container, styles.noselect)}>
       <div className={styles.canvas}>

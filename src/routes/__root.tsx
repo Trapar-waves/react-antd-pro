@@ -35,7 +35,7 @@ function RootComponent() {
         // }
       }
     }
-  }, []);
+  }, [location.pathname, navigate, token, updateRedirectUrl]);
   return (
     <React.Fragment>
       <TanStackRouterDevtools />

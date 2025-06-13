@@ -40,5 +40,5 @@ export default defineConfig({
         hash: true,
       },
     ],
-  }
+  },
 });
