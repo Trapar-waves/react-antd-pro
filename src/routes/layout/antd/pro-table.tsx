@@ -12,7 +12,7 @@ export const Route = createFileRoute("/layout/antd/pro-table")({
   component: RouteComponent,
 });
 
-export const columns: ProColumns<TableListItem>[] = [
+const columns: ProColumns<TableListItem>[] = [
   {
     title: "排序",
     dataIndex: "index",

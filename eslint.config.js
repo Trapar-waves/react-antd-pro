@@ -8,6 +8,7 @@ export default antfu(
     javascript: true,
     yaml: true,
     stylistic: { indent: 2, quotes: "double", semi: true, jsx: true },
+    react: true,
   },
   {
     files: ["**/*.ts", "**/*.tsx"],

@@ -10,7 +10,7 @@ function RouteComponent() {
   const navigate = useNavigate();
   useEffect(() => {
     navigate({ to: "/layout/welcome" }).then();
-  }, []);
+  }, [navigate]);
   return (
     <Flex justify="center" align="center" className="h-screen w-screen">
       <Spin size="large" />

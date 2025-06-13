@@ -30,7 +30,7 @@ const waitTime = (time: number = 100) => {
   });
 };
 
-export default () => {
+export default function ProFormExample() {
   const Components = {
     ProForm,
     ModalForm,
