@@ -12,6 +12,7 @@ export default antfu({
   test: true,
   typescript: true,
   yaml: true,
+  react: true,
   formatters: {
     markdown: "prettier",
   },
