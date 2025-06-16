@@ -8,6 +8,7 @@
     "name": "Rikka",
     "url": "https://github.com/Muromi-Rikka"
   },
+  "licence": "MIT",
   "homepage": "https://github.com/Trapar-waves/react-antd-pro",
   "repository": {
     "type": "git",
