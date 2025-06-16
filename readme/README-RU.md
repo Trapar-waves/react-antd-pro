@@ -90,6 +90,6 @@ pnpm install
 
 ## 🔗 Links
 
-- **Репозиторий:** [https://github.com/react-antd-pro/Trapar-waves](https://github.com/react-antd-pro/Trapar-waves)
-- **Домашняя страница:** [https://github.com/react-antd-pro/Trapar-waves](https://github.com/react-antd-pro/Trapar-waves)
-- **Проблемы:** [https://github.com/react-antd-pro/Trapar-waves/issues](https://github.com/react-antd-pro/Trapar-waves/issues)
+- **Репозиторий:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
+- **Домашняя страница:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
+- **Проблемы:** [https://github.com/Trapar-waves/react-antd-pro/issues](https://github.com/Trapar-waves/react-antd-pro/issues)

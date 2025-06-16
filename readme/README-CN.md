@@ -90,6 +90,6 @@ pnpm install
 
 ## 🔗 Links
 
-- **仓库:** [https://github.com/react-antd-pro/Trapar-waves](https://github.com/react-antd-pro/Trapar-waves)
-- **主页:** [https://github.com/react-antd-pro/Trapar-waves](https://github.com/react-antd-pro/Trapar-waves)
-- **问题:** [https://github.com/react-antd-pro/Trapar-waves/issues](https://github.com/react-antd-pro/Trapar-waves/issues)
+- **仓库:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
+- **主页:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
+- **问题:** [https://github.com/Trapar-waves/react-antd-pro/issues](https://github.com/Trapar-waves/react-antd-pro/issues)

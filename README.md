@@ -90,6 +90,6 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 
 ## 🔗 Links
 
-- **Repository:** [https://github.com/react-antd-pro/Trapar-waves](https://github.com/react-antd-pro/Trapar-waves)
-- **Homepage:** [https://github.com/react-antd-pro/Trapar-waves](https://github.com/react-antd-pro/Trapar-waves)
-- **Issues:** [https://github.com/react-antd-pro/Trapar-waves/issues](https://github.com/react-antd-pro/Trapar-waves/issues)
+- **Repository:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
+- **Homepage:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
+- **Issues:** [https://github.com/Trapar-waves/react-antd-pro/issues](https://github.com/Trapar-waves/react-antd-pro/issues)
