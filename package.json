@@ -34,7 +34,9 @@
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
     "build:rsdoctor": "cross-env RSDOCTOR=true rsbuild build",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "lint": "eslint . --cache --max-warnings=0 --no-warn-ignored",
+    "prepare": "husky"
   },
   "dependencies": {
     "@ant-design/pro-components": "^2.8.9",
@@ -73,6 +75,8 @@
     "eslint-plugin-format": "^1.0.1",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "rspack-plugin-mock": "^1.1.0",
     "tailwindcss": "^4.1.10",
     "typescript": "^5.8.3"
