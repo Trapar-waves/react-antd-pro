@@ -36,7 +36,7 @@
     "build:rsdoctor": "cross-env RSDOCTOR=true rsbuild build",
     "preview": "rsbuild preview",
     "lint": "eslint . --cache --max-warnings=0 --no-warn-ignored",
-    "prepare": "husky"
+    "postinstall": "husky"
   },
   "dependencies": {
     "@ant-design/pro-components": "^2.8.9",
