@@ -44,7 +44,7 @@
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
     "@tanstack/react-query": "^5.81.2",
     "@tanstack/react-router": "^1.121.34",
-    "antd": "^5.26.1",
+    "antd": "^5.26.2",
     "axios": "^1.10.0",
     "clsx": "^2.1.1",
     "immer": "^10.1.1",
