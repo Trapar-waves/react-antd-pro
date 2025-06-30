@@ -45,8 +45,8 @@ importers:
         specifier: ^19.1.0
         version: 19.1.0(react@19.1.0)
       react-scan:
-        specifier: ^0.4.2
-        version: 0.4.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react-router-dom@6.30.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-router@6.30.0(react@19.1.0))(react@19.1.0)
+        specifier: ^0.4.3
+        version: 0.4.3(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react-router-dom@6.30.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-router@6.30.0(react@19.1.0))(react@19.1.0)
       zustand:
         specifier: ^5.0.6
         version: 5.0.6(@types/react@19.1.8)(immer@10.1.1)(react@19.1.0)(use-sync-external-store@1.5.0(react@19.1.0))
@@ -3668,8 +3668,8 @@ packages:
     peerDependencies:
       react: '>=16.8'
 
-  react-scan@0.4.2:
-    resolution: {integrity: sha512-lmH6+rcc+i0CIxsJHxYYvrtdFtFPQw5h1mc7DFWRzPm5SktrbAH29wY3TXmvZjaNkZKBn+Re373jScQErwwABw==}
+  react-scan@0.4.3:
+    resolution: {integrity: sha512-jhAQuQ1nja6HUYrSpbmNFHqZPsRCXk8Yqu0lHoRIw9eb8N96uTfXCpVyQhTTnJ/nWqnwuvxbpKVG/oWZT8+iTQ==}
     hasBin: true
     peerDependencies:
       '@remix-run/react': '>=1.0.0'
@@ -8624,7 +8624,7 @@ snapshots:
       react: 19.1.0
     optional: true
 
-  react-scan@0.4.2(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react-router-dom@6.30.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-router@6.30.0(react@19.1.0))(react@19.1.0):
+  react-scan@0.4.3(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react-router-dom@6.30.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-router@6.30.0(react@19.1.0))(react@19.1.0):
     dependencies:
       '@babel/core': 7.27.4
       '@babel/generator': 7.27.5
