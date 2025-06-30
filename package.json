@@ -51,7 +51,7 @@
     "motion": "^12.19.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "react-scan": "^0.4.2",
+    "react-scan": "^0.4.3",
     "zustand": "^5.0.6"
   },
   "devDependencies": {
