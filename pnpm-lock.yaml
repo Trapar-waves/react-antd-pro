@@ -118,8 +118,8 @@ importers:
         specifier: ^16.1.2
         version: 16.1.2
       rspack-plugin-mock:
-        specifier: ^1.1.0
-        version: 1.1.0(@rsbuild/core@1.4.3)(@rspack/core@1.4.2(@swc/helpers@0.5.17))
+        specifier: ^1.2.0
+        version: 1.2.0(@rsbuild/core@1.4.3)(@rspack/core@1.4.2(@swc/helpers@0.5.17))
       tailwindcss:
         specifier: ^4.1.11
         version: 4.1.11
@@ -889,6 +889,10 @@ packages:
   '@napi-rs/wasm-runtime@0.2.11':
     resolution: {integrity: sha512-9DPkXtvHydrcOsopiYpUgPHpmj0HWZKMUnL2dZqpvC42lsratuBG06V5ipyno0fUek5VlFsNQ+AcFATSrJXgMA==}
 
+  '@noble/hashes@1.8.0':
+    resolution: {integrity: sha512-jCs9ldd7NwzpgXDIf6P3+NrHh9/sD6CQdxHyjQI+h/6rDNo88ypBxxz45UDuZHz9r3tNz7N/VInSVoVdtXEI4A==}
+    engines: {node: ^14.21.3 || >=16}
+
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
     engines: {node: '>= 8'}
@@ -901,8 +905,11 @@ packages:
     resolution: {integrity: sha512-oGB+UxlgWcgQkgwo8GcEGwemoTFt3FIO9ababBmaGwXIoBKZ+GTy0pP185beGg7Llih/NSHSV2XAs1lnznocSg==}
     engines: {node: '>= 8'}
 
-  '@pengzhanbo/utils@2.0.0':
-    resolution: {integrity: sha512-CGMZYQm4TSvaKxFKJ2JMUxz/GjiHPquf6T18Pr/hVMhzatAdwyfleqOMcUaVy/dxLXpE4Lp6ONY2H4rgylWyNg==}
+  '@paralleldrive/cuid2@2.2.2':
+    resolution: {integrity: sha512-ZOBkgDwEdoYVlSeRbYYXs0S9MejQofiVYoTbKzy/6GQa39/q5tQU2IX46+shYnUkpEl3wc+J6wRlar7r2EK2xA==}
+
+  '@pengzhanbo/utils@2.1.0':
+    resolution: {integrity: sha512-mdcNoYZ6S9EhRqAIpjnD2dcFxaP7E9JdMrP2z5uXuEesddNcmQ4GvEs/wcyxKmFXqeFdL88fJu7l8a6hNN4zPQ==}
 
   '@pivanov/utils@0.0.2':
     resolution: {integrity: sha512-q9CN0bFWxWgMY5hVVYyBgez1jGiLBa6I+LkG37ycylPhFvEGOOeaADGtUSu46CaZasPnlY8fCdVJZmrgKb1EPA==}
@@ -986,6 +993,15 @@ packages:
 
   '@rollup/pluginutils@5.1.4':
     resolution: {integrity: sha512-USm05zrsFxYLPdWWq+K3STlWiT/3ELn3RcV5hJMghpeAIhxfsUIg6mt12CBJBInWMV4VneoV7SfGv8xIwo2qNQ==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+
+  '@rollup/pluginutils@5.2.0':
+    resolution: {integrity: sha512-qWJ2ZTbmumwiLFomfzTyt5Kng4hwPi9rwCYN4SHb6eaRU1KNO4ccxINHr/VhH4GgPlt1XfSTLX2LBTme8ne4Zw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
@@ -2545,9 +2561,9 @@ packages:
     resolution: {integrity: sha512-wzsgA6WOq+09wrU1tsJ09udeR/YZRaeArL9e1wPbFg3GG2yDnC2ldKpxs4xunpFF9DgqCqOIra3bc1HWrJ37Ww==}
     engines: {node: '>=0.4.x'}
 
-  formidable@2.1.2:
-    resolution: {integrity: sha512-CM3GuJ57US06mlpQ47YcunuUZ9jpm8Vx+P2CGt2j7HpgkKZO/DJYQ0Bobim8G6PFQmK5lOqOOdUXboU+h73A4g==}
-    deprecated: 'ACTION REQUIRED: SWITCH TO v3 - v1 and v2 are VULNERABLE! v1 is DEPRECATED FOR OVER 2 YEARS! Use formidable@latest or try formidable-mini for fresh projects'
+  formidable@3.5.4:
+    resolution: {integrity: sha512-YikH+7CUTOtP44ZTnUhR7Ic2UASBPOqmaRkRKxRbywPTe5VxF7RRCck4af9wutiZ/QKM5nME9Bie2fFaPz5Gug==}
+    engines: {node: '>=14.0.0'}
 
   framer-motion@12.23.0:
     resolution: {integrity: sha512-xf6NxTGAyf7zR4r2KlnhFmsRfKIbjqeBupEDBAaEtVIBJX96sAon00kMlsKButSIRwPSHjbRrAPnYdJJ9kyhbA==}
@@ -2667,10 +2683,6 @@ packages:
   hasown@2.0.2:
     resolution: {integrity: sha512-0hJU9SCPvmMzIBdZFqNPXWa6dqh7WdH0cII9y+CyS8rG3nL48Bclra9HmKhVVUHyPWNH5Y7xDwAB7bfgSjkUMQ==}
     engines: {node: '>= 0.4'}
-
-  hexoid@1.0.0:
-    resolution: {integrity: sha512-QFLV0taWQOZtvIRIAdBChesmogZrtuXvVWsFHZTk2SU+anspqZ2vMnoLg7IE1+Uk16N19APic1BuF8bC8c2m5g==}
-    engines: {node: '>=8'}
 
   html-entities@2.6.0:
     resolution: {integrity: sha512-kig+rMn/QOVRvr7c86gQ8lWXq+Hkv6CbAH1hLu+RG338StTpE8Z0b44SDVaqVu7HGKf27frdmUYEs9hTUX/cLQ==}
@@ -3044,8 +3056,8 @@ packages:
     resolution: {integrity: sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==}
     engines: {node: '>= 0.6'}
 
-  memfs@4.17.0:
-    resolution: {integrity: sha512-4eirfZ7thblFmqFjywlTmuWVSvccHAJbn1r8qQLzmTO11qcqpohOjmY2mFce6x7x7WtskzRqApPD0hv+Oa74jg==}
+  memfs@4.17.2:
+    resolution: {integrity: sha512-NgYhCOWgovOXSzvYgUW0LQ7Qy72rWQMGGFJDoWg4G30RHd3z77VbYdtJ4fembJXBy8pMIUA31XNAupobOQlwdg==}
     engines: {node: '>= 4.0.0'}
 
   merge-stream@2.0.0:
@@ -3390,8 +3402,8 @@ packages:
   pnpm-workspace-yaml@0.3.1:
     resolution: {integrity: sha512-3nW5RLmREmZ8Pm8MbPsO2RM+99RRjYd25ynj3NV0cFsN7CcEl4sDFzgoFmSyduFwxFQ2Qbu3y2UdCh6HlyUOeA==}
 
-  portfinder@1.0.36:
-    resolution: {integrity: sha512-gMKUzCoP+feA7t45moaSx7UniU7PgGN3hA8acAB+3Qn7/js0/lJ07fYZlxt9riE9S3myyxDCyAFzSrLlta0c9g==}
+  portfinder@1.0.37:
+    resolution: {integrity: sha512-yuGIEjDAYnnOex9ddMnKZEMFE0CcGo6zbfzDklkmT1m5z734ss6JMzN9rNB3+RR7iS+F10D4/BVIaXOyh8PQKw==}
     engines: {node: '>= 10.12'}
 
   postcss-selector-parser@6.1.2:
@@ -3797,8 +3809,8 @@ packages:
   rslog@1.2.9:
     resolution: {integrity: sha512-KSjM8jJKYYaKgI4jUGZZ4kdTBTM/EIGH1JnoB0ptMkzcyWaHeXW9w6JVLCYs37gh8sFZkLLqAyBb2sT02bqpcQ==}
 
-  rspack-plugin-mock@1.1.0:
-    resolution: {integrity: sha512-cJFOlzEI0IZ31HJ884S9ODeCb9CsLuq3XJkvi+ACVwL6Je3xpOorNZynGPhpR3+GLKJn8otYct09wofIqk3rSw==}
+  rspack-plugin-mock@1.2.0:
+    resolution: {integrity: sha512-zvLHpAYikpTqFzKo2lfsnGq9oPtUqcg0ilXhO6B47cXtiUQ2x7rkio3smmAeQZ3JbZY6xOvwTFsSivQZItzVug==}
     engines: {node: '>=18.20.0', pnpm: '>=9'}
     peerDependencies:
       '@rsbuild/core': '>=1.0.0'
@@ -4280,8 +4292,8 @@ packages:
       utf-8-validate:
         optional: true
 
-  ws@8.18.1:
-    resolution: {integrity: sha512-RKW2aJZMXeMxVpnZ6bck+RswznaxmzdULiBr6KY7XkTnW8uvt0iT9H5DkHUChXrc+uurzwa0rVI16n/Xzjdz1w==}
+  ws@8.18.3:
+    resolution: {integrity: sha512-PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
@@ -5350,6 +5362,8 @@ snapshots:
       '@tybys/wasm-util': 0.9.0
     optional: true
 
+  '@noble/hashes@1.8.0': {}
+
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
       '@nodelib/fs.stat': 2.0.5
@@ -5362,7 +5376,11 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.19.1
 
-  '@pengzhanbo/utils@2.0.0': {}
+  '@paralleldrive/cuid2@2.2.2':
+    dependencies:
+      '@noble/hashes': 1.8.0
+
+  '@pengzhanbo/utils@2.1.0': {}
 
   '@pivanov/utils@0.0.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
@@ -5453,6 +5471,12 @@ snapshots:
     optional: true
 
   '@rollup/pluginutils@5.1.4':
+    dependencies:
+      '@types/estree': 1.0.8
+      estree-walker: 2.0.2
+      picomatch: 4.0.2
+
+  '@rollup/pluginutils@5.2.0':
     dependencies:
       '@types/estree': 1.0.8
       estree-walker: 2.0.2
@@ -7410,12 +7434,11 @@ snapshots:
 
   format@0.2.2: {}
 
-  formidable@2.1.2:
+  formidable@3.5.4:
     dependencies:
+      '@paralleldrive/cuid2': 2.2.2
       dezalgo: 1.0.4
-      hexoid: 1.0.0
       once: 1.4.0
-      qs: 6.13.0
 
   framer-motion@12.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0):
     dependencies:
@@ -7514,8 +7537,6 @@ snapshots:
   hasown@2.0.2:
     dependencies:
       function-bind: 1.1.2
-
-  hexoid@1.0.0: {}
 
   html-entities@2.6.0: {}
 
@@ -7923,7 +7944,7 @@ snapshots:
 
   media-typer@0.3.0: {}
 
-  memfs@4.17.0:
+  memfs@4.17.2:
     dependencies:
       '@jsonjoy.com/json-pack': 1.2.0(tslib@2.8.1)
       '@jsonjoy.com/util': 1.5.0(tslib@2.8.1)
@@ -8334,7 +8355,7 @@ snapshots:
     dependencies:
       yaml: 2.8.0
 
-  portfinder@1.0.36:
+  portfinder@1.0.37:
     dependencies:
       async: 3.2.6
       debug: 4.4.1
@@ -8841,26 +8862,26 @@ snapshots:
 
   rslog@1.2.9: {}
 
-  rspack-plugin-mock@1.1.0(@rsbuild/core@1.4.3)(@rspack/core@1.4.2(@swc/helpers@0.5.17)):
+  rspack-plugin-mock@1.2.0(@rsbuild/core@1.4.3)(@rspack/core@1.4.2(@swc/helpers@0.5.17)):
     dependencies:
-      '@pengzhanbo/utils': 2.0.0
-      '@rollup/pluginutils': 5.1.4
+      '@pengzhanbo/utils': 2.1.0
+      '@rollup/pluginutils': 5.2.0
       chokidar: 3.6.0
       co-body: 6.2.0
       cookies: 0.9.1
       cors: 2.8.5
-      debug: 4.4.0
+      debug: 4.4.1
       fast-glob: 3.3.3
-      formidable: 2.1.2
+      formidable: 3.5.4
       http-status: 2.1.0
       is-core-module: 2.16.1
       json5: 2.2.3
-      memfs: 4.17.0
+      memfs: 4.17.2
       mime-types: 3.0.1
       path-to-regexp: 6.3.0
       picocolors: 1.1.1
-      portfinder: 1.0.36
-      ws: 8.18.1
+      portfinder: 1.0.37
+      ws: 8.18.3
     optionalDependencies:
       '@rsbuild/core': 1.4.3
       '@rspack/core': 1.4.2(@swc/helpers@0.5.17)
@@ -9350,7 +9371,7 @@ snapshots:
 
   ws@8.17.1: {}
 
-  ws@8.18.1: {}
+  ws@8.18.3: {}
 
   xml-name-validator@4.0.0: {}
 
