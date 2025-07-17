@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ant-design/pro-components':
-        specifier: ^2.8.9
-        version: 2.8.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+        specifier: ^2.8.10
+        version: 2.8.10(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@ant-design/pro-layout':
         specifier: ^7.22.6
         version: 7.22.6(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -166,33 +166,33 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
 
-  '@ant-design/pro-card@2.9.9':
-    resolution: {integrity: sha512-n0evqAu8rmw/xCkVk7l/8Tk0HqeVPPHeieDCtFKoRIG/ajiadAVM3NfkndEjYKuWbw/dgaVOyc5wW0iBD6dKCA==}
+  '@ant-design/pro-card@2.10.0':
+    resolution: {integrity: sha512-sLONn1odmE0Wkbse8pol4WiaEzBV8JU5s3FAMflPpycfUcbSaa1ktXzQ7LCo2SAvOS7gkfmpFjBPtrfbigKh4g==}
     peerDependencies:
       antd: ^4.24.15 || ^5.11.2
       react: '>=17.0.0'
 
-  '@ant-design/pro-components@2.8.9':
-    resolution: {integrity: sha512-8qs4UxZOjsSoMl3goer0sGEKKlN51LxE55AkXeP924oq9ffi7tuVEE6y3qag96VwQIgbML1215qgnFoStXmF0w==}
+  '@ant-design/pro-components@2.8.10':
+    resolution: {integrity: sha512-QHnnIXdmC5GTAtm6i8eeJy5yT9npPlFyxpDm+duiDrTRKRFaAQBduArxlH3DA/hoRCCypzPONxfK9BQNIhIyZA==}
     peerDependencies:
       antd: ^4.24.15 || ^5.11.2
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
-  '@ant-design/pro-descriptions@2.6.9':
-    resolution: {integrity: sha512-UU1XIFoPCTLRUQM0aMStQ364MvCucEcVNOvgP75iGboajCWxwtwtWNqiCkHrtmoorgxpNYa0lS6Utho1fvXlQA==}
+  '@ant-design/pro-descriptions@2.6.10':
+    resolution: {integrity: sha512-+4MbiOfumnWlW0Awm4m8JML5o3lR649FD24AaivCmr8BQvIAAXdTITnDMXEg8BqvdP4KOvNsStZrvYfqoev33A==}
     peerDependencies:
       antd: ^4.24.15 || ^5.11.2
       react: '>=17.0.0'
 
-  '@ant-design/pro-field@3.0.6':
-    resolution: {integrity: sha512-zjJAMS5+lu7Zw95UzPY15DmEpHbT9UKPxWPiSQMAJGXUJRYm3ajDYomq7c0gWznpbxuOIiDojhbK5y4CHHcrAw==}
+  '@ant-design/pro-field@3.1.0':
+    resolution: {integrity: sha512-+Dgp31WjD+iwg9KIRAMgNkfQivkJKMcYBrIBmho1e8ep/O0HgWSp48g70tBIWi/Lfem/Ky2schF7O8XCFouczw==}
     peerDependencies:
       antd: ^4.24.15 || ^5.11.2
       react: '>=17.0.0'
 
-  '@ant-design/pro-form@2.31.9':
-    resolution: {integrity: sha512-w8lKCWkpuf7tZnRSQAoGxlRuo2r+8sXMxo8Vba2fi7/wb4u75ECI8qQ9r5dUeN1muBxfWlqBOywEwi9jqXE23Q==}
+  '@ant-design/pro-form@2.32.0':
+    resolution: {integrity: sha512-GZnVAMeYv+YHJb17lJ7rX5PYuQPvEA6EotQnPbHi9tGLN3PfexcAd21rqzuO+OrulU2x7TEMDIxtY9MzvvOGbg==}
     peerDependencies:
       antd: ^4.24.15 || ^5.11.2
       rc-field-form: '>=1.22.0'
@@ -206,8 +206,15 @@ packages:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
-  '@ant-design/pro-list@2.6.9':
-    resolution: {integrity: sha512-YKA/6yCjngQnwjMdAzgjMxOInfQf6Wk+gm0tZJzXs/9GYk0cMIOv5OdaSFW9IBsSmzJ97nBZECYCSOlsgz51uw==}
+  '@ant-design/pro-layout@7.22.7':
+    resolution: {integrity: sha512-fvmtNA1r9SaasVIQIQt611VSlNxtVxDbQ3e+1GhYQza3tVJi/3gCZuDyfMfTnbLmf3PaW/YvLkn7MqDbzAzoLA==}
+    peerDependencies:
+      antd: ^4.24.15 || ^5.11.2
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
+  '@ant-design/pro-list@2.6.10':
+    resolution: {integrity: sha512-xSWwnqCr+hPEYR4qY7nFUaxO5RQBxNlFaPNmobP2i+Im31slk9JuAusgWeIYO0mNhLJuLbxd8CCma2AZij3fBQ==}
     peerDependencies:
       antd: ^4.24.15 || ^5.11.2
       react: '>=17.0.0'
@@ -220,6 +227,13 @@ packages:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
+  '@ant-design/pro-provider@2.16.2':
+    resolution: {integrity: sha512-0KmCH1EaOND787Jz6VRMYtLNZmqfT0JPjdUfxhyOxFfnBRfrjyfZgIa6CQoAJLEUMWv57PccWS8wRHVUUk2Yiw==}
+    peerDependencies:
+      antd: ^4.24.15 || ^5.11.2
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
   '@ant-design/pro-skeleton@2.2.1':
     resolution: {integrity: sha512-3M2jNOZQZWEDR8pheY00OkHREfb0rquvFZLCa6DypGmiksiuuYuR9Y4iA82ZF+mva2FmpHekdwbje/GpbxqBeg==}
     peerDependencies:
@@ -227,8 +241,8 @@ packages:
       react: '>=17.0.0'
       react-dom: '>=17.0.0'
 
-  '@ant-design/pro-table@3.20.1':
-    resolution: {integrity: sha512-QsxKkHfkKnLIZsuznoNBVws0OGGTvOWAk+uWqgb7QBo8jxhofMUDQ/fs10wGSuX5Jm78DhVfMBGBhq8hcZaj7Q==}
+  '@ant-design/pro-table@3.21.0':
+    resolution: {integrity: sha512-sI81d3FYRv5sXamUc+M5CsHZ9CchuUQgOAPzo5H4oPAVL5h+mkYGRsBzPsxQX7khTNpWjrAtPoRm5ipx3vvWog==}
     peerDependencies:
       antd: ^4.24.15 || ^5.11.2
       rc-field-form: '>=1.22.0'
@@ -237,6 +251,13 @@ packages:
 
   '@ant-design/pro-utils@2.17.2':
     resolution: {integrity: sha512-DE7H14nfmdTyPwmJA1mgxHzcedOHSBYpTcqCvEAooK8fi8yXpcwpUs7XuUTeFHPj1gHYl/17X8Mzc3ngB8s63Q==}
+    peerDependencies:
+      antd: ^4.24.15 || ^5.11.2
+      react: '>=17.0.0'
+      react-dom: '>=17.0.0'
+
+  '@ant-design/pro-utils@2.18.0':
+    resolution: {integrity: sha512-8+ikyrN8L8a8Ph4oeHTOJEiranTj18+9+WHCHjKNdEfukI7Rjn8xpYdLJWb2AUJkb9d4eoAqjd5+k+7w81Df0w==}
     peerDependencies:
       antd: ^4.24.15 || ^5.11.2
       react: '>=17.0.0'
@@ -4428,12 +4449,12 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@ant-design/pro-card@2.9.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@ant-design/pro-card@2.10.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@ant-design/cssinjs': 1.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@ant-design/icons': 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-provider': 2.16.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-utils': 2.17.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-provider': 2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-utils': 2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@babel/runtime': 7.27.0
       antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
@@ -4443,18 +4464,18 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@ant-design/pro-components@2.8.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@ant-design/pro-components@2.8.10(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@ant-design/pro-card': 2.9.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-descriptions': 2.6.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-field': 3.0.6(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-form': 2.31.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-layout': 7.22.6(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-list': 2.6.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-provider': 2.16.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-card': 2.10.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-descriptions': 2.6.10(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-field': 3.1.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-form': 2.32.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-layout': 7.22.7(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-list': 2.6.10(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-provider': 2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@ant-design/pro-skeleton': 2.2.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-table': 3.20.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-utils': 2.17.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-table': 3.21.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-utils': 2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@babel/runtime': 7.27.0
       antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       react: 19.1.0
@@ -4462,13 +4483,13 @@ snapshots:
     transitivePeerDependencies:
       - rc-field-form
 
-  '@ant-design/pro-descriptions@2.6.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@ant-design/pro-descriptions@2.6.10(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
-      '@ant-design/pro-field': 3.0.6(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-form': 2.31.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-provider': 2.16.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-field': 3.1.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-form': 2.32.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-provider': 2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@ant-design/pro-skeleton': 2.2.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-utils': 2.17.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-utils': 2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@babel/runtime': 7.27.0
       antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       rc-resize-observer: 0.2.6(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -4478,11 +4499,11 @@ snapshots:
       - rc-field-form
       - react-dom
 
-  '@ant-design/pro-field@3.0.6(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@ant-design/pro-field@3.1.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@ant-design/icons': 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-provider': 2.16.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-utils': 2.17.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-provider': 2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-utils': 2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@babel/runtime': 7.27.0
       '@chenshuai2144/sketch-color': 1.0.9(react@19.1.0)
       antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -4496,12 +4517,12 @@ snapshots:
     transitivePeerDependencies:
       - react-dom
 
-  '@ant-design/pro-form@2.31.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@ant-design/pro-form@2.32.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@ant-design/icons': 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-field': 3.0.6(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-provider': 2.16.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-utils': 2.17.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-field': 3.1.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-provider': 2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-utils': 2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@babel/runtime': 7.27.0
       '@chenshuai2144/sketch-color': 1.0.9(react@19.1.0)
       '@umijs/use-params': 1.0.9(react@19.1.0)
@@ -4537,14 +4558,35 @@ snapshots:
       swr: 2.3.3(react@19.1.0)
       warning: 4.0.3
 
-  '@ant-design/pro-list@2.6.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@ant-design/pro-layout@7.22.7(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@ant-design/cssinjs': 1.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@ant-design/icons': 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-card': 2.9.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-field': 3.0.6(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-table': 3.20.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-utils': 2.17.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-provider': 2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-utils': 2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@babel/runtime': 7.27.0
+      '@umijs/route-utils': 4.0.1
+      '@umijs/use-params': 1.0.9(react@19.1.0)
+      antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      classnames: 2.5.1
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      path-to-regexp: 8.2.0
+      rc-resize-observer: 1.4.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      rc-util: 5.44.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      swr: 2.3.3(react@19.1.0)
+      warning: 4.0.3
+
+  '@ant-design/pro-list@2.6.10(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@ant-design/cssinjs': 1.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/icons': 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-card': 2.10.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-field': 3.1.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-table': 3.21.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-utils': 2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@babel/runtime': 7.27.0
       antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
@@ -4568,6 +4610,18 @@ snapshots:
       react-dom: 19.1.0(react@19.1.0)
       swr: 2.3.3(react@19.1.0)
 
+  '@ant-design/pro-provider@2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@ant-design/cssinjs': 1.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@babel/runtime': 7.27.0
+      '@ctrl/tinycolor': 3.6.1
+      antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      dayjs: 1.11.13
+      rc-util: 5.44.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      swr: 2.3.3(react@19.1.0)
+
   '@ant-design/pro-skeleton@2.2.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@babel/runtime': 7.27.0
@@ -4575,15 +4629,15 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@ant-design/pro-table@3.20.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+  '@ant-design/pro-table@3.21.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@ant-design/cssinjs': 1.23.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@ant-design/icons': 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-card': 2.9.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-field': 3.0.6(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-form': 2.31.9(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-provider': 2.16.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      '@ant-design/pro-utils': 2.17.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-card': 2.10.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-field': 3.1.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-form': 2.32.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(rc-field-form@2.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-provider': 2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-utils': 2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@babel/runtime': 7.27.0
       '@dnd-kit/core': 6.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@dnd-kit/modifiers': 6.0.1(@dnd-kit/core@6.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
@@ -4604,6 +4658,22 @@ snapshots:
     dependencies:
       '@ant-design/icons': 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@ant-design/pro-provider': 2.16.1(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@babel/runtime': 7.27.0
+      antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      classnames: 2.5.1
+      dayjs: 1.11.13
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      rc-util: 5.44.4(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      react: 19.1.0
+      react-dom: 19.1.0(react@19.1.0)
+      safe-stable-stringify: 2.5.0
+      swr: 2.3.3(react@19.1.0)
+
+  '@ant-design/pro-utils@2.18.0(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
+    dependencies:
+      '@ant-design/icons': 5.6.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      '@ant-design/pro-provider': 2.16.2(antd@5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@babel/runtime': 7.27.0
       antd: 5.26.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       classnames: 2.5.1
