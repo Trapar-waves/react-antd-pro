@@ -9,7 +9,7 @@
 
 ---
 
-[English](../README.md) | [中文](/readme/README-CN.md) | [Русский язык](/readme/README-RU.md)
+[English](../README.md) | [中文](./README-CN.md) | [Русский язык](./README-RU.md)
 
 > React 19とAnt Design Pro 5に基づくエンタープライズアプリケーション開発テンプレートで、TanStackツールチェーン（Router/Query）、Rsbuildビルドツール、Tailwind CSSスタイリングソリューションを統合し、効率的な開発と型安全性に焦点を当てています。
 
@@ -21,8 +21,8 @@
 - **高速ビルド:** 従来のwebpackの代わりにRsbuildを使用し、開発サーバーのコールドスタートを2秒で実現します。
 - **インテリジェントルーティング:** TanStack Routerによるファイルベースルーティングで、ルート構成を自動生成します（ネストルートをサポート）。
 - **状態管理:** 複雑なReduxの代わりに軽量なZustandを採用し、コンポーザブルなアトミック状態ソリューションを提供します。
-- **データフェッチング:** ラップされたAxiosインスタンス+TanStack Query（v4）により、リクエストの自動キャッシュ/リトライ/ページネーションを実現します。
-- **スタイリングソリューション:** Tailwind CSS v3+CSS Modulesを統合し、テーマ設定とレスポンシブデザインをサポートします。
+- **データフェッチング:** ラップされたAxiosインスタンス+TanStack Query（v5）により、リクエストの自動キャッシュ/リトライ/ページネーションを実現します。
+- **スタイリングソリューション:** Tailwind CSS v4+CSS Modulesを統合し、テーマ設定とレスポンシブデザインをサポートします。
 - **デバッグツール:** 組み込みのTanStack DevTools（Query/Router）とRsbuildビルド分析パネルを搭載しています。
 - **アニメーション強化:** Motionライブラリを介してトランジションアニメーション（ルート切り替え、コンポーネントの表示/非表示など）を実装します。
 
@@ -39,7 +39,7 @@
 - **デバッグツール:** `TanStack DevTools`：Query/Routerデバッグパネル。
 - **アニメーション:** `Motion`：宣言型アニメーションライブラリ（ルート/コンポーネントトランジション）。
 
-依存関係の完全なリストについては[package.json](package.json)を参照してください。
+依存関係の完全なリストについては[package.json](../package.json)を参照してください。
 
 ## 🚀 始め方
 
@@ -73,6 +73,40 @@ yarn install
 pnpm install
 ```
 
+### 開発
+
+開発サーバーの起動：
+
+```bash
+npm run dev
+yarn dev
+pnpm dev
+```
+
+本番ビルド：
+
+```bash
+npm run build
+yarn build
+pnpm build
+```
+
+本番ビルドのプレビュー：
+
+```bash
+npm run preview
+yarn preview
+pnpm preview
+```
+
+コードチェック：
+
+```bash
+npm run lint
+yarn lint
+pnpm lint
+```
+
 ## 🤝 コントリビューション
 
 貢献は歓迎され、非常に高く評価されています！貢献するには以下の手順に従ってください：
@@ -85,7 +119,7 @@ pnpm install
 
 ## 👤 Author
 
-- **Rikka:** (admin@rikka.cc)
+- **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
 - **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
 ## 🔗 Links
