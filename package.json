@@ -62,7 +62,7 @@
     "@iconify/tailwind4": "^1.0.6",
     "@rsbuild/core": "^1.5.3",
     "@rsbuild/plugin-react": "^1.4.0",
-    "@rsbuild/plugin-typed-css-modules": "^1.0.3",
+    "@rsbuild/plugin-typed-css-modules": "^1.1.0",
     "@rsdoctor/rspack-plugin": "^1.2.3",
     "@tailwindcss/postcss": "^4.1.12",
     "@tanstack/eslint-plugin-query": "^5.83.1",
