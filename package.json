@@ -80,7 +80,7 @@
     "lint-staged": "^16.2.3",
     "rspack-plugin-mock": "^1.2.0",
     "tailwindcss": "^4.1.13",
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.3"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
