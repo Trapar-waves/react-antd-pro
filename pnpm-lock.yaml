@@ -91,8 +91,8 @@ importers:
         specifier: ^1.133.3
         version: 1.133.3(@tanstack/react-router@1.133.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(@tanstack/router-core@1.133.3)(@types/node@24.4.0)(csstype@3.1.3)(jiti@2.6.1)(lightningcss@1.30.1)(react-dom@19.2.0(react@19.2.0))(react@19.2.0)(solid-js@1.9.9)(terser@5.44.0)(tiny-invariant@1.3.3)(tsx@4.19.3)(yaml@2.8.1)
       '@tanstack/router-plugin':
-        specifier: ^1.133.3
-        version: 1.133.3(@rsbuild/core@1.5.17)(@tanstack/react-router@1.133.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.7(@types/node@24.4.0)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.44.0)(tsx@4.19.3)(yaml@2.8.1))(webpack@5.98.0)
+        specifier: ^1.133.4
+        version: 1.133.4(@rsbuild/core@1.5.17)(@tanstack/react-router@1.133.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.7(@types/node@24.4.0)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.44.0)(tsx@4.19.3)(yaml@2.8.1))(webpack@5.98.0)
       '@types/react':
         specifier: ^19.2.2
         version: 19.2.2
@@ -1425,12 +1425,12 @@ packages:
       csstype:
         optional: true
 
-  '@tanstack/router-generator@1.133.3':
-    resolution: {integrity: sha512-McE6YfwIErLPCeWEfvtsDAOZfDOIyhZ+xPL4G+dKz8xW3K/ofnb/iXUWc93/pYLas5fd03tSFtb02ve4G6bZNw==}
+  '@tanstack/router-generator@1.133.4':
+    resolution: {integrity: sha512-OmafLkRMm21L/yZsx0FmRQeg0GZ1suQAW8/n0KvaJZcN8XP/WRfNtNkilDucWByWxAXC/Lxy8bKP2DW/omJuAw==}
     engines: {node: '>=12'}
 
-  '@tanstack/router-plugin@1.133.3':
-    resolution: {integrity: sha512-AESS2RadL16HbLuQWQT1AInXC+w7x/jEWFqcENXwBpcxR4twzK328TmhnL24C91RQu5Tw+lFRR7mBykc/7nOHA==}
+  '@tanstack/router-plugin@1.133.4':
+    resolution: {integrity: sha512-jyYIoHMIEWepYdH213s9+35V9aevO4Mp5BnHszbpL7pDQx17UDy+F7Eky/jzCCf+YiGo0NbWXRYVNBb8q4D7Hw==}
     engines: {node: '>=12'}
     peerDependencies:
       '@rsbuild/core': '>=1.0.2'
@@ -1733,10 +1733,6 @@ packages:
   ansi-styles@6.2.1:
     resolution: {integrity: sha512-bN798gFfQX+viw3R7yrGWRqnrN2oRkEkUjjl4JNn4E8GxxbjtG3FbrEIIY3l8/hrwUwIeCZvi4QuOTP4MErVug==}
     engines: {node: '>=12'}
-
-  ansis@4.1.0:
-    resolution: {integrity: sha512-BGcItUBWSMRgOCe+SVZJ+S7yTRG0eGt9cXAHev72yuGcY23hnLA7Bky5L/xLyPINoSN95geovfBkqoTlNZYa7w==}
-    engines: {node: '>=14'}
 
   ansis@4.2.0:
     resolution: {integrity: sha512-HqZ5rWlFjGiV0tDm3UxxgNRqsOTniqoKZu0pIAfh7TZQMGuZK+hH0drySty0si0QXj1ieop4+SkSfPZBPPkHig==}
@@ -5893,7 +5889,7 @@ snapshots:
       - tsx
       - yaml
 
-  '@tanstack/router-generator@1.133.3':
+  '@tanstack/router-generator@1.133.4':
     dependencies:
       '@tanstack/router-core': 1.133.3
       '@tanstack/router-utils': 1.133.3
@@ -5906,7 +5902,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/router-plugin@1.133.3(@rsbuild/core@1.5.17)(@tanstack/react-router@1.133.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.7(@types/node@24.4.0)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.44.0)(tsx@4.19.3)(yaml@2.8.1))(webpack@5.98.0)':
+  '@tanstack/router-plugin@1.133.4(@rsbuild/core@1.5.17)(@tanstack/react-router@1.133.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(vite@7.1.7(@types/node@24.4.0)(jiti@2.6.1)(lightningcss@1.30.1)(terser@5.44.0)(tsx@4.19.3)(yaml@2.8.1))(webpack@5.98.0)':
     dependencies:
       '@babel/core': 7.27.7
       '@babel/plugin-syntax-jsx': 7.27.1(@babel/core@7.27.7)
@@ -5915,7 +5911,7 @@ snapshots:
       '@babel/traverse': 7.27.7
       '@babel/types': 7.28.4
       '@tanstack/router-core': 1.133.3
-      '@tanstack/router-generator': 1.133.3
+      '@tanstack/router-generator': 1.133.4
       '@tanstack/router-utils': 1.133.3
       '@tanstack/virtual-file-routes': 1.133.3
       babel-dead-code-elimination: 1.0.10
@@ -5936,7 +5932,7 @@ snapshots:
       '@babel/generator': 7.27.5
       '@babel/parser': 7.28.4
       '@babel/preset-typescript': 7.27.1(@babel/core@7.27.7)
-      ansis: 4.1.0
+      ansis: 4.2.0
       diff: 8.0.2
       pathe: 2.0.3
       tinyglobby: 0.2.15
@@ -6316,8 +6312,6 @@ snapshots:
       color-convert: 2.0.1
 
   ansi-styles@6.2.1: {}
-
-  ansis@4.1.0: {}
 
   ansis@4.2.0: {}
 
