@@ -24,7 +24,7 @@ importers:
         specifier: ^1.139.3
         version: 1.139.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       antd:
-        specifier: ^5.28.0
+        specifier: ^5.29.1
         version: 5.29.1(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       axios:
         specifier: ^1.13.2
