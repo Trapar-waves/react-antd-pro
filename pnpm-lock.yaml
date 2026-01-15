@@ -70,8 +70,8 @@ importers:
         specifier: ^1.4.3
         version: 1.4.3(@rsbuild/core@1.7.2)
       '@rsbuild/plugin-typed-css-modules':
-        specifier: ^1.2.0
-        version: 1.2.0(@rsbuild/core@1.7.2)
+        specifier: ^1.2.1
+        version: 1.2.1(@rsbuild/core@1.7.2)
       '@rsdoctor/rspack-plugin':
         specifier: ^1.5.0
         version: 1.5.0(@rsbuild/core@1.7.2)(@rspack/core@1.7.1(@swc/helpers@0.5.18))(webpack@5.98.0)
@@ -1139,10 +1139,10 @@ packages:
     peerDependencies:
       '@rsbuild/core': ^1.0.0 || ^2.0.0-0
 
-  '@rsbuild/plugin-typed-css-modules@1.2.0':
-    resolution: {integrity: sha512-EUL9SaEXZRy6uVwmsvkceHq4RrPpZrlmbczgiJAMaulGiI6MIIUde1NE3sc8JIKk/M0fKgKUjKcA2oJwGbH9Dw==}
+  '@rsbuild/plugin-typed-css-modules@1.2.1':
+    resolution: {integrity: sha512-PTiL6t7T5Z7riPAhyJcmYgwhWl/pNjQqpHYMojO3qKnNcFZJicUbFzKkwXCPTqNl9oCWKJAWNtyXAjQQyoINNw==}
     peerDependencies:
-      '@rsbuild/core': 1.x
+      '@rsbuild/core': ^1.0.0 || ^2.0.0-0
     peerDependenciesMeta:
       '@rsbuild/core':
         optional: true
@@ -5592,7 +5592,7 @@ snapshots:
     transitivePeerDependencies:
       - webpack-hot-middleware
 
-  '@rsbuild/plugin-typed-css-modules@1.2.0(@rsbuild/core@1.7.2)':
+  '@rsbuild/plugin-typed-css-modules@1.2.1(@rsbuild/core@1.7.2)':
     optionalDependencies:
       '@rsbuild/core': 1.7.2
 
