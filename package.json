@@ -63,7 +63,7 @@
     "@rsbuild/core": "^1.7.2",
     "@rsbuild/plugin-react": "^1.4.5",
     "@rsbuild/plugin-typed-css-modules": "^1.2.1",
-    "@rsdoctor/rspack-plugin": "^1.5.0",
+    "@rsdoctor/rspack-plugin": "^1.5.1",
     "@tailwindcss/postcss": "^4.1.18",
     "@tanstack/eslint-plugin-query": "^5.91.4",
     "@tanstack/eslint-plugin-router": "^1.155.0",
