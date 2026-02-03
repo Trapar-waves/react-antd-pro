@@ -27,8 +27,8 @@ importers:
         specifier: ^5.29.3
         version: 5.29.3(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
       axios:
-        specifier: ^1.13.2
-        version: 1.13.2
+        specifier: ^1.13.4
+        version: 1.13.4
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1826,8 +1826,8 @@ packages:
   asynckit@0.4.0:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
 
-  axios@1.13.2:
-    resolution: {integrity: sha512-VPk9ebNqPcy5lRGuSlKx752IlDatOjT9paPlm8A7yOuW2Fbvp4X3JznJtT4f0GzGLLiWE9W8onz51SqLYwzGaA==}
+  axios@1.13.4:
+    resolution: {integrity: sha512-1wVkUaAO6WyaYtCkcYCOx12ZgpGf9Zif+qXa4n+oYzK558YryKqiL6UWwd5DqiH3VRW0GYhTZQ/vlgJrCoNQlg==}
 
   babel-dead-code-elimination@1.0.12:
     resolution: {integrity: sha512-GERT7L2TiYcYDtYk1IpD+ASAYXjKbLTDPhBtYj7X1NuRMDTMtAx9kyBenub1Ev41lo91OHCKdmP+egTDmfQ7Ig==}
@@ -6449,7 +6449,7 @@ snapshots:
 
   asynckit@0.4.0: {}
 
-  axios@1.13.2:
+  axios@1.13.4:
     dependencies:
       follow-redirects: 1.15.11
       form-data: 4.0.4
