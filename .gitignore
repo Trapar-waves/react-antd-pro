@@ -15,3 +15,4 @@ dist/
 doc_build
 *.module.css.d.ts
 routeTree.gen.ts
+.eslintcache
