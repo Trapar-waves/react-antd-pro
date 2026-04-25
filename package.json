@@ -37,6 +37,7 @@
     "build:rsdoctor": "cross-env RSDOCTOR=true rsbuild build",
     "preview": "rsbuild preview",
     "lint": "eslint . --cache --max-warnings=0 --no-warn-ignored",
+    "typecheck": "tsc --noEmit",
     "postinstall": "husky"
   },
   "dependencies": {
@@ -73,6 +74,7 @@
     "@types/node": "^22.19.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "cross-env": "^10.1.0",
     "eslint": "^10.2.1",
     "eslint-plugin-format": "^2.0.1",
     "eslint-plugin-react-hooks": "^7.1.1",

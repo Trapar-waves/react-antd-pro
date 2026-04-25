@@ -4,4 +4,5 @@
  */
 export default {
   "*.{ts,tsx,js,css}": "eslint --cache --max-warnings=0 --no-warn-ignored",
+  "**/*.{ts,tsx}": () => "tsc --noEmit",
 };

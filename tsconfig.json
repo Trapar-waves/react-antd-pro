@@ -19,7 +19,7 @@
     "isolatedModules": true,
     "skipLibCheck": true
   },
-  "include": ["src", "docs", "rspress.config.ts", "mock"],
+  "include": ["src", "docs", "rspress.config.ts", "mock", "rsbuild.config.ts"],
   "mdx": {
     "checkMdx": true
   }
