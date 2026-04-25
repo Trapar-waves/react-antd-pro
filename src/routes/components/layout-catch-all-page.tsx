@@ -1,0 +1,15 @@
+import { useNavigate } from "@tanstack/react-router";
+import { Flex, Spin } from "antd";
+import { useEffect } from "react";
+
+export function LayoutCatchAllPage() {
+  const navigate = useNavigate();
+  useEffect(() => {
+    navigate({ to: "/layout/welcome" }).then();
+  }, [navigate]);
+  return (
+    <Flex justify="center" align="center" className="h-screen w-screen">
+      <Spin size="large" />
+    </Flex>
+  );
+}

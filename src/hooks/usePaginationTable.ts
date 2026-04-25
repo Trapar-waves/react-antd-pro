@@ -17,7 +17,7 @@ export function usePaginationTable<T, U extends Record<string, any>>(options: Us
   const [tableParams, setTableParams] = useState<U>({} as U);
   const { data, isLoading } = useQuery({
     queryFn: () => queryFn({ ...tableParams, ...pagination }),
-    queryKey: [queryKey, pagination, tableParams],
+    queryKey: [queryKey, queryFn, pagination, tableParams],
   });
 
   return {

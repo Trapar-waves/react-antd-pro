@@ -1,19 +1,6 @@
-import { createFileRoute, useNavigate } from "@tanstack/react-router";
-import { Flex, Spin } from "antd";
-import { useEffect } from "react";
+import { createFileRoute } from "@tanstack/react-router";
+import { LayoutCatchAllPage } from "../components/layout-catch-all-page.tsx";
 
 export const Route = createFileRoute("/layout/$")({
-  component: RouteComponent,
+  component: LayoutCatchAllPage,
 });
-
-function RouteComponent() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    navigate({ to: "/layout/welcome" }).then();
-  }, [navigate]);
-  return (
-    <Flex justify="center" align="center" className="h-screen w-screen">
-      <Spin size="large" />
-    </Flex>
-  );
-}
