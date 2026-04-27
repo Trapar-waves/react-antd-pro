@@ -20,7 +20,7 @@ const techStack: TechItem[] = [
   { id: "antd", label: "Ant Design 5 · Pro", hint: "antd · @ant-design/pro-components", iconClass: "icon-[logos--ant-design]" },
   { id: "ts", label: "TypeScript", hint: "类型覆盖路由、请求与状态", iconClass: "icon-[logos--typescript-icon]" },
   { id: "tailwind", label: "Tailwind CSS 4", hint: "原子类与主题扩展", iconClass: "icon-[logos--tailwindcss-icon]" },
-  { id: "rsbuild", label: "Rsbuild", hint: "@rsbuild/core · @rsbuild/plugin-react", iconClass: "icon-[logos--webpack]" },
+  { id: "rsbuild", label: "Rsbuild", hint: "@rsbuild/core · @rsbuild/plugin-react", iconClass: "icon-[material-icon-theme--rstack]" },
   { id: "tanstack", label: "TanStack Router / Query", hint: "文件路由与服务器状态", iconClass: "icon-[logos--markdown]" },
   { id: "zustand", label: "Zustand", hint: "轻量组合式状态", iconClass: "icon-[logos--markdown]" },
   { id: "axios", label: "Axios", hint: "HTTP 客户端封装", iconClass: "icon-[logos--markdown]" },
@@ -46,7 +46,7 @@ const readmeFeatures: string[] = [
   "GitHub Pages：BASE_PATH、404.html 与可选 PUBLIC_STATIC_API 静态演示。",
 ];
 
-const readmeTechNote = "README 将 Rsbuild 表述为基于 webpack；实际由 Rspack 驱动，此处沿用 logos 集合中的 webpack 字形作生态示意。生产部署真实后端时不应设置 PUBLIC_STATIC_API。";
+const readmeTechNote = "README 将 Rsbuild 表述为基于 webpack；实际由 Rspack 驱动，此处使用 Material Icon Theme 的 rstack 字形作 Rsbuild/Rspack 生态示意。生产部署真实后端时不应设置 PUBLIC_STATIC_API。";
 
 const tiles: Array<{ title: string; desc: string; to: string }> = [
   {
@@ -143,7 +143,7 @@ export function WelcomePage() {
           <Paragraph type="secondary" style={{ marginBottom: 16, maxWidth: 680 }}>
             Rsbuild/Rspack 生态示意使用
             {" "}
-            <Text code>logos--webpack</Text>
+            <Text code>material-icon-theme--rstack</Text>
             ；无独立字形的库在卡片说明中标注。
           </Paragraph>
           <div
