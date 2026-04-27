@@ -26,6 +26,24 @@
 - **Debugging Tools:** Built-in TanStack DevTools (Query/Router) and Rsbuild build analysis panel.
 - **Animation Enhancement:** Implements transition animations (e.g., route switching, component show/hide) via Motion library.
 
+## GitHub Pages
+
+Pushing a version tag matching `v*` runs [`.github/workflows/pages.yml`](./.github/workflows/pages.yml), which builds with `BASE_PATH=/<repository-name>/` and **`PUBLIC_STATIC_API=true`** (in-browser mock for `/api/login` and `/api/table`, same behavior as the dev-server mock), copies `dist/index.html` to `dist/404.html` for SPA routing, and deploys to GitHub Pages. In the repository **Settings → Pages**, set **Source** to **GitHub Actions** once.
+
+Local preview matching the Pages bundle (subpath + static API):
+
+```bash
+BASE_PATH=/react-antd-pro/ PUBLIC_STATIC_API=true pnpm run build && pnpm preview
+```
+
+PowerShell:
+
+```powershell
+$env:BASE_PATH="/react-antd-pro/"; $env:PUBLIC_STATIC_API="true"; pnpm run build; pnpm preview
+```
+
+Deploys with a real backend should **not** set `PUBLIC_STATIC_API`; keep the default `axios` `baseURL` as `\<BASE_URL>api` and point your reverse proxy or `server.proxy` at your API.
+
 ## 💻 Tech Stack
 
 - **Base Framework:** `React`: Core for component-based development.

@@ -21,5 +21,5 @@ export interface TableListParams {
 }
 
 export function getTableList(params: TableListParams & CommonPaginationParam) {
-  return request<ResponsePagination<TableListItem>>("/table", { params });
+  return request<ResponsePagination<TableListItem>>("table", { params });
 }

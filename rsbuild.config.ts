@@ -8,10 +8,24 @@ import TurboConsole from "unplugin-turbo-console/rspack";
 import { createMockMiddleware } from "./mock/dev-server-handlers.ts";
 
 const { publicVars } = loadEnv({ prefixes: ["APP_"] });
+
+function normalizeBasePath(): string {
+  const raw = process.env.BASE_PATH?.trim();
+  if (!raw || raw === "/") {
+    return "/";
+  }
+  const prefixed = raw.startsWith("/") ? raw : `/${raw}`;
+  return prefixed.endsWith("/") ? prefixed : `${prefixed}/`;
+}
+
+const basePath = normalizeBasePath();
+const useSubpath = basePath !== "/";
+
 const enableRsdoctor = Boolean(process.env.RSDOCTOR);
 const enableTurboConsole = process.env.NODE_ENV === "development";
 
 export default defineConfig({
+  ...(useSubpath ? { output: { assetPrefix: basePath } } : {}),
   performance: {
     ...(enableRsdoctor ? { buildCache: false } : {}),
   },
@@ -20,6 +34,7 @@ export default defineConfig({
     define: publicVars,
   },
   server: {
+    ...(useSubpath ? { base: basePath } : {}),
     port: 6543,
     proxy: {
       "/api": "https://example.com",

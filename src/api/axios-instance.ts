@@ -3,11 +3,18 @@ import { message } from "antd";
 import axios from "axios";
 import { router } from "../router.ts";
 import { useAuthStore } from "../store/auth.store.ts";
+import { staticApiRequest } from "./static-client.ts";
+
+const basePrefix = (import.meta.env.BASE_URL ?? "/").replace(/\/$/, "");
+const apiBaseUrl = basePrefix ? `${basePrefix}/api` : "/api";
+
+const useStaticApi = import.meta.env.PUBLIC_STATIC_API === "true";
 
 const AxiosInstance = axios.create({
   timeout: 10000,
-  baseURL: "/api",
+  baseURL: apiBaseUrl,
 });
+
 AxiosInstance.interceptors.response.use(
   (response) => {
     switch (response?.status) {
@@ -22,13 +29,10 @@ AxiosInstance.interceptors.response.use(
     if (error?.response?.data?.message) {
       message.error(error.response.data.message).then();
     }
-    else {
-      switch (error.response.status) {
-        case 401:
-          useAuthStore.getState().updateToken("");
-          router.navigate({ to: "/login" });
-          return;
-      }
+    else if (error?.response?.status === 401) {
+      useAuthStore.getState().updateToken("");
+      router.navigate({ to: "/login" }).then();
+      return;
     }
     return Promise.reject(error);
   },
@@ -46,9 +50,13 @@ AxiosInstance.interceptors.request.use(
   },
 );
 
-function request<ResponseType = unknown>(url: string, options?: AxiosRequestConfig): Promise<ResponseType> {
+async function request<ResponseType = unknown>(url: string, options?: AxiosRequestConfig): Promise<ResponseType> {
+  if (useStaticApi) {
+    return staticApiRequest<ResponseType>(url, options);
+  }
   return AxiosInstance<unknown, ResponseType>(url, options);
 }
+
 interface ResponsePagination<T> {
   data: T[];
   total: number;
