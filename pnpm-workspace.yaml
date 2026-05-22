@@ -1,2 +1,4 @@
+minimumReleaseAge: 480
+
 allowBuilds:
   esbuild: true
