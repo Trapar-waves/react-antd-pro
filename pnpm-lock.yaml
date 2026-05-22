@@ -21,8 +21,8 @@ importers:
         specifier: ^5.100.11
         version: 5.100.11(react@19.2.6)
       '@tanstack/react-router':
-        specifier: ^1.170.4
-        version: 1.170.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+        specifier: ^1.170.7
+        version: 1.170.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       antd:
         specifier: ^5.29.3
         version: 5.29.3(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
@@ -58,7 +58,7 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3(eslint@10.4.0(jiti@2.7.0))(typescript@6.0.3)
       '@iconify/json':
-        specifier: ^2.2.474
+        specifier: ^2.2.476
         version: 2.2.476
       '@iconify/tailwind4':
         specifier: ^1.2.3
@@ -89,10 +89,10 @@ importers:
         version: 5.100.11(@tanstack/react-query@5.100.11(react@19.2.6))(react@19.2.6)
       '@tanstack/react-router-devtools':
         specifier: ^1.167.0
-        version: 1.167.0(@tanstack/react-router@1.170.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@tanstack/router-core@1.171.2)(csstype@3.2.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+        version: 1.167.0(@tanstack/react-router@1.170.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@tanstack/router-core@1.171.5)(csstype@3.2.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@tanstack/router-plugin':
-        specifier: ^1.168.6
-        version: 1.168.6(@rsbuild/core@2.0.7)(@tanstack/react-router@1.170.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6))
+        specifier: ^1.168.10
+        version: 1.168.10(@rsbuild/core@2.0.7)(@tanstack/react-router@1.170.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6))
       '@types/node':
         specifier: ^24.12.4
         version: 24.12.4
@@ -1368,8 +1368,8 @@ packages:
       '@tanstack/router-core':
         optional: true
 
-  '@tanstack/react-router@1.170.4':
-    resolution: {integrity: sha512-cusL4YCTuGGJhjfsXEBm6/SmOAs/G8wRVNadeyN3ofu4OZwX69KAybBEf217buxYzI+FohdJVoigEpJV+tGzIw==}
+  '@tanstack/react-router@1.170.7':
+    resolution: {integrity: sha512-4Q8M8Q9sGobhyt72yW+vxzUOSPfrCAHwjPOCb7+ocReQnFQ37t9Qh4RNG4+7zsFQ4tW9C8LpllRe49aK2RYy2Q==}
     engines: {node: '>=20.19'}
     peerDependencies:
       react: '>=18.0.0 || >=19.0.0'
@@ -1381,8 +1381,8 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
 
-  '@tanstack/router-core@1.171.2':
-    resolution: {integrity: sha512-sUd+BhGYkBF64LVhmOHnYsc1AutPNch/huohEXiXL4IUgmk17Gy+RkUazvjQhptVdYW5QT+qtATrUr2cQZNHFA==}
+  '@tanstack/router-core@1.171.5':
+    resolution: {integrity: sha512-BfilbQqqWiQwJn68cD8wmk1ajEWIO3IlEA1zVuWslWbiVc23CDn+6ACO5tfPAcc96ED37hxela5ij3VBvAtusw==}
     engines: {node: '>=20.19'}
 
   '@tanstack/router-devtools-core@1.168.0':
@@ -1395,16 +1395,16 @@ packages:
       csstype:
         optional: true
 
-  '@tanstack/router-generator@1.167.5':
-    resolution: {integrity: sha512-S7h9qs7WjwF1IlMiOxSv+xB/bSOQ6QS84NlApM9iWLVdkbOVUn7RzTaCqw2qdDa5cPrfSiZJ2wK2a6RFDmFubA==}
+  '@tanstack/router-generator@1.167.9':
+    resolution: {integrity: sha512-B2MiJVYyI/C+5O7Hzu9owZPHuXCxKKFweUdMLToAZLg2H7iYoXYzgqAFISUBBlL8jKWugEVwNMUE3ajBGZep4w==}
     engines: {node: '>=20.19'}
 
-  '@tanstack/router-plugin@1.168.6':
-    resolution: {integrity: sha512-u5CNtTWGyFvV8gGWKBt9LdwVGg+ISSBXG/aeeU1/d1YpEKPqlJHS6oN3tvNKOScubeV64HjpeV0tD6fqRfCpvw==}
+  '@tanstack/router-plugin@1.168.10':
+    resolution: {integrity: sha512-s3bWi8pT+p8D70aev6CBwCQp/2SlkO16wxXDtK6a9JAQYK7ARemp3qdzX5EDnVmB9Mc6ex5f9eyrN6eL/V+tLg==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@rsbuild/core': '>=1.0.2 || ^2.0.0'
-      '@tanstack/react-router': ^1.170.4
+      '@tanstack/react-router': ^1.170.7
       vite: '>=5.0.0 || >=6.0.0 || >=7.0.0 || >=8.0.0'
       vite-plugin-solid: ^2.11.10 || ^3.0.0-0
       webpack: '>=5.92.0'
@@ -1420,8 +1420,8 @@ packages:
       webpack:
         optional: true
 
-  '@tanstack/router-utils@1.162.0':
-    resolution: {integrity: sha512-c3GhqhBRCP636B41nf3TKvVz8EWzC5PTZ3I4J4LDH2tVjpxbyFNYsQKRtbNWiMFl+GTtgK4nCha346Wv7j4hcQ==}
+  '@tanstack/router-utils@1.162.1':
+    resolution: {integrity: sha512-62layyTGmclHDQS/eidwKRfN1hhCKwViG7iEBcVmL0MXgcAB3OOucWCEcDDGd9Cu11H6b4QQ5oOo47MWIqwz0A==}
     engines: {node: '>=20.19'}
 
   '@tanstack/store@0.9.3':
@@ -1654,10 +1654,6 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
 
-  anymatch@3.1.3:
-    resolution: {integrity: sha512-KMReFUr0B4t+D+OBkjR3KYqvocp2XaSzO55UcB6mgQMd3KbcE+mWTyvVV7D/zsdEbNnV6acZUutkiHQXvTr1Rw==}
-    engines: {node: '>= 8'}
-
   are-docs-informative@0.0.2:
     resolution: {integrity: sha512-ixiS0nLNNG5jNQzgZJNoUpBKdo9yTYZMGJ+QgT2jmjR7G7+QHRCc4v6LQ3NgE7EBJq+o0ams3waJwkrlBom8Ig==}
     engines: {node: '>=14'}
@@ -1684,10 +1680,6 @@ packages:
     engines: {node: '>=6.0.0'}
     hasBin: true
 
-  binary-extensions@2.3.0:
-    resolution: {integrity: sha512-Ceh+7ox5qe7LJuLHoY0feh3pHuUDHAcRUeyL2VYghZwfpkNIy/+8Ocg0a3UuSoYzavmylwuLWQOf3hl0jjMMIw==}
-    engines: {node: '>=8'}
-
   bippy@0.5.41:
     resolution: {integrity: sha512-jCP2pXXLhXqPrAN+iSEFZmLI4uUM4fjSqajh0K+TmM062VehfDT3ZJNkrTGyN701Z5XMejs9qAudSqkMGhSMKg==}
     peerDependencies:
@@ -1702,10 +1694,6 @@ packages:
   brace-expansion@5.0.6:
     resolution: {integrity: sha512-kLpxurY4Z4r9sgMsyG0Z9uzsBlgiU/EFKhj/h91/8yHu0edo7XuixOIH3VcJ8kkxs6/jPzoI6U9Vj3WqbMQ94g==}
     engines: {node: 18 || 20 || >=22}
-
-  braces@3.0.3:
-    resolution: {integrity: sha512-yQbXgO/OSZVD2IsiLlro+7Hf6Q18EJrKSEsdoMzKePKXct3gvD8oLcOQdIzGupr5Fj+EDe8gO/lxc1BzfMpxvA==}
-    engines: {node: '>=8'}
 
   browserslist-load-config@1.0.1:
     resolution: {integrity: sha512-orLR5HAoQugQNVUXUwNd+GAAwl3H64KLIwoMFBNW0AbMSqX2Lxs4ZV2/5UoNrVQlQqF9ygychiu7Svr/99bLtg==}
@@ -1747,9 +1735,9 @@ packages:
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
 
-  chokidar@3.6.0:
-    resolution: {integrity: sha512-7VT13fmjotKpGipCW9JEQAusEPE+Ei8nl6/g4FBAmIm0GOOLMua9NDDo/DWp0ZAxCr3cPq5ZpBqmPAQgDda2Pw==}
-    engines: {node: '>= 8.10.0'}
+  chokidar@5.0.0:
+    resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
+    engines: {node: '>= 20.19.0'}
 
   ci-info@4.4.0:
     resolution: {integrity: sha512-77PSwercCZU2Fc4sX94eF8k8Pxte6JAwL4/ICZLFjJLqegs7kCuAsqqj/70NQF6TvDpgFjkubQB2FW2ZZddvQg==}
@@ -2351,10 +2339,6 @@ packages:
     resolution: {integrity: sha512-sJslQKU2uM33qH5nqewAwVB2QgR6w1aMNsYUp3aN5rMRyXEwJGmZvaWzeJFNTOXWlHQyBFCWrdj3fV/fsTOX8w==}
     engines: {node: '>= 10.4.0'}
 
-  fill-range@7.1.1:
-    resolution: {integrity: sha512-YsGpe3WHLK8ZYi4tWDg2Jy3ebRz2rXowDxnld4bkQB00cc/1Zw9AWnC0i9ztDJitivtQvaI9KaLyKrc+hBW0yg==}
-    engines: {node: '>=8'}
-
   find-up-simple@1.0.1:
     resolution: {integrity: sha512-afd4O7zpqHeRyg4PfDQsXmlDe2PfdHtJt6Akt8jOWaApLOZk5JXs6VMR29lz03pRe9mpykrRCYIYxaJYcfpncQ==}
     engines: {node: '>=18'}
@@ -2405,11 +2389,6 @@ packages:
     resolution: {integrity: sha512-eKpRKAovdpZtR1WopLHxlBWvAgPny3c4gX1G5Jhwmmw4XJj0ifSD5qB5TOo8hmA0wlRKDAOAhEE1yVPgs6Fgcg==}
     engines: {node: '>=14.14'}
 
-  fsevents@2.3.3:
-    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
-    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
-    os: [darwin]
-
   function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
 
@@ -2441,10 +2420,6 @@ packages:
 
   github-slugger@2.0.0:
     resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
-
-  glob-parent@5.1.2:
-    resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
-    engines: {node: '>= 6'}
 
   glob-parent@6.0.2:
     resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
@@ -2534,10 +2509,6 @@ packages:
   iron-webcrypto@1.2.1:
     resolution: {integrity: sha512-feOM6FaSr6rEABp/eDfVseKyTMDt+KGpeB35SkVn9Tyn0CqvVsY3EwI0v5i8nMHyJnzCIQf7nsy3p41TPkJZhg==}
 
-  is-binary-path@2.1.0:
-    resolution: {integrity: sha512-ZMERYes6pDydyuGidse7OsHxtbI7WVeUEozgR/g7rd0xUimYNlvZRE/K2MgZTjWy725IfelLeVcEM97mmtRGXw==}
-    engines: {node: '>=8'}
-
   is-builtin-module@5.0.0:
     resolution: {integrity: sha512-f4RqJKBUe5rQkJ2eJEJBXSticB3hGbN9j0yxxMQFqIW89Jp9WYFtzfTcRlstDKVUTRzSOTLKRfO9vIztenwtxA==}
     engines: {node: '>=18.20'}
@@ -2557,10 +2528,6 @@ packages:
   is-interactive@2.0.0:
     resolution: {integrity: sha512-qP1vozQRI+BMOPcjFzrjXuQvdak2pHNUMZoeG2eRbiSqyvbEf/wQtEOTOX1guk6E3t36RkaqiSt8A/6YElNxLQ==}
     engines: {node: '>=12'}
-
-  is-number@7.0.0:
-    resolution: {integrity: sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==}
-    engines: {node: '>=0.12.0'}
 
   is-unicode-supported@2.1.0:
     resolution: {integrity: sha512-mE00Gnza5EEB3Ds0HfMyllZzbBrmLOX3vfWoj9A9PEnTfratQ/BcaJOuMhnkhjXvb2+FkY3VuHqtAGpTPmglFQ==}
@@ -2983,10 +2950,6 @@ packages:
   node-releases@2.0.44:
     resolution: {integrity: sha512-5WUyunoPMsvvEhS8AxHtRzP+oA8UCkJ7YRxatWKjngndhDGLiqEVAQKWjFAiAiuL8zMRGzGSJxFnLetoa43qGQ==}
 
-  normalize-path@3.0.0:
-    resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
-    engines: {node: '>=0.10.0'}
-
   nth-check@2.1.1:
     resolution: {integrity: sha512-lqjrjmaOoAnWfMmBPL+XNnynZh2+swxiX3WUE0s4yEHI6m+AwrK2UZOimIRl3X/4QctVqS8AiZjFqyOGrMXb/w==}
 
@@ -3062,10 +3025,6 @@ packages:
 
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
-
-  picomatch@2.3.2:
-    resolution: {integrity: sha512-V7+vQEJ06Z+c5tSye8S+nHUfI51xoXIXjHQ99cQtKUkQqqO1kO/KCJUfZXuB47h/YBlDhah2H3hdUGXn8ie0oA==}
-    engines: {node: '>=8.6'}
 
   picomatch@4.0.4:
     resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
@@ -3413,9 +3372,9 @@ packages:
     peerDependencies:
       react: '*'
 
-  readdirp@3.6.0:
-    resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
-    engines: {node: '>=8.10.0'}
+  readdirp@5.0.0:
+    resolution: {integrity: sha512-9u/XQ1pvrQtYyMpZe7DXKv2p5CNvyVwzUB6uhLAnQwHMSgKMBR62lc7AHljaeteeHXn11XTAaLLUVZYVZyuRBQ==}
+    engines: {node: '>= 20.19.0'}
 
   refa@0.12.1:
     resolution: {integrity: sha512-J8rn6v4DBb2nnFqkqwy6/NnTYMcgLA+sLr0iIO41qpv0n+ngb7ksag2tMRl0inb1bbO/esUwzW1vbJi7K0sI0g==}
@@ -3632,10 +3591,6 @@ packages:
     resolution: {integrity: sha512-Pugqs6M0m7Lv1I7FtxN4aoyToKg1C4tu+/381vH35y8oENM/Ai7f7C4StcoK4/+BSw9ebcS8jRiVrORFKCALLw==}
     engines: {node: ^20.0.0 || >=22.0.0}
 
-  to-regex-range@5.0.1:
-    resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
-    engines: {node: '>=8.0'}
-
   to-valid-identifier@1.0.0:
     resolution: {integrity: sha512-41wJyvKep3yT2tyPqX/4blcfybknGB4D+oETKLs7Q76UiPqRpUJK3hr1nxelyYO0PHKVzJwlu0aCeEAsGI6rpw==}
     engines: {node: '>=20'}
@@ -3832,9 +3787,6 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       zod: ^3.25.0 || ^4.0.0
-
-  zod@3.25.76:
-    resolution: {integrity: sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==}
 
   zod@4.4.3:
     resolution: {integrity: sha512-ytENFjIJFl2UwYglde2jchW2Hwm4GJFLDiSXWdTrJQBIN9Fcyp7n4DhxJEiWNAJMV1/BqWfW/kkg71UDcHJyTQ==}
@@ -5205,22 +5157,22 @@ snapshots:
       '@tanstack/query-core': 5.100.11
       react: 19.2.6
 
-  '@tanstack/react-router-devtools@1.167.0(@tanstack/react-router@1.170.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@tanstack/router-core@1.171.2)(csstype@3.2.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
+  '@tanstack/react-router-devtools@1.167.0(@tanstack/react-router@1.170.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(@tanstack/router-core@1.171.5)(csstype@3.2.3)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@tanstack/react-router': 1.170.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      '@tanstack/router-devtools-core': 1.168.0(@tanstack/router-core@1.171.2)(csstype@3.2.3)
+      '@tanstack/react-router': 1.170.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@tanstack/router-devtools-core': 1.168.0(@tanstack/router-core@1.171.5)(csstype@3.2.3)
       react: 19.2.6
       react-dom: 19.2.6(react@19.2.6)
     optionalDependencies:
-      '@tanstack/router-core': 1.171.2
+      '@tanstack/router-core': 1.171.5
     transitivePeerDependencies:
       - csstype
 
-  '@tanstack/react-router@1.170.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
+  '@tanstack/react-router@1.170.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@tanstack/history': 1.162.0
       '@tanstack/react-store': 0.9.3(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
-      '@tanstack/router-core': 1.171.2
+      '@tanstack/router-core': 1.171.5
       isbot: 5.1.40
       react: 19.2.6
       react-dom: 19.2.6(react@19.2.6)
@@ -5232,35 +5184,35 @@ snapshots:
       react-dom: 19.2.6(react@19.2.6)
       use-sync-external-store: 1.6.0(react@19.2.6)
 
-  '@tanstack/router-core@1.171.2':
+  '@tanstack/router-core@1.171.5':
     dependencies:
       '@tanstack/history': 1.162.0
       cookie-es: 3.1.1
       seroval: 1.5.4
       seroval-plugins: 1.5.4(seroval@1.5.4)
 
-  '@tanstack/router-devtools-core@1.168.0(@tanstack/router-core@1.171.2)(csstype@3.2.3)':
+  '@tanstack/router-devtools-core@1.168.0(@tanstack/router-core@1.171.5)(csstype@3.2.3)':
     dependencies:
-      '@tanstack/router-core': 1.171.2
+      '@tanstack/router-core': 1.171.5
       clsx: 2.1.1
       goober: 2.1.19(csstype@3.2.3)
     optionalDependencies:
       csstype: 3.2.3
 
-  '@tanstack/router-generator@1.167.5':
+  '@tanstack/router-generator@1.167.9':
     dependencies:
       '@babel/types': 7.29.0
-      '@tanstack/router-core': 1.171.2
-      '@tanstack/router-utils': 1.162.0
+      '@tanstack/router-core': 1.171.5
+      '@tanstack/router-utils': 1.162.1
       '@tanstack/virtual-file-routes': 1.162.0
       jiti: 2.7.0
       magic-string: 0.30.21
       prettier: 3.8.3
-      zod: 3.25.76
+      zod: 4.4.3
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/router-plugin@1.168.6(@rsbuild/core@2.0.7)(@tanstack/react-router@1.170.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6))':
+  '@tanstack/router-plugin@1.168.10(@rsbuild/core@2.0.7)(@tanstack/react-router@1.170.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6))':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-syntax-jsx': 7.28.6(@babel/core@7.29.0)
@@ -5268,20 +5220,20 @@ snapshots:
       '@babel/template': 7.28.6
       '@babel/traverse': 7.29.0
       '@babel/types': 7.29.0
-      '@tanstack/router-core': 1.171.2
-      '@tanstack/router-generator': 1.167.5
-      '@tanstack/router-utils': 1.162.0
+      '@tanstack/router-core': 1.171.5
+      '@tanstack/router-generator': 1.167.9
+      '@tanstack/router-utils': 1.162.1
       '@tanstack/virtual-file-routes': 1.162.0
-      chokidar: 3.6.0
+      chokidar: 5.0.0
       unplugin: 3.0.0
-      zod: 3.25.76
+      zod: 4.4.3
     optionalDependencies:
       '@rsbuild/core': 2.0.7
-      '@tanstack/react-router': 1.170.4(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@tanstack/react-router': 1.170.7(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
     transitivePeerDependencies:
       - supports-color
 
-  '@tanstack/router-utils@1.162.0':
+  '@tanstack/router-utils@1.162.1':
     dependencies:
       '@babel/core': 7.29.0
       '@babel/generator': 7.29.1
@@ -5620,11 +5572,6 @@ snapshots:
       - luxon
       - moment
 
-  anymatch@3.1.3:
-    dependencies:
-      normalize-path: 3.0.0
-      picomatch: 2.3.2
-
   are-docs-informative@0.0.2: {}
 
   asynckit@0.4.0: {}
@@ -5654,8 +5601,6 @@ snapshots:
 
   baseline-browser-mapping@2.10.31: {}
 
-  binary-extensions@2.3.0: {}
-
   bippy@0.5.41(react@19.2.6):
     dependencies:
       react: 19.2.6
@@ -5667,10 +5612,6 @@ snapshots:
   brace-expansion@5.0.6:
     dependencies:
       balanced-match: 4.0.4
-
-  braces@3.0.3:
-    dependencies:
-      fill-range: 7.1.1
 
   browserslist-load-config@1.0.1: {}
 
@@ -5705,17 +5646,9 @@ snapshots:
 
   character-entities@2.0.2: {}
 
-  chokidar@3.6.0:
+  chokidar@5.0.0:
     dependencies:
-      anymatch: 3.1.3
-      braces: 3.0.3
-      glob-parent: 5.1.2
-      is-binary-path: 2.1.0
-      is-glob: 4.0.3
-      normalize-path: 3.0.0
-      readdirp: 3.6.0
-    optionalDependencies:
-      fsevents: 2.3.3
+      readdirp: 5.0.0
 
   ci-info@4.4.0: {}
 
@@ -6395,10 +6328,6 @@ snapshots:
 
   filesize@10.1.6: {}
 
-  fill-range@7.1.1:
-    dependencies:
-      to-regex-range: 5.0.1
-
   find-up-simple@1.0.1: {}
 
   find-up@5.0.0:
@@ -6440,9 +6369,6 @@ snapshots:
       jsonfile: 6.2.1
       universalify: 2.0.1
 
-  fsevents@2.3.3:
-    optional: true
-
   function-bind@1.1.2: {}
 
   gensync@1.0.0-beta.2: {}
@@ -6476,10 +6402,6 @@ snapshots:
       resolve-pkg-maps: 1.0.0
 
   github-slugger@2.0.0: {}
-
-  glob-parent@5.1.2:
-    dependencies:
-      is-glob: 4.0.3
 
   glob-parent@6.0.2:
     dependencies:
@@ -6559,10 +6481,6 @@ snapshots:
 
   iron-webcrypto@1.2.1: {}
 
-  is-binary-path@2.1.0:
-    dependencies:
-      binary-extensions: 2.3.0
-
   is-builtin-module@5.0.0:
     dependencies:
       builtin-modules: 5.2.0
@@ -6578,8 +6496,6 @@ snapshots:
       is-extglob: 2.1.1
 
   is-interactive@2.0.0: {}
-
-  is-number@7.0.0: {}
 
   is-unicode-supported@2.1.0: {}
 
@@ -7150,8 +7066,6 @@ snapshots:
 
   node-releases@2.0.44: {}
 
-  normalize-path@3.0.0: {}
-
   nth-check@2.1.1:
     dependencies:
       boolbase: 1.0.0
@@ -7264,8 +7178,6 @@ snapshots:
   pathe@2.0.3: {}
 
   picocolors@1.1.1: {}
-
-  picomatch@2.3.2: {}
 
   picomatch@4.0.4: {}
 
@@ -7710,9 +7622,7 @@ snapshots:
       lodash: 4.18.1
       react: 19.2.6
 
-  readdirp@3.6.0:
-    dependencies:
-      picomatch: 2.3.2
+  readdirp@5.0.0: {}
 
   refa@0.12.1:
     dependencies:
@@ -7909,10 +7819,6 @@ snapshots:
 
   tinypool@2.1.0: {}
 
-  to-regex-range@5.0.1:
-    dependencies:
-      is-number: 7.0.0
-
   to-valid-identifier@1.0.0:
     dependencies:
       '@sindresorhus/base62': 1.0.0
@@ -8071,8 +7977,6 @@ snapshots:
   zod-validation-error@4.0.2(zod@4.4.3):
     dependencies:
       zod: 4.4.3
-
-  zod@3.25.76: {}
 
   zod@4.4.3: {}
 
