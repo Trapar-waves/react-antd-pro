@@ -84,12 +84,5 @@
     "tailwindcss": "^4.3.0",
     "typescript": "^6.0.3",
     "unplugin-turbo-console": "^2.3.2"
-  },
-  "pnpm": {
-    "onlyBuiltDependencies": [
-      "@tailwindcss/oxide",
-      "core-js",
-      "esbuild"
-    ]
   }
 }

@@ -28,4 +28,10 @@ export default antfu({
     "@tanstack/router/create-route-property-order": "warn",
     "@tanstack/query/exhaustive-deps": "error",
   },
+}, {
+  name: "trapar/pnpm-workspace-yaml-trust-policy",
+  files: ["pnpm-workspace.yaml"],
+  rules: {
+    "pnpm/yaml-enforce-settings": "off",
+  },
 });
