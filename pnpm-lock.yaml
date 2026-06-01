@@ -48,7 +48,7 @@ importers:
         specifier: ^0.5.7
         version: 0.5.7(eslint@10.4.1(jiti@2.7.0))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       zustand:
-        specifier: ^5.0.13
+        specifier: ^5.0.14
         version: 5.0.14(@types/react@19.2.15)(immer@11.1.8)(react@19.2.6)(use-sync-external-store@1.6.0(react@19.2.6))
     devDependencies:
       '@antfu/eslint-config':

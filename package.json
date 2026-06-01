@@ -54,7 +54,7 @@
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "react-scan": "^0.5.7",
-    "zustand": "^5.0.13"
+    "zustand": "^5.0.14"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^9.0.0",
