@@ -64,16 +64,16 @@ importers:
         specifier: ^1.2.3
         version: 1.2.3(tailwindcss@4.3.0)
       '@rsbuild/core':
-        specifier: ^2.0.7
+        specifier: ^2.0.9
         version: 2.0.9
       '@rsbuild/plugin-react':
-        specifier: ^2.0.0
+        specifier: ^2.0.1
         version: 2.0.1(@rsbuild/core@2.0.9)(@rspack/core@2.0.5(@swc/helpers@0.5.23))
       '@rsbuild/plugin-typed-css-modules':
-        specifier: ^1.2.2
+        specifier: ^1.2.3
         version: 1.2.3(@rsbuild/core@2.0.9)
       '@rsdoctor/rspack-plugin':
-        specifier: ^1.5.11
+        specifier: ^1.5.12
         version: 1.5.12(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rsbuild/core@2.0.9)(@rspack/core@2.0.5(@swc/helpers@0.5.23))
       '@tailwindcss/postcss':
         specifier: ^4.3.0
