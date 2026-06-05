@@ -70,8 +70,8 @@ importers:
         specifier: ^2.0.1
         version: 2.0.1(@rsbuild/core@2.0.11)(@rspack/core@2.0.6(@swc/helpers@0.5.23))
       '@rsbuild/plugin-typed-css-modules':
-        specifier: ^1.2.3
-        version: 1.2.3(@rsbuild/core@2.0.11)
+        specifier: ^1.2.4
+        version: 1.2.4(@rsbuild/core@2.0.11)
       '@rsdoctor/rspack-plugin':
         specifier: ^1.5.12
         version: 1.5.12(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)(@rsbuild/core@2.0.11)(@rspack/core@2.0.6(@swc/helpers@0.5.23))
@@ -1475,10 +1475,10 @@ packages:
       '@rsbuild/core':
         optional: true
 
-  '@rsbuild/plugin-typed-css-modules@1.2.3':
-    resolution: {integrity: sha512-J/3VkCa+mFkffGWLhie+QkPlWBfnS6k/25m2b/AGkzSET5co44OjjD09F445eY3gm+uwaLgabdB7NpiUiAsl8g==}
+  '@rsbuild/plugin-typed-css-modules@1.2.4':
+    resolution: {integrity: sha512-//lpnACAYM+W6gwPMe0Y1DuU8XQeRBIy+ZRrxUX9pOR987YD7hW5D3DJRI+2M1ZzDJQ/h4v2p6c4/ri/imH7ZA==}
     peerDependencies:
-      '@rsbuild/core': ^1.0.0 || ^2.0.0-0
+      '@rsbuild/core': ^1.0.0 || ^2.0.0
     peerDependenciesMeta:
       '@rsbuild/core':
         optional: true
@@ -5845,7 +5845,7 @@ snapshots:
     transitivePeerDependencies:
       - '@rspack/core'
 
-  '@rsbuild/plugin-typed-css-modules@1.2.3(@rsbuild/core@2.0.11)':
+  '@rsbuild/plugin-typed-css-modules@1.2.4(@rsbuild/core@2.0.11)':
     optionalDependencies:
       '@rsbuild/core': 2.0.11
 
