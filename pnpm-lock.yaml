@@ -94,8 +94,8 @@ importers:
         specifier: ^1.168.18
         version: 1.168.18(@rsbuild/core@2.0.11)(@tanstack/react-router@1.170.15(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
       '@types/node':
-        specifier: ^24.13.1
-        version: 24.13.1
+        specifier: ^24.13.2
+        version: 24.13.2
       '@types/react':
         specifier: ^19.2.17
         version: 19.2.17
@@ -1940,6 +1940,9 @@ packages:
   '@types/node@24.13.1':
     resolution: {integrity: sha512-RSpUJGmvsJ1ZeBehQZFhIdpsz+bIpES0nIQXko4Ybq+N+kX6XvOq3Jo+iJ82FWLdblFq85AsMikd3m35jgezYg==}
 
+  '@types/node@24.13.2':
+    resolution: {integrity: sha512-fRa09kZTgu8o71KFcDjUFuc7F+dEbZYZmkI0mg5YBTRs0yMKjYHsq/c0urDKeDb+D5qVgXOdFcuu+DZPKOITwA==}
+
   '@types/react-dom@19.2.3':
     resolution: {integrity: sha512-jp2L/eY6fn+KgVVQAOqYItbF0VY/YApe5Mz2F0aykSO8gx31bYCZyvSeYxCHKvzHG5eZjc+zyaS5BrBWya2+kQ==}
     peerDependencies:
@@ -3587,8 +3590,8 @@ packages:
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-  oxlint-plugin-react-doctor@0.4.2:
-    resolution: {integrity: sha512-pH5TCM+FqvbiK7I6PVdUD6AY0013okJ4DCee4eQbce2FjU2X+TXw+gkBxw7GT8S3I6jqvFLGkabekmISKcSJnw==}
+  oxlint-plugin-react-doctor@0.5.1:
+    resolution: {integrity: sha512-gGx0NCPA7s8z8UYCulfhX4CiXwBI4QdQve7zaVXglakWzzdgcXMZv6pedmbKUtefegzlfzkKDcYO4lOg8vqnJw==}
     engines: {node: ^20.19.0 || >=22.12.0}
 
   oxlint@1.68.0:
@@ -3955,8 +3958,8 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
 
-  react-doctor@0.4.2:
-    resolution: {integrity: sha512-h4wykdqF93jBd4RD4AlKjyaukfizqcrwAMdZGLM0UsCw7ipOqJXFPvfPRK+GbHVh8KKoYWq1nU7K1M3uGTY/Ag==}
+  react-doctor@0.5.1:
+    resolution: {integrity: sha512-2LSJ/iYtUugr9xj01XTyU2tRtfjmGjiwyDotrnxL0raP+q4Uhp10VaiY7BqfDhBpj4HtCsC+//G1xVupTTBDoA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
@@ -6282,6 +6285,10 @@ snapshots:
     dependencies:
       undici-types: 7.18.2
 
+  '@types/node@24.13.2':
+    dependencies:
+      undici-types: 7.18.2
+
   '@types/react-dom@19.2.3(@types/react@19.2.17)':
     dependencies:
       '@types/react': 19.2.17
@@ -8346,7 +8353,7 @@ snapshots:
       '@oxfmt/binding-win32-ia32-msvc': 0.35.0
       '@oxfmt/binding-win32-x64-msvc': 0.35.0
 
-  oxlint-plugin-react-doctor@0.4.2:
+  oxlint-plugin-react-doctor@0.5.1:
     dependencies:
       '@typescript-eslint/types': 8.60.1
       eslint-scope: 9.1.2
@@ -8807,7 +8814,7 @@ snapshots:
       react: 19.2.7
       react-dom: 19.2.7(react@19.2.7)
 
-  react-doctor@0.4.2(eslint@10.4.1(jiti@2.7.0)):
+  react-doctor@0.5.1(eslint@10.4.1(jiti@2.7.0)):
     dependencies:
       '@babel/code-frame': 7.29.7
       '@effect/platform-node-shared': 4.0.0-beta.70(effect@4.0.0-beta.70)
@@ -8821,7 +8828,7 @@ snapshots:
       jiti: 2.7.0
       magicast: 0.5.3
       oxlint: 1.68.0
-      oxlint-plugin-react-doctor: 0.4.2
+      oxlint-plugin-react-doctor: 0.5.1
       prompts: 2.4.2
       typescript: 6.0.3
       vscode-languageserver: 9.0.1
@@ -8868,7 +8875,7 @@ snapshots:
       preact: 10.29.2
       prompts: 2.4.2
       react: 19.2.7
-      react-doctor: 0.4.2(eslint@10.4.1(jiti@2.7.0))
+      react-doctor: 0.5.1(eslint@10.4.1(jiti@2.7.0))
       react-dom: 19.2.7(react@19.2.7)
       react-grab: 0.1.44(react@19.2.7)
     optionalDependencies:
