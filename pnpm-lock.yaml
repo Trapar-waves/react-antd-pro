@@ -94,7 +94,7 @@ importers:
         specifier: ^1.168.18
         version: 1.168.18(@rsbuild/core@2.0.15)(@tanstack/react-router@1.170.15(react-dom@19.2.7(react@19.2.7))(react@19.2.7))
       '@types/node':
-        specifier: ^24.13.1
+        specifier: ^24.13.2
         version: 24.13.2
       '@types/react':
         specifier: ^19.2.17
