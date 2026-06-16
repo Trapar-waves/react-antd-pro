@@ -27,7 +27,7 @@ importers:
         specifier: ^5.29.3
         version: 5.29.3(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       axios:
-        specifier: ^1.17.0
+        specifier: ^1.18.0
         version: 1.18.0
       clsx:
         specifier: ^2.1.1
