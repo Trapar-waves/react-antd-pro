@@ -58,8 +58,8 @@ importers:
         specifier: ^5.9.2
         version: 5.9.2(eslint@10.5.0(jiti@2.7.0))(typescript@6.0.3)
       '@iconify/json':
-        specifier: ^2.2.489
-        version: 2.2.489
+        specifier: ^2.2.491
+        version: 2.2.491
       '@iconify/tailwind4':
         specifier: ^1.2.3
         version: 1.2.3(tailwindcss@4.3.1)
@@ -619,8 +619,8 @@ packages:
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
-  '@iconify/json@2.2.489':
-    resolution: {integrity: sha512-KkgFv48FLPmIvex3fl5sCr1zcKV+Q4leIgk8TNnRx0j1S326+78NnTTy3DjArwyX6eNwaQutDKy4dzmpjRnOFg==}
+  '@iconify/json@2.2.491':
+    resolution: {integrity: sha512-23r0rvHuL2TL0bDPnnWV+fUB/XUrJUZtWiashZwCKuc7lmAu9Q7lwOx/xK5k7eSl+TPpoID7qioT5Rno0vZcKw==}
 
   '@iconify/tailwind4@1.2.3':
     resolution: {integrity: sha512-z8SKiMHRASJKF/IY//87MF88lcB7ulxh8vlhQXXLWsBkNtOh6ese9R41MyGpQeqXdRvQVt+/fX2glQtHFjQ+MA==}
@@ -5307,7 +5307,7 @@ snapshots:
 
   '@iarna/toml@2.2.5': {}
 
-  '@iconify/json@2.2.489':
+  '@iconify/json@2.2.491':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
@@ -6480,8 +6480,8 @@ snapshots:
 
   '@typescript-eslint/project-service@8.61.1(typescript@6.0.3)':
     dependencies:
-      '@typescript-eslint/tsconfig-utils': 8.61.1(typescript@6.0.3)
-      '@typescript-eslint/types': 8.61.1
+      '@typescript-eslint/tsconfig-utils': 8.62.0(typescript@6.0.3)
+      '@typescript-eslint/types': 8.62.0
       debug: 4.4.3
       typescript: 6.0.3
     transitivePeerDependencies:
@@ -8550,7 +8550,7 @@ snapshots:
 
   oxlint-plugin-react-doctor@0.5.8:
     dependencies:
-      '@typescript-eslint/types': 8.61.1
+      '@typescript-eslint/types': 8.62.0
       eslint-scope: 9.1.2
       eslint-visitor-keys: 5.0.1
       oxc-parser: 0.135.0
