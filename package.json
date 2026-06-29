@@ -65,7 +65,7 @@
     "@rsbuild/plugin-react": "^2.1.0",
     "@rsbuild/plugin-typed-css-modules": "^1.2.4",
     "@rsdoctor/rspack-plugin": "^1.5.16",
-    "@tailwindcss/postcss": "^4.3.1",
+    "@tailwindcss/postcss": "^4.3.2",
     "@tanstack/eslint-plugin-query": "^5.101.2",
     "@tanstack/eslint-plugin-router": "^1.162.0",
     "@tanstack/react-query-devtools": "^5.101.2",
@@ -81,7 +81,7 @@
     "eslint-plugin-react-refresh": "^0.5.3",
     "husky": "^9.1.7",
     "lint-staged": "^17.0.8",
-    "tailwindcss": "^4.3.1",
+    "tailwindcss": "^4.3.2",
     "typescript": "^6.0.3",
     "unplugin-turbo-console": "^2.3.2"
   }
