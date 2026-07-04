@@ -33,7 +33,7 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       immer:
-        specifier: ^11.1.9
+        specifier: ^11.1.11
         version: 11.1.11
       motion:
         specifier: ^12.42.2
