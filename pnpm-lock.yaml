@@ -28,7 +28,7 @@ importers:
         version: 5.29.3(react-dom@19.2.7(react@19.2.7))(react@19.2.7)
       axios:
         specifier: ^1.18.1
-        version: 1.18.1
+        version: 1.18.1(debug@4.4.3)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -58,8 +58,8 @@ importers:
         specifier: ^5.17.1
         version: 5.17.2(eslint@10.7.0(jiti@2.7.0))(typescript@7.0.2)
       '@iconify/json':
-        specifier: ^2.2.502
-        version: 2.2.502
+        specifier: ^2.2.503
+        version: 2.2.503
       '@iconify/tailwind4':
         specifier: ^1.2.3
         version: 1.2.3(tailwindcss@4.3.3)
@@ -641,8 +641,8 @@ packages:
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
-  '@iconify/json@2.2.502':
-    resolution: {integrity: sha512-f5hf1EJOHzW+oyh8JzvJ5G1RzQ8sWyexmzM9/P2IoZTxECbnZEDwYOw/ITkwoA9SPNg2bngimrh/adpy8AaO5A==}
+  '@iconify/json@2.2.503':
+    resolution: {integrity: sha512-544itETUPS/V5X6wZycbNZMqK5HtHsRbuBvoZWSByQVFf3IAY5qg36pzDpy3B3tk+pJld6E417P06yc0OtHLsA==}
 
   '@iconify/tailwind4@1.2.3':
     resolution: {integrity: sha512-z8SKiMHRASJKF/IY//87MF88lcB7ulxh8vlhQXXLWsBkNtOh6ese9R41MyGpQeqXdRvQVt+/fX2glQtHFjQ+MA==}
@@ -5282,7 +5282,7 @@ snapshots:
 
   '@iarna/toml@2.2.5': {}
 
-  '@iconify/json@2.2.502':
+  '@iconify/json@2.2.503':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
@@ -6727,9 +6727,9 @@ snapshots:
       stubborn-fs: 2.0.0
       when-exit: 2.1.5
 
-  axios@1.18.1:
+  axios@1.18.1(debug@4.4.3):
     dependencies:
-      follow-redirects: 1.16.0
+      follow-redirects: 1.16.0(debug@4.4.3)
       form-data: 4.0.6
       https-proxy-agent: 5.0.1
       proxy-from-env: 2.1.0
@@ -7532,7 +7532,9 @@ snapshots:
 
   flatted@3.4.2: {}
 
-  follow-redirects@1.16.0: {}
+  follow-redirects@1.16.0(debug@4.4.3):
+    optionalDependencies:
+      debug: 4.4.3
 
   form-data@4.0.6:
     dependencies:
