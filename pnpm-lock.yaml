@@ -121,8 +121,8 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: ^17.1.1
-        version: 17.1.1
+        specifier: ^17.2.0
+        version: 17.2.0
       tailwindcss:
         specifier: ^4.3.3
         version: 4.3.3
@@ -1414,8 +1414,8 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
 
-  '@react-grab/cli@0.1.48':
-    resolution: {integrity: sha512-KXRZFN0b78BeVa4Tq1FC9kiXPpC5lS4pQp/mvQ1azy9dZUJ3zfc7Ei84+yvGh+WoYdceMCFxXfBp6qhU/G056g==}
+  '@react-grab/cli@0.1.49':
+    resolution: {integrity: sha512-fIxIj/uBx+CrF/Tzx5P4q8t9dkKKPvHuvAvVuKBNbzeqWyin7sDIvKDyI+DjjMh+uIZBkXCBBuBYKWdQ8n9drg==}
     hasBin: true
 
   '@rollup/pluginutils@5.4.0':
@@ -2331,6 +2331,11 @@ packages:
 
   bippy@0.5.43:
     resolution: {integrity: sha512-Tvu7b1M7+d8b9/YHaCeODEsi2CgbuoBql+dWSBrNnCuqJ1gMUeY3i0r+319hvjjl5GVBP6FFWxrKnq3fhZER0w==}
+    peerDependencies:
+      react: '>=17.0.1'
+
+  bippy@0.6.1:
+    resolution: {integrity: sha512-ky4m94Y/KfsddjGkKTsV4uFjZqkJjpOjQ2t5gKPdX6XH1MNxMNX5FrVefsxV4lpjemEmEdwe0e0YbzAMNs3oUQ==}
     peerDependencies:
       react: '>=17.0.1'
 
@@ -3446,8 +3451,8 @@ packages:
     resolution: {integrity: sha512-wM1+Z03eypVAVUCE7QdSqpVIvelbOakn1M0bPDoA4SGWPx3sNDVUiMo3L6To6WWGClB7VyXnhQ4Sn7gxiJbE6A==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
-  lint-staged@17.1.1:
-    resolution: {integrity: sha512-FnHWpSe5cPRtrDG+soOuNdBxb4XQb2gN5EqpEWKdweyqyOfpl4QSjbrz3ilcIf0WXmkiNQGZZRQ23R5YtB3TEw==}
+  lint-staged@17.2.0:
+    resolution: {integrity: sha512-FchGnFe4i4B1C/a35SPU9bNGPEHSC1+1iV0plLjzBmKVe9klZrlRfSgK6Cw4VeHyqOXbJUXP0vON61uRftNQ0A==}
     engines: {node: '>=22.22.1'}
     hasBin: true
 
@@ -4170,8 +4175,8 @@ packages:
     peerDependencies:
       react: ^19.2.8
 
-  react-grab@0.1.48:
-    resolution: {integrity: sha512-p3WnmK9LLvXE/c4ITPLlXcP1fkXo2VFEQqK94tIfcHIWKNdqdhYYFyNVioO50HR+uyHIwT63Z4txZDqJlVcD/Q==}
+  react-grab@0.1.49:
+    resolution: {integrity: sha512-D5scfacyKHlEwNIyJVYiwuH2/L5g73vdKrZ49UqhQzfNV1ytdioloKrImW2KIuyPZfRAgYI6WpQrGEXlhov/yQ==}
     hasBin: true
     peerDependencies:
       react: '>=17.0.0'
@@ -6006,7 +6011,7 @@ snapshots:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
-  '@react-grab/cli@0.1.48':
+  '@react-grab/cli@0.1.49':
     dependencies:
       agent-install: 0.0.6
       commander: 14.0.3
@@ -7026,6 +7031,10 @@ snapshots:
   baseline-browser-mapping@2.10.43: {}
 
   bippy@0.5.43(react@19.2.8):
+    dependencies:
+      react: 19.2.8
+
+  bippy@0.6.1(react@19.2.8):
     dependencies:
       react: 19.2.8
 
@@ -8178,7 +8187,7 @@ snapshots:
 
   lines-and-columns@2.0.4: {}
 
-  lint-staged@17.1.1:
+  lint-staged@17.2.0:
     dependencies:
       picomatch: 4.0.5
       string-argv: 0.3.2
@@ -9283,10 +9292,10 @@ snapshots:
       react: 19.2.8
       scheduler: 0.27.0
 
-  react-grab@0.1.48(react@19.2.8):
+  react-grab@0.1.49(react@19.2.8):
     dependencies:
-      '@react-grab/cli': 0.1.48
-      bippy: 0.5.43(react@19.2.8)
+      '@react-grab/cli': 0.1.49
+      bippy: 0.6.1(react@19.2.8)
     optionalDependencies:
       react: 19.2.8
 
@@ -9317,7 +9326,7 @@ snapshots:
       react: 19.2.8
       react-doctor: 0.9.0(@opentelemetry/core@2.9.0(@opentelemetry/api@1.9.1))(@types/react@19.2.17)(eslint@10.7.0(jiti@2.7.0))
       react-dom: 19.2.8(react@19.2.8)
-      react-grab: 0.1.48(react@19.2.8)
+      react-grab: 0.1.49(react@19.2.8)
     optionalDependencies:
       unplugin: 3.3.0(@rspack/core@2.1.5(@swc/helpers@0.5.23))
     transitivePeerDependencies:
