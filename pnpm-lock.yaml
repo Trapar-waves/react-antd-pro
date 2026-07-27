@@ -121,7 +121,7 @@ importers:
         specifier: ^9.1.7
         version: 9.1.7
       lint-staged:
-        specifier: ^17.1.1
+        specifier: ^17.2.0
         version: 17.2.0
       tailwindcss:
         specifier: ^4.3.3
