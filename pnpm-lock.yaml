@@ -21,7 +21,7 @@ importers:
         specifier: ^5.101.4
         version: 5.101.4(react@19.2.8)
       '@tanstack/react-router':
-        specifier: ^1.170.20
+        specifier: ^1.170.21
         version: 1.170.21(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       antd:
         specifier: ^6.5.3
@@ -91,7 +91,7 @@ importers:
         specifier: ^1.167.1
         version: 1.167.1(@tanstack/react-router@1.170.21(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(@tanstack/router-core@1.171.18)(csstype@3.2.3)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       '@tanstack/router-plugin':
-        specifier: ^1.168.25
+        specifier: ^1.168.26
         version: 1.168.26(@rsbuild/core@2.1.10)(@rspack/core@2.1.8(@swc/helpers@0.5.23))(@tanstack/react-router@1.170.21(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       '@types/node':
         specifier: ^24.13.3
