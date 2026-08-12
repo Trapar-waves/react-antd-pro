@@ -11,119 +11,105 @@
 
 [English](../README.md) | [中文](./README-CN.md) | [Русский язык](./README-RU.md)
 
-> React 19とAnt Design Pro 5に基づくエンタープライズアプリケーション開発テンプレートで、TanStackツールチェーン（Router/Query）、Rsbuildビルドツール、Tailwind CSSスタイリングソリューションを統合し、効率的な開発と型安全性に焦点を当てています。
+> React 19 と Ant Design Pro 5 に基づくエンタープライズアプリケーション開発テンプレート。TanStack ツールチェーン（Router/Query）、Rsbuild ビルドツール、Tailwind CSS スタイリングソリューションを統合し、効率的な開発と型安全性に焦点を当てています。
 
 ## ✨ 特徴
 
-- **モダンフレームワーク:** React 19をベースに構築され、コンポーネントベース開発とhooksパターンをサポートします。
-- **エンタープライズUI:** Ant Design 5基本コンポーネント+Ant Design Proビジネスコンポーネント（ProTable/ProFormなどを含む）を統合しています。
-- **型安全性:** 完全なTypeScript開発で、API型定義と状態型チェックをカバーする完全な型システムを提供します。
-- **高速ビルド:** 従来のwebpackの代わりにRsbuildを使用し、開発サーバーのコールドスタートを2秒で実現します。
-- **インテリジェントルーティング:** TanStack Routerによるファイルベースルーティングで、ルート構成を自動生成します（ネストルートをサポート）。
-- **状態管理:** 複雑なReduxの代わりに軽量なZustandを採用し、コンポーザブルなアトミック状態ソリューションを提供します。
-- **データフェッチング:** ラップされたAxiosインスタンス+TanStack Query（v5）により、リクエストの自動キャッシュ/リトライ/ページネーションを実現します。
-- **スタイリングソリューション:** Tailwind CSS v4+CSS Modulesを統合し、テーマ設定とレスポンシブデザインをサポートします。
-- **デバッグツール:** 組み込みのTanStack DevTools（Query/Router）とRsbuildビルド分析パネルを搭載しています。
-- **アニメーション強化:** Motionライブラリを介してトランジションアニメーション（ルート切り替え、コンポーネントの表示/非表示など）を実装します。
+- **モダンフレームワーク：** React 19 をベースに構築され、コンポーネントベース開発と hooks パターンをサポート。
+- **エンタープライズ UI：** Ant Design 5 基本コンポーネント + Ant Design Pro ビジネスコンポーネント（ProTable/ProForm など）を統合。
+- **型安全性：** 完全な TypeScript 開発で、API 型定義と状態型チェックをカバーする完全な型システムを提供。
+- **高速ビルド：** 従来の webpack の代わりに Rsbuild を使用し、開発サーバーのコールドスタートを 2 秒で実現。
+- **インテリジェントルーティング：** TanStack Router によるファイルベースルーティングで、ルート構成を自動生成（ネストルートをサポート）。
+- **状態管理：** 複雑な Redux の代わりに軽量な Zustand を採用し、コンポーザブルなアトミック状態ソリューションを提供。
+- **データフェッチング：** ラップされた Axios インスタンス + TanStack Query（v5）により、リクエストの自動キャッシュ/リトライ/ページネーションを実現。
+- **スタイリングソリューション：** Tailwind CSS v4 + CSS Modules を統合し、テーマ設定とレスポンシブデザインをサポート。
+- **デバッグツール：** 組み込みの TanStack DevTools（Query/Router）と Rsbuild ビルド分析パネルを搭載。
+- **アニメーション強化：** Motion ライブラリを介してトランジションアニメーション（ルート切り替え、コンポーネントの表示/非表示など）を実装。
 
 ## 💻 技術スタック
 
-- **ベースフレームワーク:** `React`：コンポーネントベース開発のコア。
-- **UIコンポーネントライブラリ:** `Ant Design`&`Ant Design Pro`：エンタープライズレベルの基本コンポーネント＆ビジネスコンポーネントライブラリ（ProTable/ProForm）。
-- **状態管理:** `Zustand`：軽量な状態管理ソリューション。
-- **ルーティング:** `TanStack Router`：ファイルベースルーティング+型安全な設定。
-- **データフェッチング:** `Axios`&`TanStack Query`：HTTPクライアントラッパー＆サーバー状態管理（自動キャッシュ/リトライ）。
-- **ビルドツール:** `Rsbuild`：webpackに基づくモダンなビルドツール。
-- **スタイリングソリューション:** `Tailwind CSS`&`CSS Modules`：アトミックCSSフレームワーク＆ローカルスコープコンポーネントスタイル。
-- **型システム:** `TypeScript`：静的型チェック。
-- **デバッグツール:** `TanStack DevTools`：Query/Routerデバッグパネル。
-- **アニメーション:** `Motion`：宣言型アニメーションライブラリ（ルート/コンポーネントトランジション）。
+- **ベースフレームワーク：** `React` — コンポーネントベース開発のコア。
+- **UI コンポーネントライブラリ：** `Ant Design` & `Ant Design Pro` — エンタープライズレベルの基本コンポーネント & ビジネスコンポーネントライブラリ（ProTable/ProForm）。
+- **状態管理：** `Zustand` — 軽量な状態管理ソリューション。
+- **ルーティング：** `TanStack Router` — ファイルベースルーティング + 型安全な設定。
+- **データフェッチング：** `Axios` & `TanStack Query` — HTTP クライアントラッパー & サーバー状態管理（自動キャッシュ/リトライ）。
+- **ビルドツール：** `Rsbuild` — webpack に基づくモダンなビルドツール。
+- **スタイリングソリューション：** `Tailwind CSS` & `CSS Modules` — アトミック CSS フレームワーク & ローカルスコープコンポーネントスタイル。
+- **型システム：** `TypeScript` — 静的型チェック。
+- **デバッグツール：** `TanStack DevTools` — Query/Router デバッグパネル。
+- **アニメーション：** `Motion` — 宣言型アニメーションライブラリ（ルート/コンポーネントトランジション）。
 
-依存関係の完全なリストについては[package.json](../package.json)を参照してください。
+依存関係の完全なリストは [package.json](../package.json) を参照してください。
 
-## 🚀 始め方
-
-以下の手順に従ってプロジェクトをローカルで実行してください。
+## 🚀 はじめに
 
 ### 前提条件
 
-以下がインストールされていることを確認してください：
-
-- Node.js (推奨バージョン >= 18.x)
-- パッケージマネージャー (npm, yarn または pnpm)
-
-```bash
-node -v
-npm -v
-```
+- Node.js（>= 18.x 推奨）
+- パッケージマネージャー（npm、yarn、または pnpm）
 
 ### インストール
 
-スクリプトの実行
+1. テンプレートを使用して新しいプロジェクトを作成：
 
-```bash
-pnpm create trapar-waves
+   ```bash
+   pnpm create trapar-waves
+   ```
+
+2. プロジェクトディレクトリに移動し、依存関係をインストール：
+
+   ```bash
+   pnpm install
+   ```
+
+3. 開発サーバーを起動：
+
+   ```bash
+   pnpm dev
+   ```
+
+## 📁 プロジェクト構造
+
+```
+├── public/             # 静的アセット
+├── mock/               # 開発用モックデータ
+├── src/                # ソースコード
+│   ├── api/            # API 層（Axios インスタンス、型定義）
+│   ├── hooks/          # カスタム React hooks
+│   ├── layout/         # アプリケーションレイアウトコンポーネント
+│   ├── pages/          # ページレベルコンポーネント
+│   ├── routes/         # TanStack Router ファイルベースルート
+│   ├── store/          # Zustand 状態管理
+│   ├── themes/         # テーマ設定
+│   ├── global.css      # グローバルスタイルと Tailwind インポート
+│   ├── index.tsx       # エントリーポイント
+│   └── router.ts       # ルーター設定
+├── rsbuild.config.ts   # Rsbuild 設定
+├── tsconfig.json       # TypeScript 設定
+├── eslint.config.js    # ESLint 設定
+└── package.json        # プロジェクトの依存関係とスクリプト
 ```
 
-依存関係のインストール
+## 🤝 コントリビュート
 
-```bash
-npm install
-yarn install
-pnpm install
-```
+コントリビュートを歓迎します！以下の手順に従ってコントリビュートしてください：
 
-### 開発
+1. リポジトリをフォーク
+2. 機能ブランチを作成（`git checkout -b feature/amazing-feature`）
+3. 変更をコミット（`git commit -m 'Add some amazing feature'`）
+4. ブランチにプッシュ（`git push origin feature/amazing-feature`）
+5. Pull Request を作成
 
-開発サーバーの起動：
+## 📄 ライセンス
 
-```bash
-npm run dev
-yarn dev
-pnpm dev
-```
+MIT License © 2025 Trapar Waves
 
-本番ビルド：
+## 👤 作者
 
-```bash
-npm run build
-yarn build
-pnpm build
-```
+- **Rikka：** [admin@rikka.cc](mailto:admin@rikka.cc)
+- **GitHub プロフィール：** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
-本番ビルドのプレビュー：
+## 🔗 リンク
 
-```bash
-npm run preview
-yarn preview
-pnpm preview
-```
-
-コードチェック：
-
-```bash
-npm run lint
-yarn lint
-pnpm lint
-```
-
-## 🤝 コントリビューション
-
-貢献は歓迎され、非常に高く評価されています！貢献するには以下の手順に従ってください：
-
-1. リポジトリをフォークする
-2. 機能ブランチを作成する（`git checkout -b feature/amazing-feature`）
-3. 変更をコミットする（`git commit -m 'Add some amazing feature'`）
-4. ブランチにプッシュする（`git push origin feature/amazing-feature`）
-5. Pull Requestを開く
-
-## 👤 Author
-
-- **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
-- **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
-
-## 🔗 Links
-
-- **リポジトリ:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
-- **ホームページ:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
-- **イシュー:** [https://github.com/Trapar-waves/react-antd-pro/issues](https://github.com/Trapar-waves/react-antd-pro/issues)
+- **リポジトリ：** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
+- **Issues：** [https://github.com/Trapar-waves/react-antd-pro/issues](https://github.com/Trapar-waves/react-antd-pro/issues)

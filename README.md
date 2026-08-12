@@ -26,103 +26,68 @@
 - **Debugging Tools:** Built-in TanStack DevTools (Query/Router) and Rsbuild build analysis panel.
 - **Animation Enhancement:** Implements transition animations (e.g., route switching, component show/hide) via Motion library.
 
-## GitHub Pages
-
-Pushing a version tag matching `v*` runs [`.github/workflows/pages.yml`](./.github/workflows/pages.yml), which builds with `BASE_PATH=/<repository-name>/` and **`PUBLIC_STATIC_API=true`** (in-browser mock for `/api/login` and `/api/table`, same behavior as the dev-server mock), copies `dist/index.html` to `dist/404.html` for SPA routing, and deploys to GitHub Pages. In the repository **Settings → Pages**, set **Source** to **GitHub Actions** once.
-
-Local preview matching the Pages bundle (subpath + static API):
-
-```bash
-BASE_PATH=/react-antd-pro/ PUBLIC_STATIC_API=true pnpm run build && pnpm preview
-```
-
-PowerShell:
-
-```powershell
-$env:BASE_PATH="/react-antd-pro/"; $env:PUBLIC_STATIC_API="true"; pnpm run build; pnpm preview
-```
-
-Deploys with a real backend should **not** set `PUBLIC_STATIC_API`; keep the default `axios` `baseURL` as `\<BASE_URL>api` and point your reverse proxy or `server.proxy` at your API.
-
 ## 💻 Tech Stack
 
-- **Base Framework:** `React`: Core for component-based development.
-- **UI Component Library:** `Ant Design` & `Ant Design Pro`: Enterprise-level basic components & Business component library (ProTable/ProForm).
-- **State Management:** `Zustand`: Lightweight state management solution.
-- **Routing:** `TanStack Router`: File-based routing + type-safe config.
-- **Data Fetching:** `Axios` & `TanStack Query`: HTTP client wrapper & Server state management (auto-cache/retry).
-- **Build Tool:** `Rsbuild`: Modern build tool based on webpack.
-- **Styling Solution:** `Tailwind CSS` & `CSS Modules`: Atomic CSS framework & Local scoped component styles.
-- **Type System:** `TypeScript`: Static type checking.
-- **Debugging Tools:** `TanStack DevTools`: Query/Router debugging panel.
-- **Animation:** `Motion`: Declarative animation library (route/component transitions).
+- **Base Framework:** `React` — Core for component-based development.
+- **UI Component Library:** `Ant Design` & `Ant Design Pro` — Enterprise-level basic components & business component library (ProTable/ProForm).
+- **State Management:** `Zustand` — Lightweight state management solution.
+- **Routing:** `TanStack Router` — File-based routing + type-safe config.
+- **Data Fetching:** `Axios` & `TanStack Query` — HTTP client wrapper & server state management (auto-cache/retry).
+- **Build Tool:** `Rsbuild` — Modern build tool based on webpack.
+- **Styling Solution:** `Tailwind CSS` & `CSS Modules` — Atomic CSS framework & local scoped component styles.
+- **Type System:** `TypeScript` — Static type checking.
+- **Debugging Tools:** `TanStack DevTools` — Query/Router debugging panel.
+- **Animation:** `Motion` — Declarative animation library (route/component transitions).
 
 See the [package.json](./package.json) for a full list of dependencies.
 
 ## 🚀 Getting Started
 
-Follow these instructions to get the project running locally.
-
 ### Prerequisites
-
-Ensure you have the following installed:
 
 - Node.js (>= 18.x recommended)
 - Package manager (npm, yarn, or pnpm)
 
-```bash
-node -v
-npm -v
-```
-
 ### Installation
 
-Run script
+1. Create a new project using the template:
 
-```bash
-pnpm create trapar-waves
+   ```bash
+   pnpm create trapar-waves
+   ```
+
+2. Navigate to your project directory and install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   pnpm dev
+   ```
+
+## 📁 Project Structure
+
 ```
-
-Install dependencies
-
-```bash
-npm install
-yarn install
-pnpm install
-```
-
-### Development
-
-Start the development server:
-
-```bash
-npm run dev
-yarn dev
-pnpm dev
-```
-
-Build for production:
-
-```bash
-npm run build
-yarn build
-pnpm build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-yarn preview
-pnpm preview
-```
-
-Lint the code:
-
-```bash
-npm run lint
-yarn lint
-pnpm lint
+├── public/             # Static assets
+├── mock/               # Mock data for development
+├── src/                # Source code
+│   ├── api/            # API layer (Axios instance, type definitions)
+│   ├── hooks/          # Custom React hooks
+│   ├── layout/         # Application layout components
+│   ├── pages/          # Page-level components
+│   ├── routes/         # TanStack Router file-based routes
+│   ├── store/          # Zustand state management
+│   ├── themes/         # Theme configuration
+│   ├── global.css      # Global styles and Tailwind imports
+│   ├── index.tsx       # Entry point
+│   └── router.ts       # Router configuration
+├── rsbuild.config.ts   # Rsbuild configuration
+├── tsconfig.json       # TypeScript configuration
+├── eslint.config.js    # ESLint configuration
+└── package.json        # Project dependencies and scripts
 ```
 
 ## 🤝 Contributing
@@ -135,6 +100,10 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## 📄 License
+
+MIT License © 2025 Trapar Waves
+
 ## 👤 Author
 
 - **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
@@ -143,5 +112,4 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 ## 🔗 Links
 
 - **Repository:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
-- **Homepage:** [https://github.com/Trapar-waves/react-antd-pro](https://github.com/Trapar-waves/react-antd-pro)
 - **Issues:** [https://github.com/Trapar-waves/react-antd-pro/issues](https://github.com/Trapar-waves/react-antd-pro/issues)
