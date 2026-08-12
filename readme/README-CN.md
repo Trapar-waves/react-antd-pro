@@ -13,6 +13,10 @@
 
 > 基于 React 19 和 Ant Design Pro 5 的企业级应用开发模板，集成 TanStack 工具链（Router/Query）、Rsbuild 构建工具和 Tailwind CSS 样式方案，专注于高效开发与类型安全。
 
+![react-antd-pro hero](../assets/readme/hero.svg)
+
+![Features](../assets/readme/headers/features.svg)
+
 ## ✨ 特性
 
 - **现代框架：** 构建于 React 19 之上，支持组件化开发和 hooks 模式。
@@ -25,6 +29,8 @@
 - **样式方案：** 集成 Tailwind CSS v4 + CSS Modules，支持主题配置和响应式设计。
 - **调试工具：** 内置 TanStack DevTools（Query/Router）和 Rsbuild 构建分析面板。
 - **动画增强：** 通过 Motion 库实现过渡动画（如路由切换、组件显隐）。
+
+![Tech Stack](../assets/readme/headers/tech-stack.svg)
 
 ## 💻 技术栈
 
@@ -40,6 +46,8 @@
 - **动画效果：** `Motion` — 声明式动画库（路由/组件过渡）。
 
 查看 [package.json](../package.json) 获取完整的依赖列表。
+
+![Getting Started](../assets/readme/headers/getting-started.svg)
 
 ## 🚀 快速开始
 
@@ -68,6 +76,8 @@
    pnpm dev
    ```
 
+![Project Structure](../assets/readme/headers/project-structure.svg)
+
 ## 📁 项目结构
 
 ```
@@ -90,6 +100,8 @@
 └── package.json        # 项目依赖和脚本
 ```
 
+![Contributing](../assets/readme/headers/contributing.svg)
+
 ## 🤝 贡献
 
 欢迎贡献，非常感谢！请按照以下步骤贡献：
@@ -99,6 +111,8 @@
 3. 提交更改（`git commit -m 'Add some amazing feature'`）
 4. 推送到分支（`git push origin feature/amazing-feature`）
 5. 创建 Pull Request
+
+![License](../assets/readme/headers/license.svg)
 
 ## 📄 许可证
 

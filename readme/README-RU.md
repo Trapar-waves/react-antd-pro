@@ -13,6 +13,10 @@
 
 > Шаблон разработки корпоративных приложений на базе React 19 и Ant Design Pro 5, интегрирующий инструментарий TanStack (Router/Query), инструмент сборки Rsbuild и решение для стилизации Tailwind CSS, сосредоточенный на эффективной разработке и безопасности типов.
 
+![react-antd-pro hero](../assets/readme/hero.svg)
+
+![Features](../assets/readme/headers/features.svg)
+
 ## ✨ Возможности
 
 - **Современный фреймворк:** Строится на React 19, поддерживая компонентно-ориентированную разработку и паттерн хуков.
@@ -25,6 +29,8 @@
 - **Решение для стилизации:** Интегрированный Tailwind CSS v4 + CSS Modules, поддерживающий конфигурацию темы и адаптивный дизайн.
 - **Инструменты отладки:** Встроенные TanStack DevTools (Query/Router) и панель анализа сборки Rsbuild.
 - **Улучшение анимации:** Реализует переходные анимации (например, переключение роутов, отображение/скрытие компонентов) через библиотеку Motion.
+
+![Tech Stack](../assets/readme/headers/tech-stack.svg)
 
 ## 💻 Технологический стек
 
@@ -40,6 +46,8 @@
 - **Анимация：** `Motion` — Декларативная библиотека анимаций (переходы роутов/компонентов).
 
 Полный список зависимостей смотрите в [package.json](../package.json).
+
+![Getting Started](../assets/readme/headers/getting-started.svg)
 
 ## 🚀 Начало работы
 
@@ -68,7 +76,9 @@
    pnpm dev
    ```
 
-## 📁 Структура проекта
+![Project Structure](../assets/readme/headers/project-structure.svg)
+
+## 📁 Структура项目
 
 ```
 ├── public/             # Статические ресурсы
@@ -90,6 +100,8 @@
 └── package.json        # Зависимости и скрипты проекта
 ```
 
+![Contributing](../assets/readme/headers/contributing.svg)
+
 ## 🤝 Участие в разработке
 
 Участие приветствуется и высоко ценится! Пожалуйста, следуйте этим шагам для вклада:
@@ -99,6 +111,8 @@
 3. Зафиксируйте изменения (`git commit -m 'Add some amazing feature'`)
 4. Отправьте изменения в ветку (`git push origin feature/amazing-feature`)
 5. Откройте Pull Request
+
+![License](../assets/readme/headers/license.svg)
 
 ## 📄 Лицензия
 
