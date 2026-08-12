@@ -17,8 +17,6 @@
 
 ![Features](../assets/readme/headers/features.svg)
 
-## ✨ 特性
-
 - **现代框架：** 构建于 React 19 之上，支持组件化开发和 hooks 模式。
 - **企业级 UI：** 集成 Ant Design 5 基础组件 + Ant Design Pro 业务组件（包含 ProTable/ProForm 等）。
 - **类型安全：** 全 TypeScript 开发，完整的类型系统覆盖 API 类型定义和状态类型检查。
@@ -31,8 +29,6 @@
 - **动画增强：** 通过 Motion 库实现过渡动画（如路由切换、组件显隐）。
 
 ![Tech Stack](../assets/readme/headers/tech-stack.svg)
-
-## 💻 技术栈
 
 - **基础框架：** `React` — 组件化开发核心。
 - **UI 组件库：** `Ant Design` & `Ant Design Pro` — 企业级基础组件 & 业务组件库（ProTable/ProForm）。
@@ -48,8 +44,6 @@
 查看 [package.json](../package.json) 获取完整的依赖列表。
 
 ![Getting Started](../assets/readme/headers/getting-started.svg)
-
-## 🚀 快速开始
 
 ### 前置条件
 
@@ -78,8 +72,6 @@
 
 ![Project Structure](../assets/readme/headers/project-structure.svg)
 
-## 📁 项目结构
-
 ```
 ├── public/             # 静态资源
 ├── mock/               # 开发用模拟数据
@@ -102,8 +94,6 @@
 
 ![Contributing](../assets/readme/headers/contributing.svg)
 
-## 🤝 贡献
-
 欢迎贡献，非常感谢！请按照以下步骤贡献：
 
 1. Fork 仓库
@@ -113,8 +103,6 @@
 5. 创建 Pull Request
 
 ![License](../assets/readme/headers/license.svg)
-
-## 📄 许可证
 
 MIT License © 2025 Trapar Waves
 

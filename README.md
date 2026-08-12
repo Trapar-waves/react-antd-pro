@@ -17,8 +17,6 @@
 
 ![Features](assets/readme/headers/features.svg)
 
-## ✨ Features
-
 - **Modern Framework:** Built on React 19, supporting component-based development and hooks pattern.
 - **Enterprise UI:** Integrates Ant Design 5 basic components + Ant Design Pro business components (including ProTable/ProForm, etc.).
 - **Type Safety:** Full TypeScript development with complete type systems covering API type definitions and state type checks.
@@ -31,8 +29,6 @@
 - **Animation Enhancement:** Implements transition animations (e.g., route switching, component show/hide) via Motion library.
 
 ![Tech Stack](assets/readme/headers/tech-stack.svg)
-
-## 💻 Tech Stack
 
 - **Base Framework:** `React` — Core for component-based development.
 - **UI Component Library:** `Ant Design` & `Ant Design Pro` — Enterprise-level basic components & business component library (ProTable/ProForm).
@@ -48,8 +44,6 @@
 See the [package.json](./package.json) for a full list of dependencies.
 
 ![Getting Started](assets/readme/headers/getting-started.svg)
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -78,8 +72,6 @@ See the [package.json](./package.json) for a full list of dependencies.
 
 ![Project Structure](assets/readme/headers/project-structure.svg)
 
-## 📁 Project Structure
-
 ```
 ├── public/             # Static assets
 ├── mock/               # Mock data for development
@@ -102,8 +94,6 @@ See the [package.json](./package.json) for a full list of dependencies.
 
 ![Contributing](assets/readme/headers/contributing.svg)
 
-## 🤝 Contributing
-
 Contributions are welcome and greatly appreciated! Please follow these steps to contribute:
 
 1. Fork the repository
@@ -113,8 +103,6 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 5. Open a Pull Request
 
 ![License](assets/readme/headers/license.svg)
-
-## 📄 License
 
 MIT License © 2025 Trapar Waves
 

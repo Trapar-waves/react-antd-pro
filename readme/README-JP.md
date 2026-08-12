@@ -17,8 +17,6 @@
 
 ![Features](../assets/readme/headers/features.svg)
 
-## ✨ 特徴
-
 - **モダンフレームワーク：** React 19 をベースに構築され、コンポーネントベース開発と hooks パターンをサポート。
 - **エンタープライズ UI：** Ant Design 5 基本コンポーネント + Ant Design Pro ビジネスコンポーネント（ProTable/ProForm など）を統合。
 - **型安全性：** 完全な TypeScript 開発で、API 型定義と状態型チェックをカバーする完全な型システムを提供。
@@ -31,8 +29,6 @@
 - **アニメーション強化：** Motion ライブラリを介してトランジションアニメーション（ルート切り替え、コンポーネントの表示/非表示など）を実装。
 
 ![Tech Stack](../assets/readme/headers/tech-stack.svg)
-
-## 💻 技術スタック
 
 - **ベースフレームワーク：** `React` — コンポーネントベース開発のコア。
 - **UI コンポーネントライブラリ：** `Ant Design` & `Ant Design Pro` — エンタープライズレベルの基本コンポーネント & ビジネスコンポーネントライブラリ（ProTable/ProForm）。
@@ -48,8 +44,6 @@
 依存関係の完全なリストは [package.json](../package.json) を参照してください。
 
 ![Getting Started](../assets/readme/headers/getting-started.svg)
-
-## 🚀 はじめに
 
 ### 前提条件
 
@@ -78,8 +72,6 @@
 
 ![Project Structure](../assets/readme/headers/project-structure.svg)
 
-## 📁 プロジェクト構造
-
 ```
 ├── public/             # 静的アセット
 ├── mock/               # 開発用モックデータ
@@ -102,8 +94,6 @@
 
 ![Contributing](../assets/readme/headers/contributing.svg)
 
-## 🤝 コントリビュート
-
 コントリビュートを歓迎します！以下の手順に従ってコントリビュートしてください：
 
 1. リポジトリをフォーク
@@ -113,8 +103,6 @@
 5. Pull Request を作成
 
 ![License](../assets/readme/headers/license.svg)
-
-## 📄 ライセンス
 
 MIT License © 2025 Trapar Waves
 
