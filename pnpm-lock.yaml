@@ -5,7 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 overrides:
-  unplugin: '>=2.3.0'
+  unplugin: '>=2.3.11'
 
 importers:
 
