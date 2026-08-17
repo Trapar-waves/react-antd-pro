@@ -80,7 +80,7 @@
     "lint-staged": "^17.3.0",
     "rspack-plugin-mock": "^2.2.0",
     "tailwindcss": "^4.3.3",
-    "typescript": "^5.9.3",
+    "typescript": "^7.0.2",
     "unplugin-turbo-console": "^2.3.3"
   }
 }
