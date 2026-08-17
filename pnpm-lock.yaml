@@ -42,10 +42,10 @@ importers:
         specifier: ^12.34.2
         version: 12.43.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react:
-        specifier: ^19.2.4
+        specifier: ^19.2.8
         version: 19.2.8
       react-dom:
-        specifier: ^19.2.4
+        specifier: ^19.2.8
         version: 19.2.8(react@19.2.8)
       react-scan:
         specifier: ^0.5.7
@@ -97,10 +97,10 @@ importers:
         specifier: ^1.161.1
         version: 1.168.32(@rsbuild/core@1.7.6)(@rspack/core@1.7.12(@swc/helpers@0.5.23))(@tanstack/react-router@1.170.29(react-dom@19.2.8(react@19.2.8))(react@19.2.8))
       '@types/react':
-        specifier: ^19.2.14
+        specifier: ^19.2.18
         version: 19.2.18
       '@types/react-dom':
-        specifier: ^19.2.3
+        specifier: ^19.2.4
         version: 19.2.4(@types/react@19.2.18)
       eslint:
         specifier: ^10.0.0
