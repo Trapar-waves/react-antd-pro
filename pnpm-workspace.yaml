@@ -1,5 +1,11 @@
-minimumReleaseAge: 0
-
 allowBuilds:
   esbuild: true
-  msgpackr-extract: true
+
+minimumReleaseAge: 0
+
+onlyBuiltDependencies:
+  - "@tailwindcss/oxide"
+  - core-js
+  - esbuild
+
+autoInstallPeers: true

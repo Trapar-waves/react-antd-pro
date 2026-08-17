@@ -1,5 +1,4 @@
-import type { TableListParams } from "../../../api/table/table.api";
-import type { TableListItem } from "../../../api/table/table.api";
+import type { TableListItem, TableListParams } from "../../../api/table/table.api";
 import { ProTable } from "@ant-design/pro-components";
 import { useQuery } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";

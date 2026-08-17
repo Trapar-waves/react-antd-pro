@@ -34,4 +34,10 @@ export default antfu({
   rules: {
     "pnpm/yaml-enforce-settings": "off",
   },
+}, {
+  name: "trapar/tanstack-router-routes",
+  files: ["src/routes/**/*.tsx"],
+  rules: {
+    "react-refresh/only-export-components": "off",
+  },
 });

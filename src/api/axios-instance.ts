@@ -54,7 +54,8 @@ async function request<ResponseType = unknown>(url: string, options?: AxiosReque
   if (useStaticApi) {
     return staticApiRequest<ResponseType>(url, options);
   }
-  return AxiosInstance<unknown, ResponseType>(url, options);
+  const response = await AxiosInstance<ResponseType>(url, options);
+  return response.data;
 }
 
 interface ResponsePagination<T> {
