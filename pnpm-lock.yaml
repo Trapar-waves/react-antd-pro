@@ -112,7 +112,7 @@ importers:
         specifier: ^7.0.1
         version: 7.1.1(eslint@10.8.1(jiti@2.7.0))
       eslint-plugin-react-refresh:
-        specifier: ^0.5.0
+        specifier: ^0.5.4
         version: 0.5.4(eslint@10.8.1(jiti@2.7.0))
       husky:
         specifier: ^9.1.7
