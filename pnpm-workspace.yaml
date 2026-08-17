@@ -1,11 +1,11 @@
-allowBuilds:
-  esbuild: true
-
 minimumReleaseAge: 0
+
+autoInstallPeers: true
 
 onlyBuiltDependencies:
   - "@tailwindcss/oxide"
   - core-js
   - esbuild
 
-autoInstallPeers: true
+allowBuilds:
+  esbuild: set this to true or false
