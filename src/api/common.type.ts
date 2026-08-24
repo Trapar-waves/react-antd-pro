@@ -1,4 +1,4 @@
-export interface CommonPaginationParam {
+export interface CommonPaginationParameter {
   current: number;
   pageSize: number;
 }

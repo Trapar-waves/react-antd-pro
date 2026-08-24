@@ -1,42 +1,28 @@
-import antfu from "@antfu/eslint-config";
-import pluginQuery from "@tanstack/eslint-plugin-query";
-import pluginRouter from "@tanstack/eslint-plugin-router";
+import { rentonReact } from "@renton/eslint-config-react";
 
-export default antfu({
+export default rentonReact({
   stylistic: {
     quotes: "double",
     semi: true,
   },
-  markdown: true,
-  jsonc: true,
-  test: true,
-  typescript: true,
-  yaml: true,
-  react: true,
-  formatters: {
-    markdown: "prettier",
-  },
+  tanstackQuery: true,
+  tanstackRouter: true,
 }, {
   files: ["**/*.ts", "**/*.tsx"],
-  plugins: {
-    "@tanstack/router": pluginRouter,
-    "@tanstack/query": pluginQuery,
-  },
   rules: {
-    "antfu/top-level-function": "off",
-    "func-style": ["error", "declaration", { allowArrowFunctions: true }],
-    "@tanstack/router/create-route-property-order": "warn",
     "@tanstack/query/exhaustive-deps": "error",
+    "@tanstack/router/create-route-property-order": "warn",
+    "func-style": ["error", "declaration", { allowArrowFunctions: true }],
   },
 }, {
-  name: "trapar/pnpm-workspace-yaml-trust-policy",
   files: ["pnpm-workspace.yaml"],
+  name: "trapar/pnpm-workspace-yaml-trust-policy",
   rules: {
     "pnpm/yaml-enforce-settings": "off",
   },
 }, {
-  name: "trapar/tanstack-router-routes",
   files: ["src/routes/**/*.tsx"],
+  name: "trapar/tanstack-router-routes",
   rules: {
     "react-refresh/only-export-components": "off",
   },

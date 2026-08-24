@@ -8,15 +8,15 @@ export function CatchAllPage() {
   const { token } = useAuthStore();
 
   useEffect(() => {
-    if (!token) {
-      navigate({ to: "/login" }).then();
+    if (token) {
+      void navigate({ to: "/layout/welcome" });
     }
     else {
-      navigate({ to: "/layout/welcome" }).then();
+      void navigate({ to: "/login" });
     }
   }, [navigate, token]);
   return (
-    <Flex justify="center" align="center" className="h-screen w-screen">
+    <Flex align="center" className="h-screen w-screen" justify="center">
       <Spin size="large" />
     </Flex>
   );

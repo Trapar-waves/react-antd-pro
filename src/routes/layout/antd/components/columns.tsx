@@ -1,66 +1,63 @@
 import type { ProColumns } from "@ant-design/pro-components";
-import type { TableListItem } from "../../../../api/table/table.api";
 import { TableDropdown } from "@ant-design/pro-components";
 import { Input } from "antd";
+import type { TableListItem } from "../../../../api/table/table.api";
 
 export const columns: ProColumns<TableListItem>[] = [
   {
-    title: "排序",
     dataIndex: "index",
+    title: "排序",
     valueType: "indexBorder",
     width: 48,
   },
   {
-    title: "应用名称",
     dataIndex: "name",
-    render: _ => <a>{_}</a>,
     // 自定义筛选项功能具体实现请参考 https://ant.design/components/table-cn/#components-table-demo-custom-filter-panel
     filterDropdown: () => (
       <div style={{ padding: 8 }}>
-        <Input style={{ width: 188, marginBlockEnd: 8, display: "block" }} />
+        <Input style={{ display: "block", marginBlockEnd: 8, width: 188 }} />
       </div>
     ),
     filterIcon: filtered => (
       <span className="icon-[ant-design--search-outlined]" style={{ color: filtered ? "#1890ff" : undefined }} />
     ),
+    render: _ => <a>{_}</a>,
+    title: "应用名称",
   },
   {
-    title: "创建者",
     dataIndex: "creator",
+    title: "创建者",
     valueEnum: {
       all: { text: "全部" },
       付小小: { text: "付小小" },
+      兼某某: { text: "兼某某" },
       曲丽丽: { text: "曲丽丽" },
       林东东: { text: "林东东" },
       陈帅帅: { text: "陈帅帅" },
-      兼某某: { text: "兼某某" },
     },
   },
   {
-    title: "状态",
     dataIndex: "status",
-    initialValue: "all",
     filters: true,
+    initialValue: "all",
     onFilter: true,
+    title: "状态",
     valueEnum: {
-      all: { text: "全部", status: "Default" },
-      close: { text: "关闭", status: "Default" },
-      running: { text: "运行中", status: "Processing" },
-      online: { text: "已上线", status: "Success" },
-      error: { text: "异常", status: "Error" },
+      all: { status: "Default", text: "全部" },
+      close: { status: "Default", text: "关闭" },
+      error: { status: "Error", text: "异常" },
+      online: { status: "Success", text: "已上线" },
+      running: { status: "Processing", text: "运行中" },
     },
   },
   {
-    title: "备注",
+    copyable: true,
     dataIndex: "memo",
     ellipsis: true,
-    copyable: true,
+    title: "备注",
   },
   {
-    title: "操作",
-    width: 180,
     key: "option",
-    valueType: "option",
     render: () => [
       <a key="link">链路</a>,
       <a key="link2">报警</a>,
@@ -73,5 +70,8 @@ export const columns: ProColumns<TableListItem>[] = [
         ]}
       />,
     ],
+    title: "操作",
+    valueType: "option",
+    width: 180,
   },
 ];

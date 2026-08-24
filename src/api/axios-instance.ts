@@ -8,35 +8,39 @@ import { staticApiRequest } from "./static-client.ts";
 const basePrefix = (import.meta.env.BASE_URL ?? "/").replace(/\/$/, "");
 const apiBaseUrl = basePrefix ? `${basePrefix}/api` : "/api";
 
-const useStaticApi = import.meta.env.PUBLIC_STATIC_API === "true";
+const isUseStaticApi = import.meta.env.PUBLIC_STATIC_API === "true";
 
 const AxiosInstance = axios.create({
-  timeout: 10000,
   baseURL: apiBaseUrl,
+  timeout: 10000,
 });
 
+// eslint-disable-next-line unicorn/no-top-level-side-effects -- axios interceptors must be registered at module level
 AxiosInstance.interceptors.response.use(
   (response) => {
     switch (response?.status) {
       case 200:
-      case 201:
-        return Promise.resolve(response.data?.body ? response.data?.body : response.data);
-      default:
+      case 201: {
+        return Promise.resolve(response.data?.body ?? response.data);
+      }
+      default: {
         return Promise.reject(response);
+      }
     }
   },
   (error) => {
     if (error?.response?.data?.message) {
-      message.error(error.response.data.message).then();
+      void message.error(error.response.data.message);
     }
     else if (error?.response?.status === 401) {
       useAuthStore.getState().updateToken("");
-      router.navigate({ to: "/login" }).then();
+      void router.navigate({ to: "/login" });
       return;
     }
     return Promise.reject(error);
   },
 );
+// eslint-disable-next-line unicorn/no-top-level-side-effects -- axios interceptors must be registered at module level
 AxiosInstance.interceptors.request.use(
   (config) => {
     const token = useAuthStore.getState().token;
@@ -50,16 +54,16 @@ AxiosInstance.interceptors.request.use(
   },
 );
 
+interface ResponsePagination<T> {
+  data: T[];
+  total: number;
+}
+
 async function request<ResponseType = unknown>(url: string, options?: AxiosRequestConfig): Promise<ResponseType> {
-  if (useStaticApi) {
+  if (isUseStaticApi) {
     return staticApiRequest<ResponseType>(url, options);
   }
   const response = await AxiosInstance<ResponseType>(url, options);
   return response.data;
-}
-
-interface ResponsePagination<T> {
-  data: T[];
-  total: number;
 }
 export { AxiosInstance, request, type ResponsePagination };

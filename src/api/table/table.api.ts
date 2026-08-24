@@ -1,25 +1,25 @@
 import type { ResponsePagination } from "../axios-instance.ts";
-import type { CommonPaginationParam } from "../common.type.ts";
+import type { CommonPaginationParameter } from "../common.type.ts";
 import { request } from "../axios-instance.ts";
 
 export interface TableListItem {
-  key: number;
-  name: string;
   containers: number;
-  creator: string;
-  status: string;
   createdAt: number;
-  progress: number;
-  money: number;
+  creator: string;
+  key: number;
   memo: string;
+  money: number;
+  name: string;
+  progress: number;
+  status: string;
 }
 
-export interface TableListParams {
-  name?: string;
+export interface TableListParameters {
   creator?: string;
+  name?: string;
   status?: string;
 }
 
-export function getTableList(params: TableListParams & CommonPaginationParam) {
-  return request<ResponsePagination<TableListItem>>("table", { params });
+export function getTableList(parameters: CommonPaginationParameter & TableListParameters) {
+  return request<ResponsePagination<TableListItem>>("table", { params: parameters });
 }

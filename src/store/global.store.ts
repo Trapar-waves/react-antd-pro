@@ -1,14 +1,14 @@
 import { immer } from "zustand/middleware/immer";
 import { create } from "zustand/react";
 
-interface GlobalStoreState {
-  redirectUrl: string;
-}
-
 interface GlobalStoreAction {
   updateRedirectUrl: (url: string) => void;
 }
-export const useGlobalStore = create(immer<GlobalStoreState & GlobalStoreAction>(
+
+interface GlobalStoreState {
+  redirectUrl: string;
+}
+export const useGlobalStore = create(immer<GlobalStoreAction & GlobalStoreState>(
   set => ({
     redirectUrl: "",
     updateRedirectUrl: (url: string) => {

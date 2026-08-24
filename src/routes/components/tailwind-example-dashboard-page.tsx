@@ -18,14 +18,14 @@ export function TailwindExampleDashboardPage() {
               <svg
                 className="h-4 w-4 text-white"
                 fill="none"
-                viewBox="0 0 24 24"
                 stroke="currentColor"
+                viewBox="0 0 24 24"
               >
                 <path
+                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
                   stroke-linecap="round"
                   stroke-linejoin="round"
                   stroke-width="2"
-                  d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
                 >
                 </path>
               </svg>
@@ -110,35 +110,35 @@ export function TailwindExampleDashboardPage() {
             <svg
               className="h-4 w-4 text-slate-400"
               fill="none"
-              viewBox="0 0 24 24"
               stroke="currentColor"
+              viewBox="0 0 24 24"
             >
               <path
+                d="M19 9l-7 7-7-7"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M19 9l-7 7-7-7"
               >
               </path>
             </svg>
           </div>
 
           <button
-            type="button"
             className="flex items-center gap-1 rounded-lg bg-gradient-to-r from-indigo-500 to-purple-500 px-3 py-1 text-xs font-medium text-white transition-all duration-300 hover:from-indigo-600 hover:to-purple-600"
+            type="button"
           >
             View Details
             <svg
               className="h-3 w-3"
               fill="none"
-              viewBox="0 0 24 24"
               stroke="currentColor"
+              viewBox="0 0 24 24"
             >
               <path
+                d="M9 5l7 7-7 7"
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 stroke-width="2"
-                d="M9 5l7 7-7 7"
               >
               </path>
             </svg>

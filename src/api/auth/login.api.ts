@@ -1,5 +1,5 @@
 import { request } from "../axios-instance.ts";
 
-export function Login({ username, password }: { username: string; password: string }) {
-  return request<string>("login", { method: "post", data: { username, password } });
+export function Login({ password, username }: { password: string; username: string }) {
+  return request<string>("login", { data: { password, username }, method: "post" });
 }

@@ -5,10 +5,10 @@ import { useEffect } from "react";
 export function LayoutCatchAllPage() {
   const navigate = useNavigate();
   useEffect(() => {
-    navigate({ to: "/layout/welcome" }).then();
+    void navigate({ to: "/layout/welcome" });
   }, [navigate]);
   return (
-    <Flex justify="center" align="center" className="h-screen w-screen">
+    <Flex align="center" className="h-screen w-screen" justify="center">
       <Spin size="large" />
     </Flex>
   );

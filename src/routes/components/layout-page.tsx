@@ -6,15 +6,13 @@ export function LayoutPage() {
   const matches = useRouterState({ select: s => s.location });
   const navigate = useNavigate();
   function handleNavigateClick(href: string) {
-    navigate({ to: href }).then();
+    void navigate({ to: href });
   }
   return (
     <ProLayout
-      siderWidth={256}
       location={{
         pathname: matches.pathname,
       }}
-      route={layoutRoute}
       menuItemRender={(item, dom) => (
         <div
           onClick={() => {
@@ -24,6 +22,8 @@ export function LayoutPage() {
           {dom}
         </div>
       )}
+      route={layoutRoute}
+      siderWidth={256}
     >
       <PageContainer>
         <ProCard

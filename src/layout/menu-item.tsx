@@ -7,79 +7,79 @@ export const layoutRoute: Route = {
   path: "/layout/",
   routes: [
     {
-      path: "/layout/welcome",
-      name: "欢迎",
       icon: <span className="icon-[mdi--human-welcome]" />,
+      name: "欢迎",
+      path: "/layout/welcome",
     },
     {
-      path: "/layout/antd",
-      name: "Antd",
-      icon: <span className="icon-[ant-design--ant-design-outlined]" />,
       access: "canAdmin",
+      icon: <span className="icon-[ant-design--ant-design-outlined]" />,
+      name: "Antd",
+      path: "/layout/antd",
       routes: [
         {
-          path: "/layout/antd/pro-table",
           name: "Pro Table",
+          path: "/layout/antd/pro-table",
         },
         {
-          path: "/layout/antd/pro-form",
           name: "Pro Form",
+          path: "/layout/antd/pro-form",
         },
         {
-          path: "/layout/antd/pro-skeleton",
           name: "Pro Skeleton",
+          path: "/layout/antd/pro-skeleton",
         },
         {
-          path: "/layout/antd/simple-table",
           name: "Simple Table",
+          path: "/layout/antd/simple-table",
         },
       ],
     },
     {
-      name: "样式示例",
       icon: <span className="icon-[material-symbols--list-rounded]" />,
+      name: "样式示例",
       path: "/layout/style",
       routes: [
         {
-          path: "/layout/style/tailwindcss",
           name: "Tailwind CSS",
+          path: "/layout/style/tailwindcss",
           routes: [
             {
-              path: "/layout/style/tailwindcss/example-card",
               name: "Example Card",
+              path: "/layout/style/tailwindcss/example-card",
             },
             {
-              path: "/layout/style/tailwindcss/example-weather",
               name: "Example Weather",
+              path: "/layout/style/tailwindcss/example-weather",
             },
             {
-              path: "/layout/style/tailwindcss/example-dashboard",
               name: "Example Dashboard",
+              path: "/layout/style/tailwindcss/example-dashboard",
             },
           ],
         },
         {
-          path: "/layout/style/css-module-example",
           name: "CSS Module Example",
+          path: "/layout/style/css-module-example",
         },
         {
-          path: "/layout/list/sub-page3",
           name: "三级列表页面",
+          path: "/layout/list/sub-page3",
         },
       ],
     },
     {
-      path: "/dashboard",
-      name: "Dashboard",
       icon: <span className="icon-[material-symbols--dashboard]"></span>,
+      name: "Dashboard",
+      path: "/dashboard",
       routes: [
-        { path: "/dashboard/example-dashboard", name: "Example Dashboard" },
+        { name: "Example Dashboard", path: "/dashboard/example-dashboard" },
       ],
     },
     {
-      path: "https://ant.design",
-      name: "Ant Design 官网外链",
       icon: <span className="icon-[material-symbols--link-rounded]" />,
+      name: "Ant Design 官网外链",
+      path: "https://ant.design",
     },
   ],
 };

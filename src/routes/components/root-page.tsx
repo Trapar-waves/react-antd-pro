@@ -14,16 +14,16 @@ export function RootPage() {
     // scan({
     //   enabled: true,
     // });
-    const inWhiteList = ["/login"].some(item => location.pathname.startsWith(item));
-    if (!inWhiteList) {
-      if (!token) {
-        updateRedirectUrl(location.pathname);
-        navigate({ to: "/login" }).then();
-      }
-      else {
+    const isInWhiteList = ["/login"].some(item => location.pathname.startsWith(item));
+    if (!isInWhiteList) {
+      if (token) {
         // if (!location.pathname.startsWith("/layout")) {
         //   navigate({ to: "/layout/welcome" }).then();
         // }
+      }
+      else {
+        updateRedirectUrl(location.pathname);
+        void navigate({ to: "/login" });
       }
     }
   }, [location.pathname, navigate, token, updateRedirectUrl]);

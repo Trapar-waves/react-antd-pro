@@ -1,25 +1,25 @@
-import type { TableListItem, TableListParams } from "../../api/table/table.api.ts";
 import { ProTable } from "@ant-design/pro-components";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
+import type { TableListItem, TableListParameters } from "../../api/table/table.api.ts";
 import { getTableList } from "../../api/table/table.api.ts";
-import { usePagination } from "../../hooks/usePagination.ts";
+import { usePagination } from "../../hooks/use-pagination.ts";
 import { proTableColumns } from "./pro-table-columns.tsx";
 
 export function ProTablePage() {
   const pagination = usePagination({ current: 1, pageSize: 10 });
-  const [tableParams, setTableParams] = useState<TableListParams>({});
+  const [tableParameters, setTableParameters] = useState<TableListParameters>({});
   const { data, isLoading } = useQuery({
-    queryFn: () => getTableList({ ...tableParams, ...pagination }),
-    queryKey: ["getTableList", pagination, tableParams],
+    queryFn: () => getTableList({ ...tableParameters, ...pagination }),
+    queryKey: ["getTableList", pagination, tableParameters],
   });
 
   return (
-    <ProTable<TableListItem, TableListParams>
+    <ProTable<TableListItem, TableListParameters>
       columns={proTableColumns}
-      onSubmit={setTableParams}
       dataSource={data?.data}
       loading={isLoading}
+      onSubmit={setTableParameters}
       pagination={{ ...pagination, total: data?.total }}
     />
   );

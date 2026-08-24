@@ -7,13 +7,15 @@ interface IPagination {
 }
 
 interface usePaginationResult {
-  pageSize: number;
   current: number;
   onChange: (current: number, pageSize: number) => void;
+  pageSize: number;
 }
 
-export function usePagination(defaultPagination: IPagination = { current: 1, pageSize: 10 }): usePaginationResult {
-  const [pagination, setPagination] = useState(defaultPagination);
+const DEFAULT_PAGINATION: IPagination = { current: 1, pageSize: 10 };
+
+export function usePagination(defaultPagination?: IPagination): usePaginationResult {
+  const [pagination, setPagination] = useState(defaultPagination ?? DEFAULT_PAGINATION);
   function handlePaginationChange(current: number, pageSize: number) {
     setPagination(produce((draft) => {
       draft.current = current;
@@ -21,5 +23,5 @@ export function usePagination(defaultPagination: IPagination = { current: 1, pag
     }));
   }
 
-  return { pageSize: pagination.pageSize, current: pagination.current, onChange: handlePaginationChange };
+  return { current: pagination.current, onChange: handlePaginationChange, pageSize: pagination.pageSize };
 }

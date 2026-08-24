@@ -1,10 +1,10 @@
-import type { TableListItem, TableListParams } from "../../../api/table/table.api";
 import { ProTable } from "@ant-design/pro-components";
 import { useQuery } from "@tanstack/react-query";
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import type { TableListItem, TableListParameters } from "../../../api/table/table.api";
 import { getTableList } from "../../../api/table/table.api";
-import { usePagination } from "../../../hooks/usePagination.ts";
+import { usePagination } from "../../../hooks/use-pagination.ts";
 import { columns } from "./components/columns.tsx";
 
 export const Route = createFileRoute("/layout/antd/pro-table")({
@@ -13,18 +13,18 @@ export const Route = createFileRoute("/layout/antd/pro-table")({
 
 function RouteComponent() {
   const pagination = usePagination({ current: 1, pageSize: 10 });
-  const [tableParams, setTableParams] = useState<TableListParams>({});
+  const [tableParameters, setTableParameters] = useState<TableListParameters>({});
   const { data, isLoading } = useQuery({
-    queryFn: () => getTableList({ ...tableParams, ...pagination }),
-    queryKey: ["getTableList", pagination, tableParams],
+    queryFn: () => getTableList({ ...tableParameters, ...pagination }),
+    queryKey: ["getTableList", pagination, tableParameters],
   });
 
   return (
-    <ProTable<TableListItem, TableListParams>
+    <ProTable<TableListItem, TableListParameters>
       columns={columns}
-      onSubmit={setTableParams}
       dataSource={data?.data}
       loading={isLoading}
+      onSubmit={setTableParameters}
       pagination={{ ...pagination, total: data?.total }}
     />
   );

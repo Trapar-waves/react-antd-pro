@@ -8,7 +8,7 @@ import { DefaultTheme } from "./themes/default.theme.ts";
 import "./global.css";
 import "@ant-design/v5-patch-for-react-19";
 
-const rootEl = document.getElementById("root");
+const rootElement = document.querySelector("#root");
 declare module "@tanstack/react-router" {
   interface Register {
     router: typeof router;
@@ -16,8 +16,8 @@ declare module "@tanstack/react-router" {
 }
 const queryClient = new QueryClient();
 
-if (rootEl) {
-  const root = ReactDOM.createRoot(rootEl);
+if (rootElement) {
+  const root = ReactDOM.createRoot(rootElement);
   root.render(
     <>
       <QueryClientProvider client={queryClient}>
