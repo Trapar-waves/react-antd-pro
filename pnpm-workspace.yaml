@@ -6,6 +6,3 @@ onlyBuiltDependencies:
   - "@tailwindcss/oxide"
   - core-js
   - esbuild
-
-allowBuilds:
-  esbuild: set this to true or false
