@@ -200,7 +200,7 @@ export function WelcomePage() {
           </Paragraph>
         </div>
 
-        <Divider orientation="left">示例路由</Divider>
+        <Divider titlePlacement="left">示例路由</Divider>
         <div
           style={{
             display: "grid",

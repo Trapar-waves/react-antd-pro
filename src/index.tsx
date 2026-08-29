@@ -6,7 +6,6 @@ import ReactDOM from "react-dom/client";
 import { router } from "./router.ts";
 import { DefaultTheme } from "./themes/default.theme.ts";
 import "./global.css";
-import "@ant-design/v5-patch-for-react-19";
 
 const rootElement = document.querySelector("#root");
 declare module "@tanstack/react-router" {
