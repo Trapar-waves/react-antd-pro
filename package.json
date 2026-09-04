@@ -67,7 +67,7 @@
     "@tanstack/react-router-devtools": "^1.167.1",
     "@tanstack/router-plugin": "^1.168.35",
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.5",
+    "@types/react-dom": "^19.2.7",
     "eslint": "^10.9.1",
     "eslint-plugin-format": "^2.0.1",
     "eslint-plugin-react-hooks": "^7.1.1",
