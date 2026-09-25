@@ -42,7 +42,7 @@
   "dependencies": {
     "@ant-design/pro-components": "^3.1.14-7",
     "@tanstack/react-query": "^5.103.2",
-    "@tanstack/react-router": "^1.170.38",
+    "@tanstack/react-router": "^1.170.39",
     "antd": "^6.6.5",
     "axios": "^1.20.0",
     "clsx": "^2.1.1",
