@@ -207,8 +207,8 @@ importers:
         specifier: ^5.21.1
         version: 5.21.1(eslint@10.11.0(jiti@2.7.0))(typescript@6.0.3)
       '@iconify/json':
-        specifier: ^2.2.534
-        version: 2.2.534
+        specifier: ^2.2.535
+        version: 2.2.535
       '@iconify/tailwind4':
         specifier: ^1.2.3
         version: 1.2.3(tailwindcss@4.3.3)
@@ -724,8 +724,8 @@ packages:
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
-  '@iconify/json@2.2.534':
-    resolution: {integrity: sha512-Des3a8sfIHXnKEsj43K0uSR4ibWtKVsuDumFQq6G/GpEMA449PdZn+fk2mC7nDcIax8MwkAQndAM19uX/xG0xg==}
+  '@iconify/json@2.2.535':
+    resolution: {integrity: sha512-nAV60ACUSHwnsb6fsp+letHlNkrwO4vzBtcC6B4EDHErQQfezk7E3nJdnwJjve6OCfMNO0uVT5Vrgna9/NCmXw==}
 
   '@iconify/tailwind4@1.2.3':
     resolution: {integrity: sha512-z8SKiMHRASJKF/IY//87MF88lcB7ulxh8vlhQXXLWsBkNtOh6ese9R41MyGpQeqXdRvQVt+/fX2glQtHFjQ+MA==}
@@ -5765,7 +5765,7 @@ snapshots:
 
   '@iarna/toml@2.2.5': {}
 
-  '@iconify/json@2.2.534':
+  '@iconify/json@2.2.535':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
