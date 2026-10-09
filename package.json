@@ -77,6 +77,6 @@
     "rspack-plugin-mock": "^2.2.0",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
-    "unplugin-turbo-console": "^2.3.3"
+    "unplugin-turbo-console": "^3.0.0"
   }
 }
