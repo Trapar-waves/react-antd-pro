@@ -176,7 +176,7 @@ importers:
         specifier: ^1.170.45
         version: 1.170.45(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       antd:
-        specifier: ^6.6.6
+        specifier: ^6.6.7
         version: 6.6.7(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       axios:
         specifier: ^1.20.0
