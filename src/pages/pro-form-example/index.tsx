@@ -58,7 +58,7 @@ export default function ProFormExample() {
         />
         <StepsForm
           onFinish={async (_values: any) => {
-            await waitTime(2000);
+            await waitTime();
             message.success("提交成功");
           }}
         >
@@ -245,7 +245,7 @@ export default function ProFormExample() {
           // @ts-expect-error
           labelWidth="auto"
           onFinish={async (_values: any) => {
-            await waitTime(2000);
+            await waitTime();
             message.success("提交成功");
           }}
           trigger={(
@@ -329,10 +329,10 @@ export default function ProFormExample() {
   );
 }
 
-function waitTime(time: number = 100) {
+function waitTime() {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(true);
-    }, time);
+    }, 2000);
   });
 };

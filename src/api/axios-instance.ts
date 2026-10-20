@@ -15,7 +15,6 @@ const AxiosInstance = axios.create({
   timeout: 10000,
 });
 
-// eslint-disable-next-line unicorn/no-top-level-side-effects -- axios interceptors must be registered at module level
 AxiosInstance.interceptors.response.use(
   (response) => {
     switch (response?.status) {
@@ -40,7 +39,7 @@ AxiosInstance.interceptors.response.use(
     return Promise.reject(error);
   },
 );
-// eslint-disable-next-line unicorn/no-top-level-side-effects -- axios interceptors must be registered at module level
+
 AxiosInstance.interceptors.request.use(
   (config) => {
     const token = useAuthStore.getState().token;

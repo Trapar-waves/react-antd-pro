@@ -1,5 +1,4 @@
 minimumReleaseAge: 0
-
 autoInstallPeers: true
 
 onlyBuiltDependencies:

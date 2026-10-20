@@ -19,10 +19,7 @@ export interface StaticTableParameters {
 }
 
 export function staticLoginToken(username: unknown, password: unknown): null | string {
-  if (username === "test" && password === "test") {
-    return `token-${Math.random().toString(32).slice(2)}`;
-  }
-  return null;
+  return username === "test" && password === "test" ? `token-${Math.random().toString(32).slice(2)}` : null;
 }
 
 export function staticTablePageBody(parameters: StaticTableParameters): { data: Array<Record<string, unknown>>; total: number } {
