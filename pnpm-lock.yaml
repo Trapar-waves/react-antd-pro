@@ -185,8 +185,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       immer:
-        specifier: ^11.1.21
-        version: 11.1.21
+        specifier: ^11.2.6
+        version: 11.2.6
       motion:
         specifier: ^14.5.0
         version: 14.5.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
@@ -201,7 +201,7 @@ importers:
         version: 0.5.7(@opentelemetry/core@2.12.0(@opentelemetry/api@1.9.1))(@rsbuild/core@2.2.14)(@rspack/core@2.2.9(@swc/helpers@0.5.23))(eslint@10.13.0(jiti@2.7.0))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       zustand:
         specifier: ^5.0.15
-        version: 5.0.15(@types/react@19.3.0)(immer@11.1.21)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1))
+        version: 5.0.15(@types/react@19.3.0)(immer@11.2.6)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1))
     devDependencies:
       '@iconify/json':
         specifier: ^2.2.546
@@ -3693,8 +3693,8 @@ packages:
     resolution: {integrity: sha512-2E8Q6rh+1RRSq/YdaGsNfXsEZy9FVqv6BSSrkmZJP7BnaoPnRfKL+YaofPvP+5rzdk144qSm6i4+hvPgUcbV4Q==}
     engines: {node: '>= 4'}
 
-  immer@11.1.21:
-    resolution: {integrity: sha512-bZSadeCPGdaY5/qRLgr6mDSH1ra21rD3rqpiWk7+QTr4ayYPTE9qZYdLh/NdPhMe0wSrTvHD/Lk8q5EwhUs0aw==}
+  immer@11.2.6:
+    resolution: {integrity: sha512-AI5pkEyzJZLsu91LASM15eZ0L9CK9SJZ+yI/MwO3Gsv9ajEwTwILrzxnxRqquLVKG7oCalEgXpAPsJfyPuWk/w==}
 
   import-fresh@3.3.1:
     resolution: {integrity: sha512-TR3KfrTZTYLPB6jUjfx6MF9WcWrHL9su5TObK4ZkYgBdWKPOFoSoQIdEuTuR82pmtxH2spWG9h6etwfr1pLBqQ==}
@@ -8781,7 +8781,7 @@ snapshots:
 
   ignore@7.0.13: {}
 
-  immer@11.1.21: {}
+  immer@11.2.6: {}
 
   import-fresh@3.3.1:
     dependencies:
@@ -10368,10 +10368,10 @@ snapshots:
 
   zod@4.6.7: {}
 
-  zustand@5.0.15(@types/react@19.3.0)(immer@11.1.21)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1)):
+  zustand@5.0.15(@types/react@19.3.0)(immer@11.2.6)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1)):
     optionalDependencies:
       '@types/react': 19.3.0
-      immer: 11.1.21
+      immer: 11.2.6
       react: 19.3.1
       use-sync-external-store: 1.7.0(react@19.3.1)
 
