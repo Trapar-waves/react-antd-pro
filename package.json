@@ -44,7 +44,7 @@
     "@tanstack/react-query": "^5.104.5",
     "@tanstack/react-router": "^1.170.46",
     "antd": "^6.6.7",
-    "axios": "^1.20.0",
+    "axios": "^1.21.0",
     "clsx": "^2.1.1",
     "immer": "^11.2.9",
     "motion": "^14.6.0",
