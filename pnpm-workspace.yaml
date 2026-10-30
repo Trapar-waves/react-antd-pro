@@ -1,7 +1,16 @@
+
 minimumReleaseAge: 0
+minimumReleaseAgeExcludePrune: true
+
+trustPolicy: no-downgrade
+trustPolicyExclude:
+  - semver
+
 autoInstallPeers: true
+shellEmulator: true
 
 onlyBuiltDependencies:
   - "@tailwindcss/oxide"
   - core-js
   - esbuild
+
