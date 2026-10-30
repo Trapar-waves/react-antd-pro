@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@ant-design/pro-components": "^3.1.14-7",
-    "@tanstack/react-query": "^5.104.5",
+    "@tanstack/react-query": "^5.105.0",
     "@tanstack/react-router": "^1.170.46",
     "antd": "^6.6.7",
     "axios": "^1.21.0",
@@ -62,7 +62,7 @@
     "@rsbuild/plugin-typed-css-modules": "^1.2.4",
     "@rsdoctor/rspack-plugin": "^1.6.5",
     "@tailwindcss/postcss": "^4.3.3",
-    "@tanstack/react-query-devtools": "^5.104.5",
+    "@tanstack/react-query-devtools": "^5.105.0",
     "@tanstack/react-router-devtools": "^1.167.2",
     "@tanstack/router-plugin": "^1.168.48",
     "@types/react": "^19.3.0",
