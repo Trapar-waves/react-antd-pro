@@ -204,7 +204,7 @@ importers:
         version: 5.0.16(@types/react@19.3.0)(immer@11.2.9)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1))
     devDependencies:
       '@iconify/json':
-        specifier: ^2.2.549
+        specifier: ^2.2.550
         version: 2.2.550
       '@iconify/tailwind4':
         specifier: ^1.2.3
