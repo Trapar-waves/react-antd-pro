@@ -39,7 +39,13 @@ export function createMockMiddleware() {
       const creator = url.searchParams.get("creator") ?? undefined;
       const status = url.searchParams.get("status") ?? undefined;
 
-      const body = staticTablePageBody({ creator, current, name, pageSize, status });
+      const body = staticTablePageBody({
+        creator,
+        current,
+        name,
+        pageSize,
+        status,
+      });
 
       sendJson(response, 200, {
         body,

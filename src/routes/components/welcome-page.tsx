@@ -18,20 +18,90 @@ interface TechItem {
  * 与 README 及 package.json 依赖一致；图标来自 Iconify `logos`（CC0）。
 */
 const techStack: TechItem[] = [
-  { hint: "组件与 Hooks 模型", iconClass: "icon-[logos--react]", id: "react", label: "React 19" },
-  { hint: "antd · @ant-design/pro-components", iconClass: "icon-[logos--ant-design]", id: "antd", label: "Ant Design 5 · Pro" },
-  { hint: "类型覆盖路由、请求与状态", iconClass: "icon-[logos--typescript-icon]", id: "ts", label: "TypeScript" },
-  { hint: "原子类与主题扩展", iconClass: "icon-[logos--tailwindcss-icon]", id: "tailwind", label: "Tailwind CSS 4" },
-  { hint: "@rsbuild/core · @rsbuild/plugin-react", iconClass: "icon-[material-icon-theme--rstack]", id: "rsbuild", label: "Rsbuild" },
-  { hint: "文件路由与服务器状态", iconClass: "icon-[logos--markdown]", id: "tanstack", label: "TanStack Router / Query" },
-  { hint: "轻量组合式状态", iconClass: "icon-[logos--markdown]", id: "zustand", label: "Zustand" },
-  { hint: "HTTP 客户端封装", iconClass: "icon-[logos--markdown]", id: "axios", label: "Axios" },
-  { hint: "路由与显隐过渡动画", iconClass: "icon-[logos--markdown]", id: "motion", label: "Motion" },
-  { hint: "@renton/eslint-config-react 等", iconClass: "icon-[logos--eslint]", id: "eslint", label: "ESLint" },
-  { hint: "@tailwindcss/postcss", iconClass: "icon-[logos--postcss]", id: "postcss", label: "PostCSS" },
-  { hint: "包管理与 CI", iconClass: "icon-[logos--pnpm]", id: "pnpm", label: "pnpm" },
-  { hint: "本地开发环境", iconClass: "icon-[logos--nodejs-icon]", id: "node", label: "Node.js" },
-  { hint: "Release 与 Pages", iconClass: "icon-[logos--github-icon]", id: "github", label: "GitHub Actions" },
+  {
+    hint: "组件与 Hooks 模型",
+    iconClass: "icon-[logos--react]",
+    id: "react",
+    label: "React 19",
+  },
+  {
+    hint: "antd · @ant-design/pro-components",
+    iconClass: "icon-[logos--ant-design]",
+    id: "antd",
+    label: "Ant Design 5 · Pro",
+  },
+  {
+    hint: "类型覆盖路由、请求与状态",
+    iconClass: "icon-[logos--typescript-icon]",
+    id: "ts",
+    label: "TypeScript",
+  },
+  {
+    hint: "原子类与主题扩展",
+    iconClass: "icon-[logos--tailwindcss-icon]",
+    id: "tailwind",
+    label: "Tailwind CSS 4",
+  },
+  {
+    hint: "@rsbuild/core · @rsbuild/plugin-react",
+    iconClass: "icon-[material-icon-theme--rstack]",
+    id: "rsbuild",
+    label: "Rsbuild",
+  },
+  {
+    hint: "文件路由与服务器状态",
+    iconClass: "icon-[logos--markdown]",
+    id: "tanstack",
+    label: "TanStack Router / Query",
+  },
+  {
+    hint: "轻量组合式状态",
+    iconClass: "icon-[logos--markdown]",
+    id: "zustand",
+    label: "Zustand",
+  },
+  {
+    hint: "HTTP 客户端封装",
+    iconClass: "icon-[logos--markdown]",
+    id: "axios",
+    label: "Axios",
+  },
+  {
+    hint: "路由与显隐过渡动画",
+    iconClass: "icon-[logos--markdown]",
+    id: "motion",
+    label: "Motion",
+  },
+  {
+    hint: "@renton/eslint-config-react 等",
+    iconClass: "icon-[logos--eslint]",
+    id: "eslint",
+    label: "ESLint",
+  },
+  {
+    hint: "@tailwindcss/postcss",
+    iconClass: "icon-[logos--postcss]",
+    id: "postcss",
+    label: "PostCSS",
+  },
+  {
+    hint: "包管理与 CI",
+    iconClass: "icon-[logos--pnpm]",
+    id: "pnpm",
+    label: "pnpm",
+  },
+  {
+    hint: "本地开发环境",
+    iconClass: "icon-[logos--nodejs-icon]",
+    id: "node",
+    label: "Node.js",
+  },
+  {
+    hint: "Release 与 Pages",
+    iconClass: "icon-[logos--github-icon]",
+    id: "github",
+    label: "GitHub Actions",
+  },
 ];
 
 const readmeFeatures: string[] = [
@@ -156,7 +226,13 @@ export function WelcomePage() {
             }}
           >
             {techStack.map(item => (
-              <Card key={item.id} size="small" styles={{ body: { padding: "12px 14px" } }}>
+              <Card
+                key={item.id}
+                size="small"
+                styles={{
+                  body: { padding: "12px 14px" },
+                }}
+              >
                 <Flex align="flex-start" gap="small">
                   <span aria-hidden className={`${item.iconClass} text-[1.5rem] shrink-0 text-[#1677ff]`} />
                   <div>
@@ -213,7 +289,9 @@ export function WelcomePage() {
               <Card
                 hoverable
                 style={{ borderRadius: 12 }}
-                styles={{ body: { minHeight: 88 } }}
+                styles={{
+                  body: { minHeight: 88 },
+                }}
                 title={item.title}
               >
                 <Text type="secondary">{item.desc}</Text>

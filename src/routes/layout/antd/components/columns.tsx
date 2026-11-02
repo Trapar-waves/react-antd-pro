@@ -19,7 +19,12 @@ export const columns: ProColumns<TableListItem>[] = [
       </div>
     ),
     filterIcon: filtered => (
-      <span className="icon-[ant-design--search-outlined]" style={{ color: filtered ? "#1890ff" : undefined }} />
+      <span
+        className="icon-[ant-design--search-outlined]"
+        style={{
+          color: filtered ? "#1890ff" : undefined,
+        }}
+      />
     ),
     render: _ => <a>{_}</a>,
     title: "应用名称",

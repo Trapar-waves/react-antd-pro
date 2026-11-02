@@ -6,7 +6,9 @@ import { useAuthStore } from "../store/auth.store.ts";
 import { staticApiRequest } from "./static-client.ts";
 
 const basePrefix = (import.meta.env.BASE_URL ?? "/").replace(/\/$/, "");
-const apiBaseUrl = basePrefix ? `${basePrefix}/api` : "/api";
+const apiBaseUrl = basePrefix
+  ? `${basePrefix}/api`
+  : "/api";
 
 const isUseStaticApi = import.meta.env.PUBLIC_STATIC_API === "true";
 

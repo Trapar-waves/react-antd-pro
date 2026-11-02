@@ -19,11 +19,17 @@ export async function staticApiRequest<T>(url: string, options?: AxiosRequestCon
   if (url === "table" && method === "get") {
     const p = (options?.params ?? {}) as Record<string, unknown>;
     return staticTablePageBody({
-      creator: typeof p.creator === "string" ? p.creator : undefined,
+      creator: typeof p.creator === "string"
+        ? p.creator
+        : undefined,
       current: Number(p.current),
-      name: typeof p.name === "string" ? p.name : undefined,
+      name: typeof p.name === "string"
+        ? p.name
+        : undefined,
       pageSize: Number(p.pageSize),
-      status: typeof p.status === "string" ? p.status : undefined,
+      status: typeof p.status === "string"
+        ? p.status
+        : undefined,
     }) as T;
   }
 

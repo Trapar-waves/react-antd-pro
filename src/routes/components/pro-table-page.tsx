@@ -10,7 +10,10 @@ export function ProTablePage() {
   const pagination = usePagination({ current: 1, pageSize: 10 });
   const [tableParameters, setTableParameters] = useState<TableListParameters>({});
   const { data, isLoading } = useQuery({
-    queryFn: () => getTableList({ ...tableParameters, ...pagination }),
+    queryFn: () => getTableList({
+      ...tableParameters,
+      ...pagination,
+    }),
     queryKey: ["getTableList", pagination, tableParameters],
   });
 

@@ -3,7 +3,9 @@ import { Outlet, useNavigate, useRouterState } from "@tanstack/react-router";
 import { layoutRoute } from "../../layout/menu-item.tsx";
 
 export function LayoutPage() {
-  const matches = useRouterState({ select: s => s.location });
+  const matches = useRouterState({
+    select: s => s.location,
+  });
   const navigate = useNavigate();
   function handleNavigateClick(href: string) {
     void navigate({ to: href });

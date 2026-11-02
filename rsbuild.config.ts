@@ -7,15 +7,21 @@ import process from "node:process";
 import TurboConsole from "unplugin-turbo-console/rspack";
 import { createMockMiddleware } from "./mock/development-server-handlers.ts";
 
-const { publicVars } = loadEnv({ prefixes: ["APP_"] });
+const { publicVars } = loadEnv({
+  prefixes: ["APP_"],
+});
 
 function normalizeBasePath(): string {
   const raw = process.env.BASE_PATH?.trim();
   if (!raw || raw === "/") {
     return "/";
   }
-  const prefixed = raw.startsWith("/") ? raw : `/${raw}`;
-  return prefixed.endsWith("/") ? prefixed : `${prefixed}/`;
+  const prefixed = raw.startsWith("/")
+    ? raw
+    : `/${raw}`;
+  return prefixed.endsWith("/")
+    ? prefixed
+    : `${prefixed}/`;
 }
 
 const basePath = normalizeBasePath();
@@ -25,11 +31,15 @@ const isEnableRsdoctor = Boolean(process.env.RSDOCTOR);
 const isEnableTurboConsole = process.env.NODE_ENV === "development";
 
 export default defineConfig({
-  ...(isUseSubpath && { output: { assetPrefix: basePath } }),
+  ...(isUseSubpath && {
+    output: { assetPrefix: basePath },
+  }),
   performance: {
     ...(isEnableRsdoctor && { buildCache: false }),
   },
-  plugins: [pluginReact()],
+  plugins: [
+    pluginReact(),
+  ],
   server: {
     ...(isUseSubpath && { base: basePath }),
     port: 6543,
@@ -53,8 +63,17 @@ export default defineConfig({
     },
     rspack: {
       plugins: [
-        TanStackRouterRspack({ autoCodeSplitting: true, routeFileIgnorePattern: ".css.d.ts", routeFileIgnorePrefix: "components", target: "react" }),
-        ...(isEnableTurboConsole ? [TurboConsole()] : []),
+        TanStackRouterRspack({
+          autoCodeSplitting: true,
+          routeFileIgnorePattern: ".css.d.ts",
+          routeFileIgnorePrefix: "components",
+          target: "react",
+        }),
+        ...(isEnableTurboConsole
+          ? [
+              TurboConsole(),
+            ]
+          : []),
         ...(isEnableRsdoctor
           ? [
               new RsdoctorRspackPlugin({

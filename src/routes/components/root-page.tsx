@@ -26,7 +26,12 @@ export function RootPage() {
         void navigate({ to: "/login" });
       }
     }
-  }, [location.pathname, navigate, token, updateRedirectUrl]);
+  }, [
+    location.pathname,
+    navigate,
+    token,
+    updateRedirectUrl,
+  ]);
   return (
     <React.Fragment>
       <TanStackRouterDevtools />

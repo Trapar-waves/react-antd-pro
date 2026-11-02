@@ -48,14 +48,18 @@ export function LoginPage() {
           name="username"
           placeholder="Please enter username"
           required
-          rules={[{ message: "username required", required: true }]}
+          rules={[
+            { message: "username required", required: true },
+          ]}
           width="md"
         />
         <ProFormText.Password
           label="Password"
           name="password"
           placeholder="Please enter password"
-          rules={[{ message: "passwords required", required: true }]}
+          rules={[
+            { message: "passwords required", required: true },
+          ]}
           width="md"
         />
       </ProForm>
