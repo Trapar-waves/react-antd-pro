@@ -204,8 +204,8 @@ importers:
         version: 5.0.16(@types/react@19.3.0)(immer@11.2.9)(react@19.3.1)(use-sync-external-store@1.7.0(react@19.3.1))
     devDependencies:
       '@iconify/json':
-        specifier: ^2.2.551
-        version: 2.2.551
+        specifier: ^2.2.552
+        version: 2.2.552
       '@iconify/tailwind4':
         specifier: ^1.2.3
         version: 1.2.3(tailwindcss@4.3.4)
@@ -721,8 +721,8 @@ packages:
   '@iarna/toml@2.2.5':
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
 
-  '@iconify/json@2.2.551':
-    resolution: {integrity: sha512-V+eqWf/1TcgubkOLoml7Gri6HAk8IelqwIglY7LQuM8G14IuYa7VfHd17bMHcz6Oe81vugsETaJCuBL8iIabQw==}
+  '@iconify/json@2.2.552':
+    resolution: {integrity: sha512-Aj7wDQF+4PDkzIRyySlpPAlsQqTySNOJATnc3SlJN5ybv9c3mULkMa1MfvZh5zvA6rPHe6hNZpCLD1tRfXfJvw==}
 
   '@iconify/tailwind4@1.2.3':
     resolution: {integrity: sha512-z8SKiMHRASJKF/IY//87MF88lcB7ulxh8vlhQXXLWsBkNtOh6ese9R41MyGpQeqXdRvQVt+/fX2glQtHFjQ+MA==}
@@ -5711,7 +5711,7 @@ snapshots:
 
   '@iarna/toml@2.2.5': {}
 
-  '@iconify/json@2.2.551':
+  '@iconify/json@2.2.552':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 2.0.3
