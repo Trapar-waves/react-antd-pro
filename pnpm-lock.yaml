@@ -179,8 +179,8 @@ importers:
         specifier: ^6.7.0
         version: 6.7.0(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       axios:
-        specifier: ^1.21.0
-        version: 1.21.0(debug@4.4.3)
+        specifier: ^1.21.1
+        version: 1.21.1(debug@4.4.3)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -2712,8 +2712,8 @@ packages:
   atomically@2.1.1:
     resolution: {integrity: sha512-P4w9o2dqARji6P7MHprklbfiArZAWvo07yW7qs3pdljb3BWr12FIB7W+p0zJiuiVsUpRO0iZn1kFFcpPegg0tQ==}
 
-  axios@1.21.0:
-    resolution: {integrity: sha512-YCzXMB53Q9PZBsh7yN7wtapit4WepwcHS2fP8QhGsBxSz5YtgYobV7GGlWlAJi+RxfU77GQTQi2DSLUma42EYA==}
+  axios@1.21.1:
+    resolution: {integrity: sha512-6eI5Q/Y4u/Um9dDlsRoq5pY2rxnUTv+L4PpLitnbk/i4jb3MxLZ5CsN5Ih3IysbeRYK4pR+P7qfMsOQl9fwwFQ==}
 
   babel-dead-code-elimination@1.0.12:
     resolution: {integrity: sha512-GERT7L2TiYcYDtYk1IpD+ASAYXjKbLTDPhBtYj7X1NuRMDTMtAx9kyBenub1Ev41lo91OHCKdmP+egTDmfQ7Ig==}
@@ -7682,7 +7682,7 @@ snapshots:
       stubborn-fs: 2.0.0
       when-exit: 2.1.5
 
-  axios@1.21.0(debug@4.4.3):
+  axios@1.21.1(debug@4.4.3):
     dependencies:
       follow-redirects: 1.16.2(debug@4.4.3)
       form-data: 4.0.6
