@@ -6,6 +6,11 @@ trustPolicy: no-downgrade
 trustPolicyExcludePrune: true
 trustPolicyExclude:
   - semver
+  # solid-js 1.9.20 is a maintenance release published after the 2.0.x
+  # line, which ships via GitHub Actions with a SLSA provenance attestation.
+  # The pnpm no-downgrade check orders by publish date, not semver, so it
+  # rejects 1.9.20 and blocks @tanstack/react-query-devtools >= 5.108.2.
+  - solid-js@1.9.20
 
 autoInstallPeers: true
 shellEmulator: true
